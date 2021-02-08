@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <title>相冊：2.1 傳承篇</title>
+
+  <style>
+    .jumbotron-bg2 {
+      background-image: url('images/wangs-1101-TaipeiCity.jpg');
+      background-size: cover;
+      background-position: center center;
+      min-height: 300px
+    }
+
+    .bg-lighter {
+      background-color: rgba(0, 0, 0, .4);
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        王氏家族相冊
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>家人登入
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">說明</a>
+              <a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+              <a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-home"></i>追憶父母
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-211-Parents-01.html">傳承篇</a>
+              <a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+              <a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-info"></i>生活回顧
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-311-Review-01.html">眷村生活回顧</a>
+              <a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+              <a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+              <a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+			  <a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>									
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-heart"></i>享受當下
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+              <a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+              <a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+              <a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+              <a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+              <a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-asterisk"></i>展望下一代
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+              <a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+              <a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+    <!-- Jumbotron-->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+      <div class="container">
+        <div class="bg-lighter">
+          <h5>傳承</h5>
+          <p>感謝父母傳承給我們的天賦基因</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vue實例的掛載點 -->
+    <div id="app" class="container-fluid mt-1">
+
+      <header>
+        <div class="row mx-1">
+          <h3>2.1 傳承篇</h3>
+
+        </div>
+
+      </header>
+      <main>
+        <div class="row">
+          <div class="col-md-3 col-lg-2">
+            <aside class="sidebar1">
+              <h5>時間軸:大事記</h5>
+              <p>1913 -2012</p>
+              <ul>
+                <li>2020: 台鳳追憶於台北</li>
+              </ul>
+            </aside>
+            <div class="list-group" id="MenuList" role="tablist">
+              <a href="#Article-01" class="list-group-item list-group-item-action active" data-toggle="list">子女教育</a>
+              <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">基因傳承</a>
+              <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">追憶歲月</a>
+              <a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">外省人的國家認同</a>
+            </div>
+			  <br>
+          </div>
+          <div class="col-md-9 col-lg-10">
+
+
+            <div class="tab-content">
+              <!-- Articla 01-->
+              <div class="tab-pane active" id="Article-01" role="tabpanel">
+                <article>
+                  <h5>子女教育</h5>
+                  <div>
+                    <p>
+                      父親服務軍旅在外，母親獨自一人在內長期操持家務。對於子女們的敎育問題，仍然沒有任何輕忽。當我小學五年級時，母親聽從擔任西門國小敎師舅母的建議，將我與雙胞兄弟台龍一起從中正國小遷往西門國小，大姊在我們之前，也早一年轉學到西門國小就讀。子女六人中，前面三人均轉學西門國小。其原因爲何？
+                    </p>
+                    <p>
+                      事後回想，由於母親的遠見，想促使我們前面三位較大的子女，在國小時期，就能贏在起跑點上。就當時的家庭環境社會背景而言，可謂是相當前衞的舉措。其望子成龍望女成鳳的心情。也證明母親對子女敎育的高度重視可見一斑。
+                    </p>
+                    <p>
+                      西門國小在當時是最知名的國民小學。西門鬧區商業鼎盛經濟繁華。而我們居住的眷村在中正區，學區區域相對有些落差。學生素質也相對有參差不齊。我與兄姊背著大書包，每日搭乘25號公車，耗時約需半小時遠距求學。五年級轉學，與西門國小同學並列競爭，倍感壓力。國語、數學、常識各項課程，自認有追趕不上的感覺。遠距求學及當時家境的不允許，沒有參加課後補習。考試後成績不理想，當然是挨老師的鞭子。西門國小的敎育以嚴格著名。每位同學均有挨罰的經驗紀錄。
+                    </p>
+                    <p>
+                      記得母親有次來校參加母姊會。會後告訴我，老師覺得我的成績不佳升學考試可能有問題。母親認為若考不上公立學校，我可以先留級一年。若是有考上，將請我吃起士林冰淇淋乙客。（冰淇淋對當年幼年的我，則是重賞。）母親對我們的敎育雖相當重視，在我們求學過程中，從不嚴厲責罰子女在就學學業成績的高低與成敗。開放的教育方式讓子女在求學過程中追求自我。
+                    </p>
+                    <p>
+                      記得母親督看台龍兄是否有認真讀書時，她在洗衣服時，製放一面大鏡子，台龍在其身後讀書，她在操持家務時，不時可督導幼年的子女，是否有認真讀書。母親對長子的敎育，最為操心從各種細微之處隨時可見。在現代子女教育，母親單獨陪讀，在古早子女衆多年代，當然是不可能的情況。大弟台中自幼沉靜好學。數理成績優逸，自動自發學業一路順遂，直到博士畢業。他是六名子女中，母親對學業成績上最放心值得驕傲的兒子。記得當年，他同時考上師大附中及大同工專時，曾經執意要上大同工專；母親認為他應選擇師大附中，未來才能就讀大學、研究所取得碩士、博士學位。母親對子女的期待以子女各自程度有所不同，因材施教，相當的聰明。
+                    </p>
+                    <p>
+                      五弟台鼎自幼聰穎風趣調皮，完全承襲了攵親軍人的人格特質。父親期望四位兒子中，能夠有一位從軍報國，繼承父志。當仁不讓，五弟志願從軍，且服從父親的提議以「憲兵」為第一志願。在軍旅生涯中，成功完成父親一生的志業。在父親晚年，陪伴最多的一位。六弟台煌幼年時期颜值最高，人見人愛。兩位幼弟最受母親晚年的寵愛。誠如俗諺「皇室愛長子；百姓愛幼兒」。父母親晚年，五弟出力最大，六弟出錢最多。在父母親最後的人生階段，合力陪伴渡過。
+                    </p>
+                    <p>
+                      我們的教育完全有賴母親的督導。母親雖因青幼年戰爭遷徏緣故，所受敎育不高。母親聰慧賢淑提供子女優良的家庭環境。並給予敎育的機會，督促子女向學好學，讓子女接受並完成高等敎育。手足六人源自父母所生。各自成長，各有所成。在社會上各盡其力。若有任何成就，均感恩父母生我們、養我們、敎育我們。
+                    </p>
+                    <p>謹祝父母親在天上無牽無掛樂逍遙</p>
+                  </div>
+                  <img src="images/wangs-3302-school-1.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-3302-school-2.jpg" class="img-fluid" style="width:600px">
+                </article>
+              </div>
+
+              <!-- Articla 02-->
+              <div class="tab-pane " id="Article-02" role="tabpanel">
+                <article>
+                  <h5>基因 DNA&nbsp;</h5>
+                  <div>
+                    <p>近期在《Nature
+                      Genetics》上發表的文章指出，有近40%的疾病，是源於DNA，而環境的因素，包括社會經濟地位、空氣污染以及氣候變遷，則至少造成了25%的疾病。研究報告中指出40%疾病源於基因；25%與環境有關
+                      。</p>
+                    <p>父親生於1913年元月10日（農曆），卒於2013年11月9日，享壽101嵗。母親生於1926年4月14日，卒於2010年2月9日，享壽85歲。父母親均屬於長壽者，換言之，我們擁有長壽的基因。</p>
+                    <p>
+                      父母親享有長壽，不是沒有原因的，父親長期受到母親的照顧起居及良好的飲食習慣。造成他的百歳人生。加上晚年兒女的陪伴，尢其是五弟在母親辭世後，毅然辭職專心陪伴，讓他成為百歲幸福老人。而母親卻積老成疾，於八十五歳竟未能享福一天就撒守人寰。（父母親年齡差距12歲）
+                    </p>
+                    <p>父母親的顏值基因，遺傳至祖孫後代。兒孫輩的高颜值，必須要感謝我們的父母親所賜。以身高來說，兒孫輩男性190公分，女性170公分。高個身材均來自祖父母及外祖父母的身長基因。</p>
+                    <p>
+                      父親的高智商基因，不但彰顕在他的職塲生涯中的表現。晚年他在病褟時，仍不時顕現他的明睿、聰慧及佼潔。真不愧是情報人員歷練出身。兄弟姊六人，遺傳自父母親良好的基因。譲人生行走的路途順遂，遭遇困難時，也能勇敢挺身而過。兄弟姊們智商均在中、高之上。在求學途中，除了母親的敎育以外，智商基因決定了優秀與否的關鍵因素。
+                    </p>
+                    <p>
+                      父親雖是一位軍人及武人。但是，父親對生活的質感及品位絕佳。他使用的物品大自傢俱，小至盤碗碟，非常講究。食品水果、點心低價購買拒食。穿著的衣裳、帽子等質感講究。我的服裝也常常會飽受評論。是否「美」觀？當然是他的評論，以他的主觀判斷說了算。
+                    </p>
+                    <p>
+                      家庭陳設力求美觀、大方，整潔有序。我與父親最神似，記憶中我們常常去買像俱，多半去零再減半向母親報價，母親嫌貴，父女二人只好作假帳矇騙母親。至今我有買高當檔物品習性，當然源自於父親高品位高消費的基因特質。
+                    </p>
+                    <p>我繼承了父母親的所有基因。套句父親的名言：「所有好的基因都像母親；所有壞的基因都來自於父親」。至今我仍然非常驕傲我的基因遺傳。</p>
+                  </div>
+
+
+                  <img src="images/wangs-3301-DNA01.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-3301-DNA02.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-3301-DNA04.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-3301-DNA05.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-3301-DNA06.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-3301-DNA03.jpg" class="img-fluid" style="width:600px">
+
+                </article>
+              </div>
+              <!-- Articla 03-->
+              <div class="tab-pane " id="Article-03" role="tabpanel">
+                <article>
+                  <h5>陪伴雙親老去的歲月札記</h5>
+                  <div>
+                    <p>
+                      母親個性樂觀開明，具有菩薩一般的慈悲、善良的心，處處都為他人著想，從不哰叨、抱怨。晚年一頭銀白色的髮絲、和藹慈祥的容顏，搭配著端莊、貴氣的穿著與舉止，總是讓人見到了都喜歡跟她親近。
+                      她長年因受各種慢性病的困擾，必需經常赴榮總看病，看診當天清晨四點不到就起床，招呼父親用完早膳，簡單的梳洗後，就要趕第一班新店-淡水線的捷運，至石牌轉換接駁車到榮總在人潮中抽取驗血、驗血糖的號碼牌等待檢驗流程。
+                      每當我抵達榮總時，總是看見她靜靜的坐在人群中的一角耐心的等待與我會合。
+                    </p>
+                    <p>
+                      當時，眼科診間有位護理師見到母親與我坐在診外候診時，總會過來打趣的說：「奶奶，今天您又帶了保鏢來看診啦！」「下一號就輪到您了，我扶您先進來吧！」，這時我抬頭看一下候診燈號，與我們預約的號次，往往差個二、三十號，這位善心的護理師不動聲色的幫年邁的母親暗中又插了一次隊了。
+                      結束了整個醫院流程，母親還要匆匆趕到南門市場，爲父親添購一些愛吃，新店不容易買到的蓮子、白菜心、馬來糕、土雞肉等食材，再趕回去料理中餐——她的一生就是爲兒女、丈夫、家庭庸庸碌碌中，無怨無悔的把自己的青春、健康都陪送進去了。
+                    </p>
+                    <p>
+                      父親個性急躁又極度的敏感，可能年輕時受家庭及工作環境影響屬完全悲觀主義者，常懷著「人生不滿百，要懷千歲憂」的憂患意識，尤其是當他眼睛皮突然一跳時（不以命理界所謂的喜怒哀樂區分），他會立即感應必有重大災難發生，全身細胞也會不由自主的進入緊張備戰階段。再加上他兩條頸動脈老化嚴重的堵塞，造成晚年脫序的言行時偶發生。而他個性又不願服老，事事講求親為親力全程指揮與控管，所以我倆之間的戰爭經常會一觸即發：
+                    </p>
+                    <p>
+                      例如：他因慢性病，需至三總看診時，這也是我夢魘的開始。每次我一定會先透過各種管到，幫他取得院長控管的特別號1至3號，但他還是不放心，當天中午11點不到，他必會催促印傭提前用餐，幫他穿戴整齊，準備出發，你怎麼勸說：三總下午診1330才開始，請他先小睡片刻再去，時間上措措有餘。但他絕對不會接受。
+                      這時他眼睛會滴流流的觀察，我跟印傭自不自愛，有無做好出發的準備，當我們還無動作，他發現暗示無效時，接著會把拐杖故意甩在地上，再接著就是唉聲嘆氣，故意說些刺激的話，什麽「久病無孝子啦！」、「他的病都是我們活活逼出來的啦！」等等，等到我也受不了時，只有招車出發。
+                    </p>
+                    <p>
+                      到了三總一看手錶，天啊！剛好12點整，整個候診室空蕩蕩的，只有我們父子加個印傭三人枯坐在這裡。事情還未了，他每隔五分鐘會問我一次：「阿鼎呀！你去看看醫生來了沒有？」、「阿鼎啊！你再去看看嘛！醫生開始看了沒有？」、「阿鼎啊！你去聞聞（問問）看，這是什麽龜（鬼）醫院，病人都快被活活整死啦！」問到最後，我也火了，回他一句：「老爸，問過了，醫生死掉了，他已經被你逼死了」。這下父親更不高興了。他說「阿鼎啊！尼這個人最大缺點就是容易生氣，做事耐心不夠，所以尼要是再不改，這輩子都要準備吃苦，做不出什麼大事業的，我倆若不是父子關係，我才懶的說你⋯⋯。」等等。整個過程，非要等到離開醫院，準備轉奔武昌街城中市場-上海澡堂泡澡時，他緊張的情緒才能稍作緩和，還會聽到他跟印傭講：「肖梅（小妹）啊！我們今天來的棗（早），所以還算順順利利的。」
+                    </p>
+                    <p>
+                      例如：回到自己的家，最怕半夜接到印傭的來電，一是擔心父親發生狀況，二來是父親睡不著，準備對我實施不定期「夜間緊急集合」測試，不過一般都是以測試的機率最高，當我接起電話時：就會聽到印傭無耐的說：「三杯（伯）爺爺說他不行了，要尼麻尚（馬上）會（回）來」，我問明天一大早回來，不行嗎？她說：「不行，也業（爺爺）有以（遺）言要角（交）待，等不及了。」，趕回家中，見父親面色紅潤，聲如洪鐘的說道：「阿鼎呀！你總算趕回來了，我不行啦！有幾句遺言要交待給你」，我回答說：「老爸，你行，你非常行，你一定會長命百歲，我感覺我好像不行了」。
+                      例如：每當二樓王氏倆老上樓探視父親時，他老人家眼角一瞟，發現我不在客廳時，馬上會壓低聲量（無耐天生嗓門太大，我還是聽的清清楚楚）訴說著他的辛酸：「唉！自從老伴離開了，我每天眼淚往肚子裡面吞。有苦沒有人可以訴。我現在這個兒子整天遊手好閒，好吃懶做，現在賴在我這裡，我一個老人還要養印傭他們幾個人」、「他們每天大魚大肉大口的吃，只給我喝碗湯⋯⋯」，他老人家形容的真比八點檔連續劇還催淚，我平常雖然頌經唸佛，有心悔改。同時也想過他是否因年歲太高，已經失智退化，但當時還是忍不住這口氣，待客人離開後，我問父親：「做人要憑良心，你剛才在說什麼？」⋯⋯。
+                      當時常為這些瑣事跟父親發生爭執，事後回想：所謂：「返老還童」，我們年幼時，也不是常因無知、胡鬧惹的父母的不快，但雙親對我們的愛，永遠不變，但為何在他們老後，身體機能、智力嚴重衰退後，我們對他們無意識的失序言行還會在意呢？
+                    </p>
+                    <p>
+                      雙親往生後，我非常感謝上蒼能賜給我這段機緣、有幸能陪伴父母走過這段歲月，也感謝兄姊們自幼對我們關愛與照顧（我依然記得大姊第一次工作領薪後贈我的鋼筆，上面還刻有勉勵我的話，我第一套西裝是大哥帶我在衡陽路惠羅西服訂製的，二姊每月以每堂5百元的高鐘點費送我到師大張道林教授處學習素描與油畫，二哥自美出差返國贈我的卡西歐高價電子錶」等等，尤其是兄姊弟等同心協力，不分彼此的對家庭的付出，對父母的奉養，讓家庭環境得以改善，雙親晚年豐衣足食，鄰里稱羨。
+                    </p>
+                    <p>
+                      雙親往生後，我非常感謝上蒼能賜給我這段機緣、有幸能陪伴父母走過這段歲月，也感謝兄姊們自幼對我們關愛與照顧（我依然記得大姊第一次工作領薪後贈我的鋼筆，上面還刻有勉勵我的話，我第一套西裝是大哥帶我在衡陽路惠羅西服訂製的，二姊每月以每堂5百元的高鐘點費送我到師大張道林教授處學習素描與油畫，二哥自美出差返國贈我的卡西歐高價電子錶」等等，尤其是兄姊弟等同心協力，不分彼此的對家庭的付出，對父母的奉養，讓家庭環境得以改善，雙親晚年豐衣足食，鄰里稱羨。
+                    </p>
+                  </div>
+                  <img src="images/wangs-21-1-parents-02.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-2101-parents-03.jpg" class="img-fluid" style="width:600px">
+
+                </article>
+              </div>
+              <!-- Articla 04-->
+              <div class="tab-pane " id="Article-04" role="tabpanel">
+                <article>
+                  <h5>台灣外省人的國家認同</h5>
+                  <div>
+                    <p>
+						外省人<br>
+						台灣外省人後代是接續「外省人」的概念而來，通常是指在台灣日治時代結束以後，在台灣出生但雙親或雙親之一（一般以父親為主）來自中國大陸的人。
+                    </p>
+                    <p>
+						外省第一代<br>
+
+						我們的父母親在1947-1948年前後自中國大陸浙江省、福建省來台灣，相對於原本即世居臺灣的「本省人」，被稱為「外省人」。根據統計在彼時約有120萬人左右。我們父母親初來台灣這一代，是外省第一代。而我們兄弟姐在台灣初生長大的這一代是外省第二代。
+						<br>
+						第一、二代外省人的生活環境大多是眷村。由於生活環境、集體歷史及家庭背景的不同，「外省人」被認為與「本省人」有部分區別。隨著定居台灣的時間越長，且台灣之戶籍登記資料已不再登記籍貫，無論是認同或者各個方面，少數「第三代外省人」基本上已經難以分辨而與「本省人」無異
+                    </p>
+                    <p>
+						外省第二代<br>
+
+						外省第二代多成長於眷村。根據統計，彼時有幾種出路，學業成績優良者升大學，畢業後，去國外讀書，或進入公教單位。而外省第二代在幾十年前踏入公教也有其淵源，那時要進民營企業，如台塑、東元，第一個條件就是要會講台灣話，長在眷村的外省第二代第一關就被刷掉。出路就是經過政府公開的聯合招考進入政府機關或是公營事業機構公開招考徴選進入成為政府或公營事業機構的公教人員。由於公開招考甄試錄取成績優秀人才，公敎人員均是成績優良的人員。另外，也有部分因為家庭背景因素，投入軍旅生涯，成為報效國家的軍人。
+                    </p>
+                    <p>
+						1971-1972年，我及台龍兄大學畢業，因為軍人家庭出身，沒有家庭背景人事介紹，只有參加高、普考、金融人員特考、經濟部人員及郵電特考等各職公職人員考試。
+						<br>
+						母親對子女敎育自小非常重視，我們經過初中、高中、大學各種聯考制度的洗禮磨練，早就練到一身「考試」功夫。所以大學畢業半年我就考上普考（金融類）金融特考、郵局、中華電信公職人員考試。幾乎百發百中。
+						<br>
+						台龍也同樣考上普考（金融類）金融人員特考。
+
+						台中弟由於自小學到大學一路成績優異，交通大學碩士畢業即被中山科學研究院網羅進入中科院任職。
+						五弟台鼎自幼被父親相中，承繼父志，投效軍中，隨著父親的腳步，一生服務軍旅。成為軍中重要幹部。
+
+						六弟台煌成為珠寶商人，在仁愛路開設富園珠寶店，二十年經營，非常成功富有。
+                    </p>
+                    <p>
+						大學畢業很多人也出國深造了。我當時也非常希望能夠隨同學去美國留學。但是考量父母的經濟壓力及弟弟們相繼升學壓力，父親當時已經退休了。再加上當時台灣經濟開始復甦好轉，考試非常順利，謀職非常容易。也就隨著歲月增長流失，最後「美國留學夢」逐漸消逝。
+                    </p>
+                    <p>
+						外省第二代被認為最幸運公平的一代。我們成長的過程中，台灣處在中國及台灣兩岸和平沒有戰爭的年代。升學及就業完全以聯考制度決定，一切公平競爭。在就業過程中也各憑本事努力就有出頭天。
+						<br>
+						外省第二代約占台灣縂人口數的百分之十二。外省第二代與四、五年級生一様曾經對國家社會的經濟發展，貢獻良多。
+
+						外省人在台灣，「日久他鄉是故鄉」休養生息，繁衍後代。外省與本省族群，在台灣美麗的寶島上共有生活作息，本質上並無其差異性。
+						我們的同學、同事、朋友、親戚及鄰居有外省籍、本省籍，生活交流及職塲競爭並無明顕的界線、差異性或是對立。
+                    </p>
+                    <p>
+						外省族群人士政黨屬性大多爲國民黨。少數人士屬於民進黨。民主進步黨，簡稱民進黨，成立於1986年9月28日，由黨外運動各團體於台灣戒嚴與黨禁解除前整合而成。2000－2008年首度執政，實現中華民國歷史上首次政黨輪替；2016年起再度執政，三次政黨輪替並首度達成同時掌握行政及立法部門的「完全執政」。
+                    </p>
+                    <p>
+						兩黨輪替執政，交相監督執行，本是民主國家社會的常態。在政黨政治利益的衝突糾葛競爭中，為政者不仁，缺乏遠見，採取不當的行為手法走向藍綠惡鬥的結果。
+						尤其在競選期間，為爭取自己的勝選，肆無忌憚抹黑對手，造成族群分裂。雖然贏得了勝選，但是已經撕裂了部分族群的人心。針對事件的看法，已經失去公正客觀的評論，各自從自己的角度，以偏概全，在同溫層中取暖。
+                    </p>
+					<p>
+					  	我們的父母祖先遠來自中國。我們的傳統文化及習俗，也一脈相承於中國。我們無法拒絕認同是「中國人」。兩岸分制，這是一個歷史的事實。我們生在台灣，長在台灣，熱愛台灣這一片土地。但是遙記祖先，也不會忘懷我們是中國人。
+					</p>
+					<p>
+					  後記：
+						2020年10月5日西門國小同學周仲蘭（浙江寧波）來自瑞士，章樂綺（浙江上海）與本人在喜來登飯店聚會。有感而發特此為記。
+					</p>
+                  </div>
+
+                </article>
+              </div>
+				
+			<!-- Next Aritical -->
+            </div>
+  
+
+          </div>
+
+        </div>
+
+      </main>
+
+      <!-- Footer -->
+      <footer class="page-footer foot-small my-5">
+        <div class="row">
+          <div class="col-3 pl-5 py-1">
+
+          </div>
+          <div class="col pr-5 py-1 text-white">
+            <small> 王氏家族相冊 2020 </small>
+
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Vue實例的程式碼 -->
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          Home: '首頁',
+          Menu: '便當',
+          Login: '登入',
+          Shopping: '購物車'
+        }
+      })
+    </script>
+</body>
+
+</html>

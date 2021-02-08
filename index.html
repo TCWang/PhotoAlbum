@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <title>王氏家族相冊</title>
+
+  <style>
+    .jumbotron-bg2 {
+      background-image: url('images/wangs-1104-TauyuanBanner-02.jpg');
+      background-size: cover;
+      background-position: center center;
+      min-height: 350px
+    }
+
+    .bg-lighter {
+      background-color: rgba(0, 0, 0, .4)
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        王氏家族相冊
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>家人登入
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">說明</a>
+              <a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+              <a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-home"></i>追憶父母
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-211-Parents-01.html">傳承篇</a>
+              <a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+              <a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-info"></i>生活回顧
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-311-Review-01.html">眷村生活回顧</a>
+              <a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+              <a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+              <a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+			  <a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>					
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-heart"></i>享受當下
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+              <a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+              <a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+              <a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+              <a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+              <a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-asterisk"></i>展望下一代
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+              <a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+              <a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+
+    <!-- Jumbotron-->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+      <div class="container">
+        <div class="bg-lighter p-1" style="width:360px">
+          <p class="text-white">在世界各地，零時差、無距離接觸家族訊息。</p>
+          <p class="text-white">承上祖先，啟下子孫；血脈相連，千秋萬世。</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Vue實例的掛載點 -->
+    <div id="app" class="container-fluid mt-1">
+      <div class="row mx-2">
+        <h3>1.1 說明</h3>
+
+      </div>
+      <div class="row mx-2">
+
+        <div class="col-12 col-sm-12 col-md-6">
+          <h5>王氏家族相冊</h5>
+          <p>
+            相冊項目：目前完成項目整理如下
+          <ol>
+            <li>家人登入：作為此網站權限註冊與登入。未來將在資安管控下建立族譜。
+				<ol>
+					<li>說明</li>
+					<li>登入</li>
+					<li>族譜</li>
+				</ol>  
+			</li>
+            <li>追憶父母：提供目前家人懷念父母，追思以往快樂時光。
+				<ol>
+					<li>傳承篇
+						<ul>
+							<li>子女教育</li>
+							<li>基因傳承</li>
+							<li>追憶歲月</li>
+							<li>台灣外省人的國家認同</li>
+						</ul>
+					</li>
+					<li>父親篇
+						<ul>
+							<li>父親的身影</li>
+							<li>人格特質</li>
+							<li>坦蕩剛直</li>
+							<li>怒海救人</li>
+							<li>日薄西山</li>
+						</ul>
+					</li>
+					<li>母親篇
+						<ul>
+							<li>母親的手紅</li>
+							<li>手足情深</li>
+							<li>天賜良緣</li>
+							<li>晚年生活</li>
+							<li>辭世十週年</li>
+							<li>母親與大姊</li>
+							<li>媽媽的好味道</li>
+						</ul>
+					</li>
+				</ol>  
+			</li>
+            <li>生活回顧：整理以往家人留下之照片，做說明與整理。
+				<ol>
+					<li>眷村生活回顧
+						<ul>
+							<li>竹籬笆的春天</li>
+							<li>蘭園故居</li>
+							<li>媽媽的好味道菜餚</li>
+							<li>左鄰右舍—姊妹花</li>
+							<li>左鄰右舍-曾建人、駱光烈</li>
+						</ul>
+					</li>
+					<li>尋根之旅
+						<ul>
+							<li>浙江嵊州市</li>
+							<li>尋根之旅</li>
+							<li>嵊州札記</li>
+							<li>嵊州正宗小吃</li>
+						</ul>
+					</li>
+					<li>軍旅生活回顧
+						<ul>
+							<li>化解危機之道</li>
+							<li>浙江子弟在臺灣紀行</li>
+							<li>從軍樂-在軍中開菜單的歲月</li>
+						</ul>
+					</li>
+					<li>團圓相聚
+						<ul>
+							<li>相聚的日子</li>
+							<li>除夕夜團圓</li>
+						</ul>
+					</li>
+					<li>
+						家族重要的日子
+							<ul>
+								<li>駿杰&怡君婚禮</li>
+							</ul>
+					</li>
+				</ol>  
+			</li>
+            <li>享受當下：希望兄弟姊妹能多把握當下，用照片與短文紀錄當下人生最美好之光陰。
+				<ol>
+					<li>芳
+						<ul>
+							<li>2020/10 南投旅遊</li>
+						</ul>
+					</li>
+					<li>龍</li>
+					<li>鳳
+						<ul>
+							<li>2020/08 澎湖，金門</li>
+							<li>2020/09 花蓮行</li>
+							<li>2016/09 阿拉斯加旅遊紀</li>
+							<li>2016/09 班夫國家公園</li>
+						</ul>
+					</li>
+					<li>中
+						<ul>
+							<li>2019年 溫哥華島</li>
+						</ul>
+					</li>
+					<li>鼎</li>
+					<li>煌</li>
+				</ol>  
+			</li>
+            <li>展望下一代：提供我們下一代在全球各地發展之重要圖文。此一相冊希望能留給後代子孫永續傳承。
+			  	<ol>
+					<li>台灣
+						<ul>
+							<li>Florence 音樂比賽</li>
+							<li>芝倫台灣紀行</li>
+							<li>艾倫台灣紀行</li>
+						</ul>
+					</li>
+					<li>加拿大
+						<ul>
+							<li>2020年渥太華採南瓜</2020></li>
+						</ul>
+					</li>
+					<li>美國</li>
+				</ol>
+			</li>
+          </ol>
+          </p>
+
+
+        </div>
+        <div class="col-12 col-sm-12 col-md-6">
+          <strong>注意事項</strong>
+          <p>
+            手機上使用，請點擊右上方三條線標示。採用手機導覽模式瀏覽。 部分網頁採用內分頁模式，第一次進入會顯示所有內部分項。以後可在頁面上端點擊選項按鈕，直接閱讀各分頁。
+          </p>
+          <p>請用手機掃描下面二維碼進入此網頁</p>
+          <a href="https://tcwang.github.io/PhotoAlbum/index.html">
+            <img src="images/wangs-1102-PhotoAlbumQRCode.png" style="width:150px">
+          </a>
+			<br><br>
+          <strong>歷史相片 - 下面連結至 谷歌相簿 相對應的相簿分類</strong>
+          <ul>
+            <li>
+              <a href="https://photos.app.goo.gl/kmsmvaS8knhsCgG19">合家歡</a>
+            </li>
+            <li>
+              <a href="https://photos.app.goo.gl/sAWbjWThLNauX47h6">祖父母/父母</a>
+            </li>
+            <li>
+              <a href="https://photos.app.goo.gl/3RDrVNtSydCdoY7v9">父親與友人</a>
+            </li>
+            <li>
+              <a href="https://photos.app.goo.gl/j6wdgDJEy3oyNDEX8">父母與子女</a>
+            </li>
+            <li>
+              <a href="https://photos.app.goo.gl/RVucjgKRtFzX4TmV9">下一代</a>
+            </li>
+            <li>
+              <a href="https://photos.app.goo.gl/YTgAqPUrkcd54Fto6">檔案匯總</a>
+            </li>
+            <li>
+              <a href="https://photos.app.goo.gl/9tGSFcNJx4PdUSjA7">父母晚年生活</a>
+            </li>
+          </ul>
+			
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer foot-small my-5">
+      <div class="row">
+        <div class="col-3 pl-5 py-1">
+
+        </div>
+        <div class="col pr-5 py-1 text-white">
+          <small> 王氏家族相冊 2020 </small>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Vue實例的程式碼 -->
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          Home: '首頁',
+          Menu: '便當',
+          Login: '登入',
+          Shopping: '購物車'
+        }
+      })
+    </script>
+</body>
+
+</html>

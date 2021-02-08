@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap 4 CSS 的 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fontawesom 的 CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Icons CDN  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="css/mycss.css">
+    <title>相冊：3.1 竹籬笆的春天</title>
+
+    <style>
+        .jumbotron-bg2 {
+            background-image: url('images/wangs-1103-TaipeiPark.jpg');
+            background-size: cover;
+            background-position: center center;
+            min-height: 300px
+        }
+
+        .bg-lighter {
+            background-color: rgba(0, 0, 0, .4);
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                王氏家族相冊
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>家人登入
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">說明</a>
+                            <a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+                            <a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-home"></i>追憶父母
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-211-Parents-01.html">傳承篇</a>
+                            <a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+                            <a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-info"></i>生活回顧
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-311-Review-01.html">竹籬笆的春天</a>
+                            <a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+                            <a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+                            <a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+                            <a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-heart"></i>享受當下
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+                            <a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+                            <a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+                            <a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+                            <a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+                            <a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-asterisk"></i>展望下一代
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+                            <a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+                            <a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+        <!-- Jumbotron-->
+        <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+            <div class="container">
+                <div class="bg-lighter">
+                    <h5>竹籬笆的春天</h5>
+                    <p>眷村生活追憶</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vue實例的掛載點 -->
+        <div class="container-fluid mt-1">
+
+            <header>
+                <div class="row mx-1">
+                    <h3>3.1 眷村生活回顧</h3>
+
+                </div>
+
+            </header>
+            <main>
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <aside class="sidebar1">
+                            <h5>時間軸:大事記</h5>
+                            <p>1913 -2012</p>
+                            <ul>
+                                <li>2020: 台鼎及台鳳追憶於台北</li>
+                            </ul>
+                        </aside>
+                        <div class="list-group" id="MenuList" role="tablist">
+                            <a href="#Article-01" class="list-group-item list-group-item-action active"
+                                data-toggle="list">竹籬笆的春天</a>
+                            <a href="#Article-02" class="list-group-item list-group-item-action"
+                                data-toggle="list">蘭園故居</a>
+                            <a href="#Article-03" class="list-group-item list-group-item-action"
+                                data-toggle="list">媽媽的好味道菜餚</a>
+                            <a href="#Article-04" class="list-group-item list-group-item-action"
+                                data-toggle="list">左鄰右舍—姊妹花</a>
+                            <a href="#Article-05" class="list-group-item list-group-item-action"
+                                data-toggle="list">左鄰右舍-曾建人、駱光烈</a>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-md-9 col-lg-10">
+                        <div class="tab-content">
+
+                            <!-- Articla 01-->
+                            <div class="tab-pane active" id="Article-01" role="tabpanel">
+                                <article>
+                                    <h5>竹籬笆的春天</h5>
+                                    <div>
+                                        <p>
+                                            自我7-8歲有明確記憶開始，我家居住在建國新村眷村內，位於建國北路96號。現在門牌伊通街31巷14號。
+                                            <br>
+                                            我們的家在此之前，最先在屏東鳳山落腳，後來暫居台北西門町遠百附近，又遷居台中糖廠附近。也曽暫居台北涼州街、撫順街，隨著父親職務調動調整，四處停留暫居直到遷住伊通街，才算在台灣台北真正定居下來。也算是自此有「家」的氣息。
+
+                                            <br><br>
+                                            建國新村包括新建及舊造二種，計分甲、乙、丙三等級。我們的家屬於新建，計有28戶，二排房屋併列。中間以竹籬笆相隔開。巷道〇公尺距離。〇年開始供新遷戶入住。舊社區約有〇戶。在我家遷入前，舊社區已有住戶約〇戶居住在此。
+                                            我家位在眷村中間位置。主因是大姊代父親抽籖幸運取得最佳的位置。
+                                            <br>
+                                            住家計有七坪。前、後、右邊均有空地。內有客廰、臥室及廚房等空間。廚房後來改成兩姊妹的臥室。利用竹子搭建厨房。室外有小小的花園。種植杜鵑花等植物。
+                                            在幼年的記憶中，我們的家好大好大，及年長後才知道當時我們的家好小好小。
+
+                                            <br><br>
+                                            附註：
+                                            左鄰右舍自右至左-<br>
+                                            雙號：郎文光、趙也超、張高參、姜泰喜、徐浩如、雷驚百、孫發孔、本家、范景湯、廖文彬、印特務長、趙有才、楊繼高
+                                            <br>
+                                            單號：
+                                            謝朝珍、駱光烈、曾建仁、陳範、沙輝、王金嶽、何秘書、馮棋、劉西、馬端溥、毛家（兒子被戲稱毛澤東）、鄭振庸。
+                                        </p>
+                                        <p>
+                                            母親將一家八口人居住的房屋，窗戶明淨，簡單傢俱，床榻等物品陳設打理的一塵不染。空間內僅存放簡單必須的傢俱外無一雜物存放。幼小時的眼睛所見誤以為我家擁有的空間很大。長大後曾經回到老家，才發覺我幼年、青少年時期居家竟然，然是一個非常簡陋狹小的空間，真如古人所言「室雅何需大」，自我安慰一番。
+                                            父親常年不在家，難得見面。母親一人帶著陸續報到出生的幼年子女，居住在竹籬笆裡的房屋。雖然口袋裡沒有半毛錢，母親一日三餐供應無缺，烹調手藝佳，看著吃著蔥油餅、小籠包子、菜肉包子、棕子、年糕真是一應俱全，回想起來人間美味。
+                                        </p>
+                                        <p>
+                                            眷村小孩非常多。離開竹籬笆，大家夜間去提燈籠，追螢火蟲，男孩們玩蛋珠、尪仔標、女孩們玩跳房子、跳繩子等遊戲，由於沒有電視，經常大人沒有叫，就不知道要回家。竹籬笆的春天有我們美麗童年的回憶。
+                                            家戶之間，雖有竹籬笆相隔，似有似無，互相往來的鄰居媽媽經常串門子。若有烹調好餐點也會相互供應。母親由於孩子較多家務繁重，甚少見母親外出鄰居家串門子。
+                                        </p>
+                                        <p>
+                                            斜對門王家，隔壁范家兩位媽媽是母親的好友。經常幫助支援母親處理一些事情。我經常去陳麗瓊、趙華、藤楚蓮與我同齡孩子家造訪串門子遊戲。台龍兄幼年時也喜歡去找眷村小孩，打彈珠玩、尪仔標，贏得勝利品裝滿於餅乾盒內，正在高興興奮之餘，不幸，因遅歸回家，母親火大一把火扔進煤爐給全毀了。可見母親管敎也是有規矩的。
+                                        </p>
+                                        <p>
+                                            大姊長我三歲。得傳母親的高顏值基因，自小到大屬於美女等級，當時流行中國小姐選拔，若有報名可能入選。吾家有女初長，竹籬笆外的青年路過，經常會探頭探腦，不知何意？我等同齡女孩在唸書之餘，最大興趣在研究衣服製作，如何選擇樣式，大姊就是我們爭相模仿的對象。
+                                        </p>
+                                        <p>
+                                            眷村入口有一個雜貨舖。丁老闆是小孩們歡樂的時光記憶。夏季午睡起來，若母親心情好，小孩都很乖，母親會派一人，前去買冰棒、或是西瓜。在物資缺乏生活貧窮平代，這可是孩童們的期望與最大享受。
+                                            眷村內有很多八卦，在電視、報紙未發達前，口耳相傳也是早期媒體傳播的方式。小孩在大人傳播時分享一些。最主要的仍被規範在讀書的方面。讀書的重視與否？嗣後在每一家庭子女是否出人頭地得到印證。當然行行出狀元，也有不讀書日後成就者，畢竟是少數例子。
+                                        </p>
+                                        <p>
+                                            竹籬笆裡的春天代表著眷村文化的意義。「竹籬笆」是眷村的建築物特色。也象徵著1948-1970年代台灣的特殊歷史記憶。眷村內長大的小孩長大後走出竹籬笆外，成為社會的中堅分子。竹籬笆「裡」、「外」的春天，都是我們這一代成長的記憶。也代表著美好歲月的陽光痕跡。
+                                        </p>
+                                    </div>
+
+                                    <img src="images/wangs-4101-living-4.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-4101-living-5.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-4101-living-2.jpg" class="img-fluid" style="width:600px">
+
+                                </article>
+                            </div>
+
+                            <!-- Articla 02-->
+                            <div class="tab-pane " id="Article-02" role="tabpanel">
+                                <article>
+                                    <h5>蘭園故居</h5>
+                                    <div>
+                                        <p>
+                                            我們新店的故居蘭園（地址位於北新路一段64巷29號4樓）。從1973年開始，由於伊通街軍方眷舍拆除改建。當年我與台龍兄也剛從大學畢業。我們兩人的薪水儲蓄，加上母親省吃儉用的儲蓄，再加上標會，七凑八湊才勉強購得，記憶中大約是新台幣91萬元。因為父親一身軍旅生涯。清寒自持，從未有任何動念貪得不義之財，並且父親縂認為反攻大陸在望，他終將會追隨蔣公中正回到他的家鄉浙江嵊州。以致從沒有打算在台灣置產。這是第一楝也是父母親暮年直到終老居住的老家。一個大陸來台世代王家人的記憶。
+                                        </p>
+                                        <p>
+                                            註：反攻大陸或稱光復大陸，是中華民國政府自1949年遷往臺灣後至1990年代前的政治主張與口號，意指反攻國共內戰後被中國共產黨統治的中國大陸。通常與「解救同胞」、「消滅共匪」、「反共抗俄復國」、「殺朱拔毛」等政治口號並用。
+                                        </p>
+                                        <p>
+                                            新店故居在1973年初購買時，採取U字型建築型式。中間是共用空間，有小型的花園，四層樓建築。我們的故居在右側頂樓。在當時，可稱得上在新店市頂級優雅現代化的社區。北新路一段64巷又稱名人巷。社區稱為蘭園，計十六戶。故居占地約46坪。客廳及餐廳計十坪。主臥房、書房及二間臥房。另有一間㕑房。初遷入時，與眷舍比較，空間頓時覺得寬闊起來。全家人非常地開心！
+                                            <br><br>
+                                            <img src="images/wangs-4102-living2-01.jpg" class="img-fluid"
+                                                style="width:600px">
+                                            <img src="images/wangs-4102-living2-02.jpg" class="img-fluid"
+                                                style="width:600px">
+                                        </p>
+                                        <p>
+                                            客廳及餐廳計十坪大，在當時算是大的客廳。除擺放一組沙發以外；另放置十人的餐桌，供全家人用餐使用。牆面設置二個大型櫉櫃。擺放著大家出國旅遊帶回來的紀念品。小弟台煌與弟媳淑卿成家後，曾經在此短暫居住。尤其是瑩瑩姪女曾經在此出生長大。櫥櫃內的物品愈來愈多。弟媳淑卿存放嫁粧，豐富了櫉櫃內的收藏品。
+                                            <br><br>
+                                            <img src="images/wangs-4102-living2-03.jpg" class="img-fluid"
+                                                style="width:600px">
+                                            <img src="images/wangs-4102-living2-04.jpg" class="img-fluid"
+                                                style="width:600px">
+                                            <img src="images/wangs-4102-living2-05.jpg" style="height:400px">
+                                        </p>
+                                        <p>
+                                            書房書櫃上陳列書以外，擺滿兒孫們的相片。父親白天經常在書桌前戴著老花眼鏡看報紙。母親在廚房忙煮三餐時，父親在此享受清幽的生活。
+                                            <br><br>
+                                            <img src="images/wangs-4102-living2-06.jpg" style="height:200px">
+                                            <img src="images/wangs-4102-living2-10.jpg" style="height:200px">
+
+                                            <img src="images/wangs-4102-living2-08.jpg" style="height:600px">
+
+
+                                            <img src="images/wangs-4102-living2-09.jpg" class="img-fluid"
+                                                style="width:600px">
+                                            <img src="images/wangs-4102-living2-07.jpg" class="img-fluid"
+                                                style="width:600px">
+                                        </p>
+                                        <p>
+                                            父母親暮年二人獨居在此，沒有僱請傭人協助家務。家中永遠光鮮亮麗一層不染。有次有衛生福利單位探視老人住居者來到家中，臨去前曽告訴我說：妳父母親家非常美麗整㓗，是她造訪家庭極少數狀況。非常值得讚揚。
+                                        </p>
+                                        <p>
+                                            故居每年均必須更換壁紙，窗簾。家具沙發櫥櫃，早年，我曽多次陪同父親一同去購買。我們均選擇最好材質，價格較高者，回家向母親報假帳。母親勤儉持家，既便是去零減半，仍然太貴。我與父親兩人約定不可説明真相。我的愛買及奢侈性格來自父親的基因，至今習慣不改。時光荏苒，瞬間我們作子女的也個個均來自暮年，以父母親為榜樣，希望將自己的家庭起居，維持整潔有序的居家環境，照顧好自己的生活。珍惜享受暮年時光。健康最大的關鍵因素影響，來自於基因及環境。可見生活環境及方式是一非常重要的身體健康的影響因素。當我看到朋友身體健康亮紅燈時，看到她們的生活環境大半是髒亂不堪的。父母親均屬高壽。有一半屬於自律整潔的生活習慣。電話機及大同電鍋，母親縂是擦拭的一層不染，潔淨光亮。
+                                            <br><br>
+                                            <img src="images/wangs-4102-living2-11.jpg" style="height:200px">
+                                            <img src="images/wangs-4102-living2-12.jpg" style="height:200px">
+                                        </p>
+                                        <p>
+                                            父親對於傢俱陳設，有相當品味。早年在伊通街時，依稀記得都係採用白色沙發。遷居新店時，多採用皮製沙發，搭配大理石茶几。父九十多歲母親八十多歲，沙發椅彈簧塌䧟了。母親因腳部關節不良，站立起來有困難度。但是母親拒絕再更新，認為勉強拖延使用一下就可以了。感謝弟媳淑卿將父母親帶到外面；請傢俱行送一套全新的牛皮製沙發給父母親使用。我買了德國製的抱枕搭配。價格不斐，僅購置四個。突接父親來電，應該購買六個才對。我再補齊。可見老父親的眼光十分銳利。使用較有視覺及品位的物品，一直是父女二人最大的默契與價值觀。長大後，我經常遊玩歐美先進國家。每到一地，我最先購買父親的帽子。父母親的羊毛衣及外套等禮物。家中的桌巾、抱枕、擺件，都是我的旅遊獵品。父母親均妥善穿著及收存。
+                                            <br><br>
+                                            <img src="images/wangs-4102-living2-13.jpg" class="img-fluid"
+                                                style="width:800px">
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Articla 03-->
+                            <div class="tab-pane " id="Article-03" role="tabpanel">
+                                <article>
+                                    <h5>媽媽的好味道菜餚</h5>
+                                    <div>
+                                        <p>
+                                            小時候的記憶，我們經常圍在一張小圓桌上吃飯。長大成人後，我們圍在十人長方桌上吃飯。我們是一家人，經常津津有味吃著母親的拿手菜肴。2016年時，我曾經去過浙江嵊州及杭州等地。突然才恍悟發現母親烹煮的竟然是江浙口味的杭幫菜。母親的拿手菜肴，遠自家郷江浙一帶，飄洋過海到台灣來了。江浙菜口味清淡追鮮，偏甜味。江浙菜肴是我長大成人後最喜歡的好味道。江浙菜是中國八大菜系之一，講究味鲜原汁原味，龍井蝦仁、西湖醋鱼、宋嫂魚羹、東坡肉.....等菜如其景。浙江菜更適合精雅小聚，不擅大快朵颐。
+                                        </p>
+                                        <p>
+                                            母親烹煮一桌十人大菜，從買菜、洗菜、烹調完全一手包辦，從不假他人之手。母親直到終老操持家務仍然井然有序。母親在八十五年的歲月中，為其丈夫及子女付出生命。365天，一日三餐記憶中媽媽從來沒有延遲或缺席。難得的是母親從沒有任何抱怨。終其一生任勞任怨無悔的付出。
+                                        </p>
+                                        <p>
+                                            依稀回憶母親拿手的菜肴有下面幾道：
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                筍片炒肉片:
+                                                父親嗜吃筍。江浙一帶產筍，因此江浙人喜歡筍食料理。母親經常三餐烹調此道菜。如果沒有筍，父親一定是會不開心的。嫰筍絲炒肉絲也是一道衍生出的菜肴。雪里紅又稱雪菜，是用芥菜醃漬而成。江浙人稱鹹菜。炒筍絲也可以加入湯麵中成為鹹菜筍絲麵。
+                                            </li>
+                                            <li>
+                                                紅燒豆腐:
+                                                除了以筍子為菜肴以外，最常見的是豆腐。紅燒、乾煎豆腐，也是三餐必備。父母親上了年紀，牙口不好，母親體恤父親，煮較軟好咬的食物。例如紅燒豆皮之類。江浙人喜歡吃豆皮、豆腐。餐桌上經常可見。
+                                            </li>
+                                            <li>
+                                                豆皮鑲肉:
+                                                江浙人士愛吃豆皮。豆皮可以作湯料理之外；母親最常作的一道料理，將荸薺切碎加絞肉加蔥拌調味料待用。將豆皮包上述絞肉捲起來，酥炸再切塊後食用。母親經常烹調的好料理。
+                                            </li>
+                                            <li>
+                                                蘇式薰魚:
+                                                將草魚切成片段，醮糖醋汁，再酥炸。母親嗜好吃魚。黃魚、鯽魚、帶魚、鲳魚⋯均十分愛吃。紅燒黃魚、乾煎鯧魚、蘇式鯽魚、乾煎帶魚等都是母親愛吃的料理。但是父親不吃魚。母親等待父親吃完離開，再將魚端上桌自己慢慢享用。蘇式薰魚是節日必備的佳餚。
+                                            </li>
+                                            <li>
+                                                糖醋排骨:
+                                                將排骨先炸好，再加糖及醋調汁。在年節時，才會有此道菜。另一道類似的佳餚。咕咾肉。
+                                            </li>
+                                            <li>
+                                                紅燒肉燉竹筍:
+                                                我繼承了父親的偏食習慣，我是肉食主義者。只喜歡吃肉，不喜歡吃魚。紅燒肉是我的最愛。紅燒肉燉竹筍是一道家庭好料理。
+                                            </li>
+                                            <li>
+                                                白斬雞、醉鷄:
+                                                60、70年代台灣經濟未起飛以前，家庭經濟由父親一人挑起，年節也無法吃到全雞。母親會切成兩半。除夕吃一半，剩下的過完年，有客人來到時才端出來給大家吃。醉雞是一道江浙名菜。母親作得非常好吃。
+                                                晚年家庭經濟好轉，父親餐餐均要喝雞湯。孝順的五弟台鼎去南門市場，父親指定的雞攤販買鷄燉雞給父親食用。父親能享百歲，飲食是関鍵因素。
+                                            </li>
+                                            <li>
+                                                肴肉:
+                                                冷凍涼菜，江浙名菜之一。將肉冷凍放涼吃。
+                                            </li>
+                                            <li>
+                                                鹹鴨蛋蒸肉:
+                                                豬肉切條剁餡，生薑切細末，把薑末與肉餡攪拌均勻。鹹鴨蛋蒸肉將肉和鹹鴨蛋完美結合在一起，做出了這道下飯又營養的味道！
+                                            </li>
+                                            <li>
+                                                紅燒明蝦:
+                                                大明蝦炸過後，加上蕃茄醤、醤油調汁後再拌炒一下起鍋上菜。年節團聚大菜之一。
+                                            </li>
+                                            <li>
+                                                豬心、豬肝、豬腰:
+                                                當年經濟不佳的年代，炒豬肝、豬肝湯、豬腰都是補品。母親幫大家補身體時，都會炒煮豬心或豬肝。口感非常好吃完全沒有腥味。
+                                            </li>
+                                            <li>
+                                                滷菜拚盤:
+                                                在眷村長大，家家戶戶在過年期間均會醃製香腸、臘肉等食品。母親也學到此手藝。將牛肉香腸切盤。母親會將豆干、海帶、牛肉、蛋等魯成一大鍋，以拚盤方式切大盤供家人食用。年少時吃一顆白蛋，已是最大的享受了。我們的便當菜色通常有蘿蔔干炒蛋。
+                                            </li>
+                                            <li>
+                                                芥蘭炒牛肉:
+                                                母親的拿手菜芥蘭炒牛肉，牛肉非常嫩好吃。
+                                            </li>
+                                            <li>
+                                                油豆腐鑲肉:
+                                                白菜油豆腐鑲肉鷄湯大鍋菜, 將油豆腐鑲肉加上大白菜及粉絲，以鷄湯熬煮為湯底。冬季熱騰騰必吃。
+                                            </li>
+                                            <li>
+                                                手工蛋餃:
+                                                大白菜雞湯為底加上蛋餃大鍋菜。母親親手烹調手工蛋餃。每年過年均會製作。
+                                            </li>
+                                            <li>
+                                                紅燒清燉牛肉湯:
+                                                父親是一位美食主義者。晚年僅有父母親二人生活。也必須有四、五道菜。鷄湯、牛肉湯交替餐餐必備。
+                                            </li>
+                                            <li>
+                                                炒年糕:
+                                                母親的拿手佳餚，以韮黄肉絲炒年糕，這道菜肴通常在節慶才會上桌。
+                                            </li>
+                                            <li>
+                                                蔥油餅:
+                                                年少時，經常吃到母親親手合麪粉、擀麵團，煎蔥油餅，配綠豆稀飯，炎炎夏日全家人一起用餐。
+                                            </li>
+                                            <li>
+                                                小籠包:
+                                                年少時的記憶中，母親會蒸小籠包（菜包、肉包）等給我們當點心。至今對香噴噴的小籠包難以忘懷童年的記憶。
+                                            </li>
+                                            <li>
+                                                棕子:
+                                                江浙人士不但在端午節包棕子吃棕子，在過年或是節慶時，也吃棕子。母親自己包棕子有紅豆、豆沙及鹹肉棕子。年節時我們可以不吃飯只吃棕子。
+                                            </li>
+                                            <li>
+                                                年糕:
+                                                母親也會在過年時自己動手製作年糕。從將糯米磨成粉，蒸成年糕均自己動手製作。母親實在萬能，什麼都難不倒她。也因為她的雙手萬能，我們從小衣食無憂無缺。感謝母親的偉大！
+                                            </li>
+                                        </ul>
+
+                                        <img src="images/wangs-3103-record-2.jpg" class="img-fluid" style="width:600px">
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Articla 04-->
+                            <div class="tab-pane " id="Article-04" role="tabpanel">
+                                <article>
+                                    <h5>左鄰右舍—姊妹花</h5>
+                                    <div>
+                                        <p>
+                                            建國新村<br>
+                                            建國新村是父母親來台居住最久，也是兄弟姊們幼年直到長大成年的家。記憶中的老家也是一般人俗稱的眷村。眷村的基本建築最引人入勝的是「竹籬笆」。竹籬笆相隔家家戶戶的區域空間。適度保持家戶的隱私；但是由於竹籬笆有鏠隙的存在，隱約間仍然可以看到似有似無的人影及聲音的存在，以致阻擋不了家戶鄰里之間感情的存在。眷村文化的養成，也透過竹籬笆傳遞著一種特殊的人文人情的溫暖情愫培育養成。
+                                            <br>
+                                            在這眷村內居住的軍職人員大都屬於中、高階層人士。我們家屬於新建二排房舍。計〇戶。左右兩排中間間隔一走道。年少時，誤以為走道間隔很寬；年長成人後回家，才發現走道非常狹窄，僅有〇公尺。我們經常走在巷道上通往各自回家的路途上。
+                                        </p>
+                                        <p>
+                                            陳麗瓊<br>
+                                            麗瓊的令尊大人陳範先生。他是父親的同事。我們住在台中時，曾經全家拜訪過他們家。遷來台北短暫居住在大龍洞，她家緊鄰我們家的隔鄰。由於當時的房舍上層部分是空間沒有隔牆，所以孩子們爬到上臥舖層，即可以看到她家的狀況。經常看到的是外婆在忙碌著處理家中大小生活起居煮食。
+                                            <br>
+                                            在建國新村時，她家在我們家的斜對角，僅隔著王家、沙家兩間，距離非常近，再加上麗瓊與台龍及我同年紀，所以，我有事沒有事就往她家找她一同玩耍。跳房子、跳繩、跳橡皮筋⋯。她家有一面哈哈鏡，小孩子最愛作鬼臉。通常要玩到吃飯時，才會回家。
+                                            <br>
+                                            麗瓊有一位兄長陳蘇民，自幼書唸念的非常優異。從建國中學初中、高中直到交通大學畢業。村中少數念到大學畢業者。他是長子也是獨生子。下面有三位妹妹。母親管敎甚嚴。外婆非常寵愛。只要蘇民沒有回家，家人是不准開飯，直到回來為止。我從初中、高中都沒有跟麗瓊同校直到我們一起就讀政大之後。但是好交情從沒有間斷過。她家是我的眷村生活的另一娛樂埸所。我們曾經在大學畢業時，一起去謀職考試。她後來進入郵局，我則進入中華電信。麗瓊是我的兒時玩伴，也是長大成人後的友人。
+                                            <br>
+                                            麗瓊常常羨慕我們的家庭，家庭和樂氣氛，她曾經稱讃父親的幽默風趣，母親溫和軽聲細語，家中的整潔有序。在暑假期間她喜歡呆在我家打毛缐、鈎珠珠手工皮包作女紅。我們之間沒有競爭，學業成績似乎也沒有任何緊張關係。縂是交換些彼此的意見。她資質聰頴、反應快速。妙語連珠。然而十分婉惜感嘆著家中父母親的感情問題，造成令先翁暮年中風，兄妹們輪流照顧的困難歲月。家家有本難唸的經。麗瓊的家是眷村生活中最喜歡串門子的家。
+                                            <br>
+                                            長大後的麗瓊居住在郵局公配的公寓。離仁愛路小弟台煌淑卿家的富園珠寶店非常近。三不五時，麗瓊就會光顧珠寶店牯賞自己一下。順便聊聊眷村小時候的林林縂縂。富園珠寶店也成為長大後的聚會所。我們縂是樂此不疲。
+                                        </p>
+                                        <p>
+                                            滕楚蓮（Chuu-Lian Terng）簡介<br>
+                                            滕楚蓮是我居住建國新村四位姊妹花之一。她的父親滕巽三是父親的同事。她的家居住在建國新村老房子，離我們家距離稍遠。但是，她就讀中正國小，與台龍兄同班，我們也曾經就讀台北市立女子中學初中同校。以致我們初中時期互有往來。她經常來我家𥚃玩。
+                                            <br>
+                                            楚蓮家中有四名子女。她是長女。下面三位弟弟。自小成績出類拔萃，名列前矛。尢其在數學方面。在青少年時期，已經顯現在數學方面的天賦。很多眷村子弟都聘請她作家敎。她的出國留學費用在當時的家庭經濟情況，無法提供；她自己只能靠家敎收入及聯考時作試閲人員自己籌措經費來源。她雖然成績斐然，但從不驕傲，始終保持質樸的赤子之心。
+                                            <br>
+                                            她在美任敎多年，仍在寒暑假回到台灣國內在清華、台大作短期任敎作育英才。雖然是知名敎授學者仍然在回台時，與麗瓊及我三人相聚。她仍然像小時候一樣，保持一顆赤子童心。
+                                            <br>
+                                            在此必須一提的是楚蓮的大弟滕光中。光中有一位成績斐然，始終保持第一的姊姊為榜樣。想必壓力是非常大的。據他自己陳述：年少貪玩，從未有過好好唸書的想法。直到高中時期，領悟到自己竟然名落孫山，還要仰賴父親託人說情就讀恆毅高中，從此，好好發憤圖強努力讀書。大學就讀輔大經濟系。後來由於姊姊的協助，赴美讀碩士。
+                                            <br>
+                                            畢業後入光寶科技公司，於2014年2月退休。曾經擔任光寶科技公司的執行長。在科技電子業享有盛名。他的成長歷程曲折也足為後代子孫留下學習的榜樣。
+                                            <br>
+                                            誰說眷村子弟，都是混混痞子？滕家兩姊弟都在學界、商界留下成功的模範榜樣。難得的是眷村子弟的父執輩均是軍人出身。從小到大耳濡目染均有對國家盡忠，對社會盡責，對人講義氣的豪邁胸懐。滕家姊弟在2014-2015年相遇時，談及過往仍保存一股眷村子弟的英雄正氣氣概。姊弟之情相互間的支持與感動，令我在旁感動不已。
+                                            <br>
+                                            光中在聚會言談之中，未提及職塲生涯成功之路，卻時時不忘回首年少時的輕狂，曾經讓父母親傷心，姊姊失望；回首努力追趕讀書上進之路。感念姊姊提攜，也致贈姊姊高檔玉珮乙枚手鐲乙只。同時也致贈弟弟板指乙枚。手足之情，不忘本的個性表露無遺。
+                                        </p>
+                                        <p>
+                                            趙華<br>
+                                            趙華的家居住在巷子尾，倒數第二間。趙華的父親趙也超先生。趙華排行老大，下有弟弟趙松，妹妹趙玲。趙華初中唸萬華女中，高中唸第二女中，大學唸台灣大學。四人中趙華較少與我們互動，偶而才會聚在一起。
+                                            <br>
+                                            趙華畢業後赴美，隨夫婿任敎高雄中山大學居家高雄，甚少往來台北。
+                                        </p>
+                                        <img src="images/wangs-3104-systers-01.jpg" class="img-fluid"
+                                            style="width:600px">
+                                        <img src="images/wangs-3104-systers-02.jpg" class="img-fluid"
+                                            style="width:600px">
+                                        <img src="images/wangs-3104-systers-03.jpg" class="img-fluid"
+                                            style="width:600px">
+                                        <img src="images/wangs-3104-systers-04.jpg" class="img-fluid"
+                                            style="width:600px">
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Articla 05-->
+                            <div class="tab-pane " id="Article-05" role="tabpanel">
+                                <article>
+                                    <h5>左鄰右舍-曾建人、駱光烈</h5>
+                                    <div>
+                                        <p>
+                                            曾建人<br>
+
+                                            憲兵特高人員在大陸時期，赫赫有名，尤其以對日抗戰期間留下無數可歌可泣的史實。黨國元老張群曾對「特高憲兵」蒐報的一件情報形容：「遠勝百萬大軍」。
+                                            <br>
+                                            兄姊們是否有印象，幼年時，同住在「建國新村」、住同條巷仔裡（伊通街31巷）的曾建人？
+
+                                            他當時擔任憲部情報處長，個頭不高、文質彬彬的，圓圓臉上掛了一副金絲細框眼鏡、說起話來慢條斯理的，給外人的印象好似大學教授。
+                                            <br>
+                                            其實，他早期出身於中共紅軍軍團的政委，在加入「特高組」前還擔任過江西某縣縣長。
+
+                                            當年，他奉命至北京，與日本間諜組織「黑龍會」及日本軍閥特務頭子-土肥原交戰獲得全面大勝，為國家立過戰功。
+
+                                            在台灣早期，每逢國慶大典時，擔任大會司儀的中國廣播公司-邊境先生，也是他當年自北大吸收至特高組的工作關係。
+                                        </p>
+                                        <p>
+                                            駱光烈<br>
+
+                                            駱伯伯的大兒子駱華雄，官校35期畢業後，曾擔任國安局局長隨從，在同學中也算風光過一段日子，後來在「聯合安全指揮部」-特種警衛安全組（專責總統安全維護）上校副組長任內退伍。我當時在台北憲兵隊擔任副指揮官時，在執行總統蒞勤務時還曾多次遇到他。
+                                            後來聽說他染有賭博惡習，到處找人借貸，就不知人去何處了。
+                                            <br>
+                                            我在離開建國新村十餘年後，第二次搬回老宅時，在伊通公園附近還遇到他的弟弟，啞巴-毛弟。
+
+                                            毛弟竟然還認出我來，高興的抱著我又叫又跳，還用手語比著我長高了，看他一身汗臭、檳榔味，他應該是在附近打零工。我原本有些衝動想資助他一點金錢，但考慮萬一他發現我的住處，三不五時上門，而我又長年不在家。可能給家裡帶來困擾，而作罷，回想起來，不甚唏噓。
+                                        </p>
+
+                                    </div>
+                                </article>
+                            </div>
+                            <!-- Next Aritical -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </main>
+
+            <!-- Footer -->
+            <footer class="page-footer foot-small my-5">
+                <div class="row">
+                    <div class="col-3 pl-5 py-1">
+
+                    </div>
+                    <div class="col pr-5 py-1 text-white">
+                        <small> 王氏家族相冊 2020 </small>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Vue 的 CDN -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+        <!-- Bootstrap 4 JavaScript 的 CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <!-- Axios 的 CDN -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <!-- Vue實例的程式碼 -->
+
+</body>
+
+</html>

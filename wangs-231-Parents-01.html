@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap 4 CSS 的 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fontawesom 的 CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Icons CDN  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="css/mycss.css">
+    <title>相冊：2.3 母親篇</title>
+
+    <style>
+        .jumbotron-bg2 {
+            background-image: url('images/wangs-1101-TaipeiCity.jpg');
+            background-size: cover;
+            background-position: center center;
+            min-height: 300px
+        }
+
+        .bg-lighter {
+            background-color: rgba(0, 0, 0, .4);
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                王氏家族相冊
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>家人登入
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">說明</a>
+                            <a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+                            <a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-home"></i>追憶父母
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-211-Parents-01.html">傳承篇</a>
+                            <a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+                            <a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-info"></i>生活回顧
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-311-Review-01.html">眷村生活回顧</a>
+                            <a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+                            <a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+                            <a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+			  				<a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>												
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-heart"></i>享受當下
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+                            <a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+                            <a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+                            <a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+                            <a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+                            <a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-asterisk"></i>展望下一代
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+                            <a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+                            <a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+        <!-- Jumbotron-->
+        <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+            <div class="container">
+                <div class="bg-lighter">
+                    <h5>母親篇</h5>
+                    <p>向我們母親 獻上永懷的追思</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vue實例的掛載點 -->
+        <div id="app" class="container-fluid mt-1">
+
+            <header>
+                <div class="row mx-1">
+                    <h3>2.3 母親篇</h3>
+
+                </div>
+
+            </header>
+            <main>
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <aside class="sidebar1">
+                            <h5>時間軸:大事記</h5>
+                            <p>1926年 -2010年: 母親-王書筠 福建省林森縣人</p>
+                            <ul>
+                                <li>1926年農曆4月14日酉時: 母親出生</li>
+								<li>身分證登記：1928年3月1日</li>
+								<li>2010年農曆12月26日 (國曆2010年2月9日）：母親病歿於馬偕醫院</li>
+								<li>
+									生育子女計六人：
+									<ul>
+										<li>1946年農曆8月18日午時：長女出生 </li>
+										<li>1949年3月17日：長子與次女出生</li>
+										<li>1953年7月1日：次子出生</li>
+										<li>1955年農曆8月14日辰時：三子出生</li>
+										<li>1958年 月：四子出生</li>
+									</ul>
+								</li>
+                                <li>2020年10月: 台鳳追憶於台北</li>
+                            </ul>
+                        </aside>
+                        <div class="list-group" id="MenuList" role="tablist">
+                            <a href="#Article-01" class="list-group-item list-group-item-action active"
+                                data-toggle="list">母親的手紅</a>
+                            <a href="#Article-02" class="list-group-item list-group-item-action"
+                                data-toggle="list">手足情深</a>
+                            <a href="#Article-03" class="list-group-item list-group-item-action"
+                                data-toggle="list">天賜良緣</a>
+                            <a href="#Article-04" class="list-group-item list-group-item-action"
+                                data-toggle="list">晚年生活</a>
+                            <a href="#Article-05" class="list-group-item list-group-item-action"
+                                data-toggle="list">辭世十週年</a>
+                            <a href="#Article-06" class="list-group-item list-group-item-action"
+                                data-toggle="list">母親與大姊</a>	
+                            <a href="#Article-07" class="list-group-item list-group-item-action"
+                                data-toggle="list">媽媽的好味道</a>							
+                        </div>
+						<br>
+                    </div>
+                    <div class="col-md-9 col-lg-10">
+
+
+
+                        <!-- Articla 01-->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Article-01" role="tabpanel">
+                                <article>
+                                    <h5>母親的手紅</h5>
+                                    <p>1947年，兩岸情勢緊張，母親帶著剛滿周歲的大姊，搭乘〇輪，自福建來到台灣鳳山投靠在軍中憲兵隊任職的父親。</p>
+                                    <p>1949年，我及雙生台龍兄弟出生。家中全靠母親照料三個幼兒，家務繁忙可想而知。我自幼由於雙胞胎関係身體孱弱。經常生病須要更多細心的照顧更加重了母親沈重的負擔。
+                                    </p>
+                                    <p>我的另三位弟弟分別在1953年、1956年、1958年相繼出生。母親帶著六個小孩，不但，親手操持家務，所有的餐點三餐必備多樣的江浙杭幫菜，麵食小籠包、葱油餅也經常充當孩子們正常餐以外的點心。家務的繁重除外；母親作得一手非常棒的手紅。
+                                    </p>
+                                    <p>我的兄弟們從小西裝筆挺像個小紳士。均由母親親手裁製。每年過年時，均會替我們兄弟姊妹裁縫新衣服。母親對我們在外的形象非常注意。照片中我們幼年時的衣裳完全均出自母親的巧手。
+                                    </p>
+
+                                    <img src="images/wangs-3201.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-3202.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-3203.jpg" class="img-fluid" style="width:600px">
+
+                                    <p>年事稍長，由於家中人口衆多，母親曾經為了籌措家庭支出及子女學費，開始學習鈎織手缐衣，自工廠批來外銷代工紡織品。早晚都在家中忙碌作代工品。母親一生劬勞，在繁忙操勞中度過她的一生。
+                                    </p>
+                                    <p>泛黃的一張張照片中，我們手足身上的衣裳均來自能幹賢淑母親的巧手。呈現了母親的好手紅。</p>
+                                </article>
+                            </div>
+
+                            <!-- Articla 02-->
+                            <div class="tab-pane " id="Article-02" role="tabpanel">
+                                <article>
+                                    <h5>手足情深</h5>
+                                    <p>〇年-〇年期間，我們與舅舅家人共同生活居住。母親除了照顧家中幼年子女以外；還要兼顧姪女四人。以現在人觀點來看，照顧十人的青少年及幼兒生活起居成長，實在是難度甚高，也可以說是天方夜譚吧。在當時的生活條件及環境下，食物原料及成品一切都需要自己動手製作完成。但是，我的母親一日三餐從沒有延誤短少。年節期間，應是食品例如：棕子、年糕，臘肉、香腸也一應俱全。母親的能幹度破表！以現在的年輕人角度觀看，真是太神奇了。
+                                    </p>
+                                    <p>母親對待舅舅，手足之情溢於言表。每當舅舅因賭涉事，母親從未有責備多語，在財務拮据極端困難時，二話不說，全力搶救。直到晚年，因為兄弟們已經成年開始賺錢，生活情況稍有好轉時，母親將省吃減用的錢，偷偷地塞給舅舅。看在晩輩眼中，真是不可思議。手足之情，姊弟情深。以現在的語言說：姊姊，有妳真好！
+                                    </p>
+                                    <p>母親因罹患食道癌，於〇年病逝馬偕醫院。臨別最後一刻，舅舅自美返台送別。當母親聽到舅舅喊著「阿姊⋯⋯」母親竟然淚從眼眶下流出。我終於知道：母親最放心不下的是她的弟弟-我的舅舅。
+                                    </p>
+                                    <p>舅舅挺著僂曲的背，踏上金寶山母親的長眠之地祭拜送別。不久之後，我接到小弟媳的電話，希望我能陪伴舅舅到仁愛路店來，我目睹小弟媳送給舅舅信封一個，內存現金。我相信是母親最後的交待，感恩小弟與弟媳遵從母親的遺言對舅舅的贈予。。
+                                    </p>
+
+                                    <p>什麼是「手足」？從母親身上看到她如何對待她的弟弟。手足情深，深似海。在此感恩我的兄弟們，均不會賭博，也不會打麻將，連撲克牌也可能不會。母親的身敎言敎，領引子女們走上正途。如今，我們有任何一點點成就，都要歸功於母親的敎悔。
+                                    </p>
+
+                                    <img src="images/wangs-3204-brothers-1.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-3205-brothers-2.jpg" class="img-fluid" style="width:600px">
+
+                                </article>
+                            </div>
+                            <!-- Articla 03-->
+                            <div class="tab-pane " id="Article-03" role="tabpanel">
+                                <article>
+                                    <h5>天賜良緣</h5>
+                                    <p>
+                                        民國34年前後，父親調任國民政府軍事委員會警衛團、負責當地的警備治安工作，駐地在福建省。
+                                       父親初到任時，盱衡當地的治安、交通環境，為避免警衛兵力備多力分，立刻下達封閉、管制非必要之橋樑、通道，並調整原有的警衛佈署，以免造成人力的浪費與防衛上的死角。這個舉措，無意間也惹腦了母親與舅舅，但卻也締結了一段良緣。
+                                    </p>
+                                    <p>
+                                        某日，舅舅氣急敗壞的跑回來，口中囔囔著：「阿姊！阿姊！憲兵調來一個諸暨佬（他誤認父親口音是浙江嵊線西邊諸暨縣人）壞透了，長的又兇又狠，講話又大聲，他把外祖父每天散步必經的主要道路全封閉了，我們現在怎麼辦？」。母親當時想到俗話說：「秀才遇到兵，有理也講不清」的道理，雖然心中再生氣，也只能默默的帶著舅舅在田間一片瓦、一塊磚的另外舖陳出一條便道，方便外祖父進出。
+                                    </p>
+                                    <P>
+                                        這時，父親見到了母親雖視為天人，但據父親告訴我，因他個性保守，甜言蜜語的話他說不上口，想表達又怕表錯情，這時，他與天俱來情報蒐集的天賦立刻上身，他查悉外祖父喜歡吃魚，他每天下午就帶著傳令到溪邊用步槍炸魚（以他的急躁個性，若採用賢人雅士溪邊垂釣的優閒方式，那會活活逼死他，所以他選擇用步槍直接射擊，利用火藥爆炸產生的巨大爆破力與震撼力，讓魚群嚇昏
+                                        浮出水面，則是既快又好」，撈取魚貨後，趁新鮮每天給外祖父送去，這個窩心的行為，這才「天雷勾動地火」打動母親的芳心。
+                                        所以先前舅舅私下對母親提到父親時，還是習慣稱：「這個諸暨佬⋯⋯怎麽樣，怎麽樣」「那個諸暨佬⋯⋯怎麼樣，怎麼樣的。」
+                                    </p>
+
+                                    <img src="images/wangs-3207-mother1.jpg" class="img-fluid" style="height:400px">
+                                    <img src="images/wangs-3207-mother2.jpg" class="img-fluid" style="height:400px">
+                                    <img src="images/wangs-3207-mother3.jpg" class="img-fluid" style="height:400px">
+
+                                </article>
+                            </div>
+                            <!-- Articla 04-->
+                            <div class="tab-pane " id="Article-04" role="tabpanel">
+                                <article>
+                                    <h5>晚年生活</h5>
+                                    <p>
+                                        日薄西山，人近黃昏。渡過多少春秋，走著走著，不知不覺，子女我們長大成人；父母親卻已年邁步入晚年。
+                                    </p>
+                                    <p>
+                                        長大後手足各自離家分居。父母親獨自生活居住在新店北新路一段64巷29號4樓。父母親仍然保持家居整潔的好習慣。父親也會協助處理家務。例如；擦桌掃地曬衣等輕鬆工作。母親仍然操持家務。每當大家年節期間或平時探訪時，仍由母親一人下廚，烹煮全家大小十餘人的大餐。從買菜、洗菜、烹煮，一直到處理散後，母親一手全包。有時候過意不去，我只能幫忙洗碗。平日父親從年輕時，十分講求飲食吃的習慣。旣便是晚年二人生活餐食也要四、五道菜。包括主菜鷄、牛、豬肉等，副菜包括筍、青菜等，當然也少不了湯類。我們回家過年節的日子，母親當然準備好8-10道大菜。父母親均是江浙人士。母親煮的一手杭幫菜。
+                                    </p>
+                                    <p>
+                                        晚年小弟台煌夫婦弟媳淑卿有感父母親八九十歲年事已高。是否可以請一外傭協助處理家務？減輕兩位老人家的負擔。甚至每月交付母親一筆3萬元台幣的錢，請僱外傭協助家務。可惜勤儉一生的母親均拒絕了。直到八十五歲倒下那年，她都在支撑著無怨無悔付出深愛的家庭及子女。
+                                    </p>
+                                    <p>
+                                        父親較母親長十二歲。晚年父親經常臥床，母親則在廚房忙煮三餐。一旦母親聽到父親呼叫，都會急速趕到臥室探詢。回家時，我曾提議外出帶著母親去喝下午茶。母親都婉拒了。所持理由是父親身體不佳，是否能在父親天年之後，她才來過休閒享受的日子。然而沒有料想得到的是，她竟在八十五歳那年因食道癌病逝。從發現到去逝短短三個月。她操勞過度，等待不急，先行離世。留下錯愕的子女，深感遺憾與婉惜，無力回天！
+                                    </p>
+                                    <p>
+                                        母親走後，留下父親一人。 我們接手才知道父親實在難搞，不好伺服。母親忍受父親長達六十五年如何渡過？
+                                    </p>
+                                    <p>
+                                        母親在晚年時，因罹患三高及氣喘病，需要長期服藥治療，母親獨自從新店搭車前往榮縂看病拿藥。基於體諒子女工作繁忙，不想勞煩子女的心理，均是獨自前往。 當時母親高齡八十多歲，視力、腿力、體力早已衰退。 母親在去醫院時，仍然會穿戴整齊服飾。她認為年歲大了，一定要注意自己的儀容，以免被別人嫌棄。對醫生也是不敬。直到五弟台鼎退休辭職接手照顧才知道母親晚年的辛勞與勇敢。
+                                    </p>
+                                    <p>
+                                        母親在晚年時，因罹患三高及氣喘病，需要長期服藥治療，母親獨自從新店搭車前往榮縂看病拿藥。基於體諒子女工作繁忙，不想勞煩子女的心理，均是獨自前往。 當時母親高齡八十多歲，視力、腿力、體力早已衰退。 母親在去醫院時，仍然會穿戴整齊服飾。她認為年歲大了，一定要注意自己的儀容，以免被別人嫌棄。對醫生也是不敬。直到五弟台鼎退休辭職接手照顧才知道母親晚年的辛勞與勇敢。
+                                    </p>
+                                    <br>
+                                    <img src="images/wangs-2301-old-01.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-2301-old-02.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-2301-old-03.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-2301-old-04.jpg" class="img-fluid" style="width:600px">
+
+                                    <p>
+                                        <br>
+                                        少年夫妻，老來伴。父母親在青、中年時期，由於父親工作關係，甚少在家。母親獨撑大局與子女在家中生活。父親不在家的日子，真是自由、快樂的生活。兄弟及姊姊們各自讀書、遊戲。母親從不拘束強制子女要作什麼；不要作什麼？讀書的好壞也自行定奪。只要不要留級以外，通通可以自行決定。
+                                    </p>
+                                    <p>
+                                        母親對六位子女一視同仁。沒有特別寵愛或是不喜歡。從小覺得家中的「自由」、「公平」主義的伸張，獲得最大的支持、肯定與認同。暮年到來，父親退休後回到家中。子女卻長大成婚，相繼離家，各自有了家庭，也陸續有了自己的兒女。父母親二人獨居於我們的舊家（台北縣新店市北新路一段64巷29號4樓）。家中46坪由二人獨居。母親仍然維持她的好習慣，家中一層不染非常整潔乾淨井井有條。直到母親於2009年倒下的那一年。家中從沒有僱用佣人幫忙家務。圖2照片中依稀塲景佈置中的整潔有序。我們子女經常於假日或年慶日回家探視父母親。
+                                    <br><br>
+                                    <img src="images/wangs-2302-old2-01.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-2302-old2-02.jpg" class="img-fluid" style="width:600px">
+                                    </p>
+                                    <p>
+                                        母親在子女回家時，除了傾聽子女的報告，永遠面帶笑容，仍然在廚房忙進忙出烹煮一桌的菜肴，給兒孫子女飽餐一頓有媽媽味道的好料理。遇到年節期間，我們全家也會去外面餐廳享用。 由於母親在暮年因患有膽疾拿除膽，因此不能吃油膩的食物。經常外食就會有拉肚子的毛病。所以，感嘆沒有享福的命。但是，母親珍惜與家人相處的時光，縂是打扮的非常體面，光鮮亮麗的出門。從沒有看過母親有任何不體面的時候。暮年，母親甚少時間出門逛街，衣服、鞋子、首飾均由大姊、弟媳及我買辦打理。母親縂是會說不要浪費錢，然後接納，笑咪咪的去試試穿著看看。在出門時都適時穿上。現在回顧舊照片，母親在任何環境中，都展現了光鮮亮麗的裝容，將她的美貌完整呈現。也留下給子孫們最佳的音容及學習榜樣。母親出身書香門弟大家閨秀，終生延襲世家傳習美德。子孫後代應以為傲。
+                                    <br><br>
+                                    <img src="images/wangs-2302-old2-03.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-2302-old2-04.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-2302-old2-05.jpg" class="img-fluid" style="width:600px">
+                                    </p>
+                                    <p>
+                                        母親一生以子女為榮。無論子女的成就與好壞，大家都是母親的「媽寶」。大姊由於是長女，與母親最為親近。有事沒事，只要有空母女倆人就會聊天，一聊二、三小時，縂忘了掛電話。父親是一位脾氣欠佳的人，加上嫉妒心作祟，在旁頻催掛電話。母親從未惱怒。僅能聼從。父親暮年雖有協助曬衣服、擦桌子、擺碗筷等軽家務，其餘一概不會作。完全由母親一己承擔。我們從未聼過母親的抱怨。賢妻良母，可真是我們的母親最佳的封號。
+                                    </p>
+                                    <p>
+                                        父母親年齡相差一輪12歲。父親是軍職，奠定了身體的良好基礎。在96歲以前，均可以上下四層樓梯，外出行動自如。且父親沒有三高心臟等問題。相反地，母親的健康問題較大。除了三高以外，尚有血糖過高，有氣喘等慢性病，必須要長期服藥。母親經常要去榮縂領藥，父親從未陪同。母親獨自一人搭車來回。由於母親生性節儉，捨不得撘乘計程車，均搭乘公共汽車前往。且母親不肯勞煩子女陪同。一人獨自前往來回自己處理，可見母親的獨立性。
+                                    </p>
+                                    <p>
+                                        母親於2009年自發現食道癌到離世，僅短短三個月。發現初期僅感覺有吞嚥的困難情況。母親向來容忍，未曾向我們提及。直到有一天，我的初中同學鄭至慧女士因罹食道癌病逝消息在報紙上曝光，我在家中告訴母親。母親聽後，也提及她吞食物也覺得有卡卡地感覺。我竟然沒有太在意。當她向大姊提及此事。大姊立即安排去馬偕紀念醫院就診，才發現母親當時已經罹患食道癌末期。聽此訊息，仿如睛天霹靂。家人開始擔心㤺亂起來。
+                                    </p>
+                                    <p>
+                                        母親仍然一派輕鬆穩定。我們隱瞞病情的嚴重性。母親聽說要接受化療，仍然樂觀的告訴我們，可以治療的疾病，就不是絕症。我們配合醫師診治就可以了。經過12次標靶化療，曾經出院回家，短暫又回到醫院。可惜癌細胞轉移不治。
+                                    </p>
+                                    <p>
+                                        病療期間，全家縂動員大姊輪值白日，台龍兄與我輪值晩上。台鼎弟仍顧守攵親為主。有空時到醫院探視。小弟台煌及弟媳淑卿忙於烹煮營養品，隨時探視。2010年2月9日下午在上班時，突接噩號傳來，母親終不敵癌症折磨，病況危急。當時母親經常喊疼痛難耐，要求施打麻非止疼，時間愈來愈短，看到母親的痛苦，已知最擔心害怕的事情就要來了。
+                                    </p>
+                                </article>
+                            </div>
+
+                            <!-- Articla 05-->
+                            <div class="tab-pane " id="Article-05" role="tabpanel">
+                                <article>
+                                    <h5>母親王書筠女士辭世十周年纪念文</h5>
+									<p>
+										2021年2月7日（農曆12月26日）我們在台灣台北遙祭在天上的母親，您過得是否安好？如果今天您還活著在世上，已是九十五歲高齡了。而就在十年前的今天，您卻抛下我們而去，嗚呼哀哉！十年漫長的歲月，您永存在我們心中，常伴左右，身影像貌的清晰仿如昨日。
+									</p>
+									<div id="carouselExampleIndicators-15" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/wangs-2303-mother-11.jpg" class="d-block w-100" alt="..."> 
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-12.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-13.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-14.jpg" class="d-block w-100" alt="...">
+											</div>
+
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-15" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-15" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>			
+									<br>
+									
+									<p>
+									母親一生劬勞，奉獻給了家庭，丈夫及子女。母親生前從無假期，沒有自己的娛樂及郊遊活動。更沒有如同現代女性獨立自主的觀點，找尋自我的要求。記憶所及，母親不但沒有出國，也沒有在國內旅遊活動。僅有乙次，我帶著她獨自一人離家，及大哥台龍、駿逸參加中華電信舉辦的自強活動。她非常開心，沿途在遊覽車上目不轉睛的看窗外的風景。欣奮的心情仿如小學生參加遠足郊遊活動。我問母親為何不休息一下，母親說道：「難得出來，我好好看看風景。」此次活動遇到一位攝影愛好者，留下母親美麗的倩影。這是母親少數在戶外景區的照片，特別的珍貴照片，睹物思情，為母親的一生抱屈，不勝唏噓！母親對自我的享樂，均期待以攵親考量為優先。放下自我，然天不假年，母親積勞先行告別。這是我們對您最大無法彌補的遺憾。
+									<div id="carouselExampleIndicators-16" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>											
+
+
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/wangs-2303-mother-15.jpg" class="d-block w-100" alt="..."> 
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-16.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-17.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-18.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-19.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-20.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-21.jpg" class="d-block w-100" alt="...">
+											</div>											
+
+
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-16" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-16" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>		<br>								
+									<p>
+										母親年輕時，美貌出眾。晚年時，與孫輩合影，縂是面露慈笑，慈眉善目開心極了。只可惜當年手機尚未像今天一様人手一機，隨時隨地可拍照留影。當年僅憑相機拍攝，尚須到照相館冲洗保留。今天科技發達，台中吾弟身為資訊科技技術頂尖高手，打造王府相册，將母親大人的相貌再度呈現在我們大家的眼前，仿如母親在世，也留供後代子孫，一堵祖先祖母、外祖母、曾外祖母的美麗面容。回憶母親在中年時期與青少年的子女照片，也看出母親伴隨著我們的成長歲月。								
+									</p>
+									<div id="carouselExampleIndicators-17" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/wangs-2303-mother-22.jpg" class="d-block w-100" alt="..."> 
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-23.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2303-mother-24.jpg" class="d-block w-100" alt="...">
+											</div>
+
+
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-17" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-17" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>			<br>							
+									
+
+									<p>
+										十年漫長的歲月，一轉眼我們兄弟大家都退休離開職塲，過著悠閒的退休生活。同時也邁入老年。2020年，新冠疫情襲擊全球，各國無一倖免。台灣是一個寶島，四面環海，疫情尚非十分嚴重，十一月間我們兄弟組團遊寶島。如果您在天有感，應該非常開心與我們一起遊玩。感嘆人世無常，在有生之年，珍惜有限的生命，應常旅行遊玩山水之間。更盼2021年牛轉乾坤，太平盛世，大家平安！更盼望母親在天國逍遙自在，保祐子孫身體健康平安。
+									</p>
+  
+                                </article>
+                            </div>	
+							
+							
+                            <!-- Articla 06-->
+                            <div class="tab-pane " id="Article-06" role="tabpanel">
+                                <article>
+                                    <h5>我的母親與大姊</h5>
+									<p>
+										大姊取名「榕芳」，她是父母的長女，生於大陸福建，外公取名榕芳，「榕」代表著福建省的含義。父親駐軍関島，母親住在娘家。自幼深受外公、外婆及舅舅的疼愛。來台之後，由於排行為長姊，弟妹相繼出生，經常需要協助母親分擔處理家務，照顧弟妺。大姊成為家中發號司令的管家，可是母親得力的好幫手。
+									</p>
+									<div id="carouselExampleIndicators-25" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>											
+
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/wang-2304-mandSister-01.jpg" class="d-block w-100" alt="..."> 
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-02.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-03.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-04.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-05.jpg" class="d-block w-100" alt="...">
+											</div>											
+
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-25" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-25" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>			
+									<br>
+									
+									<p>
+									大姊與母親的感情深厚，自幼懂事。父親長年不在家。通常母親有任何心事、難事、苦惱均會與大姊分享。而我們弟妹者通常是不會知曉的。雖然大姊很早就結婚了。但是婚後，三不五時經常攜帶她的一兒伯康一女惠瑛回到娘家。外甥女惠瑛及外甥伯康自幼在家中長大。父母的長外孫兒女，深受父母的喜愛。
+									<div id="carouselExampleIndicators-26" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>											
+
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/wang-2304-mandSister-06.jpg" class="d-block w-100" alt="..."> 
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-07.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-08.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-09.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-10.jpg" class="d-block w-100" alt="...">
+											</div>											
+
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-26" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-26" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>		<br>								
+									<p>
+										當我們小時候，大姊手牽著弟妹，外出時一幅大姊的模樣，在家中負責發號施令，傳達母親的命令。交待我們要幹嘛、幹嘛包括一切洗澡、吃飯、睡覺，燙制服，協助起火燒煤球爐等諸多大小事。我們也聽她的命令照章行事，不敢勃逆行事。而我與她相差三歲家中女性少數民族，只能當跟屁蟲。站在同一陣線團結為要。								
+									</p>
+									<div id="carouselExampleIndicators-27" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+										
+
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/wang-2304-mandSister-11.jpg" class="d-block w-100" alt="..."> 
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-12.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-13.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wang-2304-mandSister-14.jpg" class="d-block w-100" alt="...">
+											</div>
+									
+
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-27" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-27" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>		<br>								
+									
+
+									<p>
+										母親晚年最開心的事情，就是與大姊榕芳電話聊家常。通常一聊就是熱缐長達數小時。父親經常在旁嘟嘴妒忌評論女人真是話多。不解她們的革命感情，母女之間的情深似海。如果母親沒有大姊，母親的生活是非常寂寞地。因為母親與父親單獨居住，除了家人及一位舅舅以外，沒有什麼親戚及朋友。早年在居住眷村時期，也只有一、二位鄰居熟識而已。遷居到新店以後，母親也就再沒有交往附近鄰居了。在單純的生活起居中，僅有與大姊話聊家常。可是她的精神生活支柱與調劑。<br><br>
+
+										母親雖然一向非常獨立自立自強。晚年，身體不適，大家上班，均由大姊陪同前往馬偕紀念醫院檢查看病。直到母親發現罹癌的三個月，也均由大姊白天陪侍在側，直到母親病逝。我與台龍輪值夜班。母親走後，父親的照顧，大姊也經常回家協助照顧，分擔家庭成員的責任。未有稍懈。<br><br>
+
+
+										母親辭世十年間，大姊對母親的追思情感深遠。母親的慎終追遠各種祭典與伯康外甥均會參與家中大小祭拜，從未有缺席間斷。
+
+										每一個人從出生、幼年、成長、中年、衰老、老年，直到死亡，這一條人生道路，無論酸甜苦辣，最終結局都會回到原點。最後，我們都會回到原生家庭當初最原始的開端。
+									</p>
+  
+                                </article>
+                            </div>		
+							
+							
+                            <!-- Articla 07-->
+                            <div class="tab-pane " id="Article-07" role="tabpanel">
+                                <article>
+                                    <h5>媽媽的好味道</h5>
+									<p>
+										2016年4月7日應大學同學黃龍興之邀，前往父親故鄕中國浙江省深度旅遊。其中包含父親出生青少年成長嵊州尋訪探親。沿途在寧波、邵興、嘉興、杭州各地享用當地美食，驚喜發現母親烹調的菜餚口味，源自於江浙一帶的美食，口味作法均相同。記憶中，我們的外公祖籍也是浙江，後來才遷往福建居住。母親嫁給父親來台，淵源來自家傳烹調方法屬於江浙一帶口味。江淅菜一般較屬清淡口味，且略帶甜味。<br><br>
+
+										杭幫菜<br>
+										杭幫菜是指發源或興盛於杭州的菜餚名食。杭州菜系是中國八大菜系之一，浙菜中最主要的一支。杭幫菜講究原汁原味，選料精細，兼顧時令，行廚有序，造型精緻，且括色、香、味俱全。杭幫菜的特點是「輕淡適中，選料精細，因令時鮮，多元趨新」。「清淡」是杭州菜一個重要的特點。杭幫菜最知名的菜包括叫花雞、杭州醤鴨、東波肉、荷葉粉蒸肉、龍井蝦仁、西湖醋魚、油悶春筍、蟹黃湯包、宋嫂魚羹等名菜。但據杭州當地人稱「杭幫菜是給外地來訪旅遊客吃的；當地人不吃杭幫菜，主因是當地人經濟條件能力是吃不起的。<br>
+									</p>
+									
+									<div id="carouselExampleIndicators-71" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="2" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+										</ol>
+										<div class="carousel-inner">
+
+											<div class="carousel-item active">
+												<img src="images/wangs-2305-food-02.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-03.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-04.jpg" class="d-block w-100" alt="...">
+											</div>
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-71" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-71" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>			
+									<br>
+									
+									<p>
+									母親的拿手佳餚當然不會是杭幫菜囉！因為以父親微薄的軍人薪資餉糧，要應付八口之家，談何容易？並且以當時社會經濟環境條件情況也不允許。母親精打細算、量入為出，仍然每天三餐及年節都會烹調満桌佳餚。敎子女及後輩們望成沒及。看看回憶王府母親的江浙名菜菜單如下：<br>
+									<div id="carouselExampleIndicators-72" class="carousel slide img-fluid"
+										data-ride="carousel" style="width:600px">
+										<ol class="carousel-indicators">
+											<li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>	
+											<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>	
+											<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+											<li data-target="#carouselExampleIndicators" data-slide-to="13"></li>												
+
+										</ol>
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="images/wangs-2305-food-05.jpg" class="d-block w-100" alt="..."> 
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-06.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-07.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-08.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-09.jpg" class="d-block w-100" alt="...">
+											</div>		
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-10.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-11.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-12.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-13.jpg" class="d-block w-100" alt="...">
+											</div>	
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-14.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-15.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-16.jpg" class="d-block w-100" alt="...">
+											</div>
+											<div class="carousel-item">
+												<img src="images/wangs-2305-food-17.jpg" class="d-block w-100" alt="...">
+											</div>												
+
+										</div>
+										<a class="carousel-control-prev" href="#carouselExampleIndicators-72" role="button" data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="carousel-control-next" href="#carouselExampleIndicators-72" role="button" data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>		<br>								
+							
+
+									<p>
+									<a href="https://www.youtube.com/watch?v=doKlNiv_kPU&list=PLwWP7gFbKuCn44Q7-xUW4WCp6OuPGhvr5&index=86">滷菜拚盤</a>
+									<br>
+									平常及年節期間，母親會烹調一大鍋滷鍋，內容物有牛䭈、豬肉、海帶豆干鷄蛋⋯等。各種食物遇到要吃時再切成小塊，以拚盤形式放在盤內端盤上菜，在年節期間，可以在短時間隨時上菜省力方便。
+
+									當母親烹製滷鍋時，若在旁邊觀看煮蛋，母親會大方賞賜一顆白蛋。小時候吃一顆蛋已是人間美味補身良品。在今天覺得可笑，然在當時可見社會經濟上的貧乏拮挶。
+									<br><br>
+									<a href="https://www.youtube.com/watch?v=6RUTI-X686w">茄汁明蝦</a>
+									<br>
+									將薑蒜切末，蒜頭拍扁，蝦子開背去腸泥。熱油鍋將蝦炸熟後瀝掉多餘的油，取出。用鍋底餘油爆香薑末和蒜末之後，倒入豆瓣醬、番茄醬炒香，並倒入高湯、糖。放入炸好的蝦煨煮並將醬汁不斷淋在明蝦上。這可是過年期間才有的待遇哦。
+									<br><br>
+									<a href="https://www.youtube.com/watch?v=t3vNfO4Or6o">酥炸草魚/鯽魚</a>										
+									<br>
+									將草魚洗淨切段，炸酥後酟糖醋醬料。過年期間，酥炸放冰箱隨時上菜取用。江浙菜館有提供此道名菜供食客隨時點選。
+									<br><br>
+									<a href="https://www.youtube.com/watch?v=SKrAD6gl-pI">紅燒黃魚/鯧魚/煎帶魚</a>										
+									<br>
+									母親喜愛魚料理。黃魚、白鯧魚、帶魚都是家中桌上見到的料理。平日都是較小尾的。年節一定是大尾的。
+									
+									記憶中聽道母親稱：有條小帶魚，勝過
+									各種美食。可見母親對魚料理的喜愛程度。
+									<br><br>
+									
+									<a href="https://www.youtube.com/watch?v=JzMUvxAAfIw">白斬鷄</a>	<br>									
+									將整隻鷄洗淨，大火煮熟，食用時切塊上桌。母親烹調的白斬鷄非常清淡可口。由於父親是一位挑剔的美食主義者，一定要求現宰殺的土鷄。
+									<br><br>
+									
+									<a href="https://cookpad.com/tw/%E6%90%9C%E5%B0%8B/%E9%AE%AE%E7%AD%8D%E8%82%89%E7%89%87">春/冬筍笋肉片</a>	<br>									
+									江浙人嗜食「筍」如命。無論是春筍、冬筍都是一年四季餐桌上的佳餚。口味鮮美，勝過魚肉。父親是最好的例子。一日三餐餐桌上必有「筍」，無「筍」不歡。
+									<br><br>
+									<a href="https://www.youtube.com/watch?v=XAe0Q-KGJoQ">紅燒豆皮/豆腐</a>										
+									<br>
+									豆腐是母親的拿手菜之一。尤其在晚年，紅燒嫩豆腐、油煎老豆腐是三餐必備。或將豆皮紅燒後切條狀食用。
+									<br><br>
+									<a href="https://www.youtube.com/watch?v=hAKJwSvoLEQ">油豆腐鑲肉</a>										
+									<br>
+									一道從小吃到大的佳餚。將油豆腐洗淨，將豬肉拌葱調味鑲入。最近我常去一家販售眷村熟食店家購買。可以放在火鍋或白菜粉絲大鍋菜煮食。非常有媽媽的味道。
+									<br><br>
+									<a href="https://www.cookpot.com.tw/video/70.html">紅燒及清燉牛肉湯</a>
+									<br>
+									紅燒及清蒸牛肉搭配紅、白蘿蔔及番茄。此料理是王府家中常用料理。
+									<br><br>
+									<a href="https://www.youtube.com/watch?v=stRz9WXoSpA">大鍋菜/火鍋</a>
+									<br>
+									採用高湯作鍋底，放置白菜、粉絲、蛋餃、火鍋料⋯母親烹煮的大鍋菜，非常清淡有甜味。
+									<br><br>
+									<a href="https://www.youtube.com/watch?v=9CtyB1SEQJA">棕子</a>										
+									<br>
+									江浙人年節期間吃棕子。如同北方人吃餃子一般。母親親手包鹹、甜棕子。作為餐桌上甜食。
+									鹹棕內包豬肉、香姑、蝦皮等食料。甜棕子包有紅豆、或豆沙。
+									<br><br>
+									<a href="https://www.youtube.com/watch?v=D7UoI-uK4UI">炒年糕</a>										
+									<br>
+									韮黃、蛋皮炒年糕是母親的拿手菜。也是王府年節必備的佳餚。
+									<br><br>
+									上館子<br>
+									家庭成員子女逐漸長大成人，成家立業後，家庭經濟情況好轉，由於參加除夕人數過多才開始上餐廳用餐。母親終於脫離放下掌廚的重擔。當時我們經常去上館子
+									的餐廳如成都路的大三園、富園餐廳。
+									<br><br>
+									母親在晚年割除膽囊，不能進食油膩食物。上餐館後経常有腹㵼的後遺症。無福消受享用美食，真是遺憾之至。
+									
+
+									母親一生勤勞樸實，每日三餐親自烹調，從無懈怠。想想今天外食嚴重，年輕人動不動叫外賣，到大飯店享用美食，真是有愧面對天上的母親。
+									</p>
+  
+                                </article>
+                            </div>								
+                            <!-- Next Aritical -->
+
+                        </div>
+
+                    </div>
+
+            </main>
+
+            <!-- Footer -->
+            <footer class="page-footer foot-small my-5">
+                <div class="row">
+                    <div class="col-3 pl-5 py-1">
+
+                    </div>
+                    <div class="col pr-5 py-1 text-white">
+                        <small> 王氏家族相冊 2020 </small>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Vue 的 CDN -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+        <!-- Bootstrap 4 JavaScript 的 CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <!-- Axios 的 CDN -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+        <!-- Vue實例的程式碼 -->
+	<script>
+		// Javascript to enable link to tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			$('.list-group a[href="#' + url.split('#')[1] + '"]').tab('show');
+		}
+
+		// Change hash for page-reload
+		$('.list-group a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Bootstrap 4 CSS 的 CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- Fontawesom 的 CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- Google Icons CDN  -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- My CSS file -->
+	<link rel="stylesheet" href="css/mycss.css">
+	<title>相冊：3.4 團圓相聚</title>
+
+	<style>
+		.jumbotron-bg2 {
+			background-image: url('images/wangs-1104-TogetherBanner-03.jpg');
+			background-size: cover;
+			background-position: center center;
+			min-height: 300px
+		}
+
+		.bg-lighter {
+			background-color: rgba(0, 0, 0, .4);
+			width: 300px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<a class="navbar-brand" href="#">
+				王氏家族相冊
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-user"></i>家人登入
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="index.html">說明</a>
+							<a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+							<a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-home"></i>追憶父母
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="wangs-211-Parents-01.html">傳承篇</a>
+							<a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+							<a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-info"></i>生活回顧
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="wangs-311-Review-01.html">眷村生活回顧</a>
+							<a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+							<a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+							<a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+							<a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-heart"></i>享受當下
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+							<a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+							<a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+							<a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+							<a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+							<a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-asterisk"></i>展望下一代
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+							<a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+							<a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+						</div>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+
+
+		<!-- Jumbotron-->
+		<div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+			<div class="container">
+				<div class="bg-lighter">
+					<h5>闔家團聚</h5>
+					<p>節慶團圓聚會的回顧</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Vue實例的掛載點 -->
+		<div id="app" class="container-fluid mt-1">
+
+			<header>
+				<div class="row mx-1">
+					<h3>3.4 團圓相聚</h3>
+
+				</div>
+
+			</header>
+			<main>
+				<div class="row">
+					<div class="col-md-3 col-lg-2">
+						<aside class="sidebar1">
+							<h5>時間軸:大事記</h5>
+							<p>2016 -2020</p>
+							<ul>
+								<li>2020: 台鳳追憶於台北</li>
+							</ul>
+						</aside>
+						<div class="list-group" id="MenuList" role="tablist">
+							<a href="#Article-01" class="list-group-item list-group-item-action active"
+								data-toggle="list">相聚的日子</a>
+							<a href="#Article-02" class="list-group-item list-group-item-action"
+								data-toggle="list">除夕夜團圓</a>
+						</div>
+						<br>
+					</div>
+					<div class="col-md-9 col-lg-10">
+						<div class="tab-content active">
+
+							<!-- Articla 01-->
+							<div class="tab-pane active" id="Article-01" role="tabpanel">
+								<article>
+									<div class="row">
+										<div class="col-12 col-sm-12 col-md-6">
+											<h5>闔家團聚的追憶</h5>
+											<section>
+												<p>
+													團圓年夜飯<br>
+													年夜飯，華北地區普遍稱為年夜飯，江南、粵港澳地區和星馬稱之為團年飯、團圓飯，閩南與臺灣稱圍爐，是農曆除夕的一餐，目的是在過年前一家團聚並共度農曆新年，傳統上年夜飯多在除夕祭祖後食用。除夕的日期不定，可能是臘月廿九為三十日。
+													<br>
+													父母親在時，記得我們在年幼及成長的過程中，母親通常會一手包辦年夜飯。母親是烹調高手，作得一手好菜。乾淨俐落，從不需要別人當幫手。所以，我完全不會烹調煮食。有了媳婦，過年也是母親一手自己完成。長大成人，疼惜母親的辛勞，我都會擔任洗碗的工作。
+													<br>
+													父母親晚年，我們在過年時，開始在餐廳過團圓吃年夜飯。父母親相繼離世後，我們近年來的團圓年夜飯，如何度過呢，讓大家回憶一下囉！
+
+												<div id="carouselExampleIndicators-01" class="carousel slide img-fluid"
+													data-ride="carousel" style="width:600px">
+													<ol class="carousel-indicators">
+														<li data-target="#carouselExampleIndicators" data-slide-to="0"
+															class="active"></li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="1">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="2">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="3">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="4">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="5">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="6">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="7">
+														</li>
+
+													</ol>
+													<div class="carousel-inner">
+														<div class="carousel-item active">
+															<img src="images/wangs-3401-Together-01.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-02.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-03.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-04.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-05.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-06.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-07.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-08.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+
+													</div>
+													<a class="carousel-control-prev"
+														href="#carouselExampleIndicators-01" role="button"
+														data-slide="prev">
+														<span class="carousel-control-prev-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next"
+														href="#carouselExampleIndicators-01" role="button"
+														data-slide="next">
+														<span class="carousel-control-next-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+												</p>
+												<p>
+													清明節<br>
+													我們也會在清明節掃墓祭祖後，團聚聚餐
+													活動中心。清明節也是家人團聚聚餐的大好日子。2015年4月5日清明團聚。
+												</p>
+												<p>
+													端午節<br>
+													端午節是東亞文化圈的傳統節日，定在每年農曆五月初五，本來是夏季的一個送離五瘟神，驅除瘟疫的節日。戰國時期的楚國愛國詩人屈原於這一日投江自盡，後在中國演變為端午節，以紀念屈原，有人稱其為詩人節（有些地方是紀念吳國忠臣伍子胥的忌日），是華人四大節日之一，與新春、中秋等節日同屬東亞文化圈的中國大陸、香港、澳門、台灣、新加坡、馬來西亞、日本、朝鮮半島、越南的重要傳統節日。
+												</p>
+												<p>
+													中秋節<br>
+													中秋節是漢字文化圈的重要傳統節日，為每年的農曆八月十五，約在公曆的9月至10月初。按照農曆，八月為秋季的第二個月，在中國古代稱為仲秋，因此民間稱為中秋，又稱秋夕、八月節、八月半、月夕、月節、
+													十五夜，是漢族四大傳統節日之一。
+													中秋節始於唐朝初年，盛行於宋朝，至明清時鼎盛，已成為與農曆新年齊名的中國傳統節日之一。端午節及中秋佳節也是親友團聚的好日子。
+												</p>
+
+												<p>
+													情人節 2016年2月13日<br>
+
+													情人節，在西方也稱為聖瓦倫丁節，在每年的公曆2月14日。近年，情人節被指過於商業化。基於宗教理由，南亞和中東等某些地區，情人節的相關活動受到規範。情人節不僅是男女情人要歡渡，包括家人、好友及老師也一樣可致贈小禮物表達愛意。今年我們一家人也在今天度過情人節。
+
+												<div id="carouselExampleIndicators-04" class="carousel slide img-fluid"
+													data-ride="carousel" style="width:600px">
+													<ol class="carousel-indicators">
+														<li data-target="#carouselExampleIndicators" data-slide-to="0"
+															class="active"></li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="1">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="2">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="3">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="4">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="5">
+														</li>
+
+													</ol>
+													<div class="carousel-inner">
+														<div class="carousel-item active">
+															<img src="images/wangs-3401-Together-31.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-32.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-33.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-34.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-35.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-36.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+
+													</div>
+													<a class="carousel-control-prev"
+														href="#carouselExampleIndicators-04" role="button"
+														data-slide="prev">
+														<span class="carousel-control-prev-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next"
+														href="#carouselExampleIndicators-04" role="button"
+														data-slide="next">
+														<span class="carousel-control-next-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+												</p>
+
+
+											</section>
+										</div>
+										<div class="col-12 col-sm-12 col-md-6">
+											<section>
+												<p>
+													端午節 2016年6月9日<br>
+
+													華人的端午節，是華人的四大傳統節日之一，與東亞其他地區的端午節節慶同樣源於中國古代的端午節傳統。今年我們在六福皇宮絲路餐廳舉行。姊姊、姊夫及女婿惠瑛夫婦、外孫女貝貝，及孫女小花參加，另外，表妹王璇夫婦及女兒均來參加端午家庭聚餐，大哥及駿逸均有參加。
+
+												<div id="carouselExampleIndicators-05" class="carousel slide img-fluid"
+													data-ride="carousel" style="width:600px">
+													<ol class="carousel-indicators">
+														<li data-target="#carouselExampleIndicators" data-slide-to="0"
+															class="active"></li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="1">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="2">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="3">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="4">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="5">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="6">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="7">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="8">
+														</li>
+													</ol>
+													<div class="carousel-inner">
+														<div class="carousel-item active">
+															<img src="images/wangs-3401-Together-37.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-38.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-39.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-40.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-41.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-42.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-43.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-44.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-45.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+
+													</div>
+													<a class="carousel-control-prev"
+														href="#carouselExampleIndicators-05" role="button"
+														data-slide="prev">
+														<span class="carousel-control-prev-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next"
+														href="#carouselExampleIndicators-05" role="button"
+														data-slide="next">
+														<span class="carousel-control-next-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+												</p>
+												<p>
+													聖誕節聖誕夜<br>
+													對於西方人來說，聖誕節（X'mas）是一個家人團聚，一起享用聖誕大餐，互相送禮，寄聖誕卡問候遠方朋友的重要節日。2015年12月25日聖誕聚餐。
+
+												<div id="carouselExampleIndicators-02" class="carousel slide img-fluid"
+													data-ride="carousel" style="width:600px">
+													<ol class="carousel-indicators">
+														<li data-target="#carouselExampleIndicators" data-slide-to="0"
+															class="active"></li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="1">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="2">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="3">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="4">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="5">
+														</li>
+
+													</ol>
+													<div class="carousel-inner">
+														<div class="carousel-item active">
+															<img src="images/wangs-3401-Together-09.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-10.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-11.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-12.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-13.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-14.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+
+													</div>
+													<a class="carousel-control-prev"
+														href="#carouselExampleIndicators-02" role="button"
+														data-slide="prev">
+														<span class="carousel-control-prev-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next"
+														href="#carouselExampleIndicators-02" role="button"
+														data-slide="next">
+														<span class="carousel-control-next-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+												</p>
+												<p>
+													人走茶涼，每逢佳節倍思親。我們在父母親相繼離世後，非常珍惜相聚的日子，縂是在節日找日子，聚一聚。
+
+
+													母親節<br>
+													母親節祝福天下的母親快樂！更祝福天上的母親逍遙自在。
+													2015年5月10日歡渡母親節！
+												<div id="carouselExampleIndicators-03" class="carousel slide img-fluid"
+													data-ride="carousel" style="width:600px">
+													<ol class="carousel-indicators">
+														<li data-target="#carouselExampleIndicators" data-slide-to="0"
+															class="active"></li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="1">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="2">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="3">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="4">
+														</li>
+														<li data-target="#carouselExampleIndicators" data-slide-to="5">
+														</li>
+
+													</ol>
+													<div class="carousel-inner">
+														<div class="carousel-item active">
+															<img src="images/wangs-3401-Together-15.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-16.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-17.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-18.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-19.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+														<div class="carousel-item">
+															<img src="images/wangs-3401-Together-20.jpg"
+																class="d-block w-100" alt="...">
+														</div>
+
+													</div>
+													<a class="carousel-control-prev"
+														href="#carouselExampleIndicators-03" role="button"
+														data-slide="prev">
+														<span class="carousel-control-prev-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Previous</span>
+													</a>
+													<a class="carousel-control-next"
+														href="#carouselExampleIndicators-03" role="button"
+														data-slide="next">
+														<span class="carousel-control-next-icon"
+															aria-hidden="true"></span>
+														<span class="sr-only">Next</span>
+													</a>
+												</div>
+												</p>
+											</section>
+										</div>
+									</div>
+
+								</article>
+							</div>
+							<div class="tab-pane" id="Article-02" role="tabpanel">
+
+								<div class="row">
+									<div class="col-13, col-sm-12, col-md-6">
+
+										<h5>2019 年夜飯 2019年2月04日</h5>
+										2019年我們在那米哥會館圍爐吃年夜飯。小花兒是家中寵兒，愈來愈加美麗。
+
+										<div id="carouselExampleIndicators-13" class="carousel slide img-fluid"
+											data-ride="carousel" style="width:600px">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselExampleIndicators" data-slide-to="0"
+													class="active"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/wangs-3402-Dinner-51.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-52.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-53.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-54.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-55.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-56.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-57.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-58.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-59.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-60.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+
+											</div>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators-13"
+												role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators-13"
+												role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+
+										聚會 2020年6月23日 <br>
+
+										應台鼎弟的邀約，我們在艾美酒店家庭聚會，大家一起喝下午茶
+
+										<div id="carouselExampleIndicators-16" class="carousel slide img-fluid"
+											data-ride="carousel" style="width:600px">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselExampleIndicators" data-slide-to="0"
+													class="active"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/wangs-3402-Dinner-60.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-61.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-62.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-63.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-64.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators-16"
+												role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators-16"
+												role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+										<br>
+										<h5>2018 年夜飯 2018年2月15日</h5>
+										2018年這一年的年夜飯，王府全家人之外；另增添駿傑的媳婦怡君，大家一起在那米哥會館圍爐
+
+										<div id="carouselExampleIndicators-13" class="carousel slide img-fluid"
+											data-ride="carousel" style="width:600px">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselExampleIndicators" data-slide-to="0"
+													class="active"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/wangs-3402-Dinner-31.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-32.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-33.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-34.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-35.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-36.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-37.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-38.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-39.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-30.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+
+											</div>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators-13"
+												role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators-13"
+												role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+
+										<p>
+											年初三<br>
+
+											年初三大姊全家人在常聚聚餐。大家喜氣洋洋歡度大年初三的佳節。
+
+										<div id="carouselExampleIndicators-15" class="carousel slide img-fluid"
+											data-ride="carousel" style="width:600px">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselExampleIndicators" data-slide-to="0"
+													class="active"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/wangs-3402-Dinner-41.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-42.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-43.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-44.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-45.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-46.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-47.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-48.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-49.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-50.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+
+
+											</div>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators-15"
+												role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators-15"
+												role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+
+
+									</div>
+
+									<div class="col-12, col-sm-12, col-md-6">
+										<h5>2017 年夜飯 2017年1月27日</h5>
+										2017年這一年年夜飯全員到齊，可說是最盛大齊全的一年。王府全員到齊，遠在中國鴻海任職四弟來台參加，另外，大姊全家人共聚。特別邀請到親家周府共聚。在那米哥會館，席開兩桌。
+
+										<div id="carouselExampleIndicators-35" class="carousel slide img-fluid"
+											data-ride="carousel" style="width:600px">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselExampleIndicators" data-slide-to="0"
+													class="active"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/wangs-3402-Dinner-21.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-22.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-23.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-24.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-25.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-26.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-27.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-28.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-29.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-30.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+
+											</div>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators-35"
+												role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators-35"
+												role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+										<br>
+										<h5>2016 除夕夜團圓 2016年2月10日</h5>
+										今年我們的年夜飯在那米哥會館舉辦。參加的家人有台龍兄及兒子駿逸，台鼎弟及汪汪，以及女兒韻涵。每年姊夫及大姊回南投老家過年，外甥伯康、媳婦及小花均與我們一起過年。大家圍爐一起歡渡過除夕。
+
+										<div id="carouselExampleIndicators-11" class="carousel slide img-fluid"
+											data-ride="carousel" style="width:600px">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselExampleIndicators" data-slide-to="0"
+													class="active"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/wangs-3402-Dinner-01.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-02.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-03.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-04.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-05.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-06.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+
+											</div>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators-11"
+												role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators-11"
+												role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+										好友何家玲霞及其娘家
+										<div id="carouselExampleIndicators-12" class="carousel slide img-fluid"
+											data-ride="carousel" style="width:600px">
+											<ol class="carousel-indicators">
+												<li data-target="#carouselExampleIndicators" data-slide-to="0"
+													class="active"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+												<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+											</ol>
+											<div class="carousel-inner">
+												<div class="carousel-item active">
+													<img src="images/wangs-3402-Dinner-07.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-08.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-09.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-10.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-11.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-12.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-13.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+												<div class="carousel-item">
+													<img src="images/wangs-3402-Dinner-14.jpg" class="d-block w-100"
+														alt="...">
+												</div>
+											</div>
+											<a class="carousel-control-prev" href="#carouselExampleIndicators-12"
+												role="button" data-slide="prev">
+												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a>
+											<a class="carousel-control-next" href="#carouselExampleIndicators-12"
+												role="button" data-slide="next">
+												<span class="carousel-control-next-icon" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+						<!-- Next Aritical -->
+
+
+					</div>
+
+
+				</div>
+
+		</div>
+
+		</main>
+
+		<!-- Footer -->
+		<footer class="page-footer foot-small my-5">
+			<div class="row">
+				<div class="col-3 pl-5 py-1">
+
+				</div>
+				<div class="col pr-5 py-1 text-white">
+					<small> 王氏家族相冊 2020 </small>
+
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Vue 的 CDN -->
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+	<!-- Bootstrap 4 JavaScript 的 CDN -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+		crossorigin="anonymous"></script>
+	<!-- Axios 的 CDN -->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+	<!-- Vue實例的程式碼 -->
+	<script>
+		new Vue({
+			el: '#app',
+			data: {
+				Home: '首頁',
+				Menu: '便當',
+				Login: '登入',
+				Shopping: '購物車'
+			}
+		})
+	</script>
+</body>
+
+</html>

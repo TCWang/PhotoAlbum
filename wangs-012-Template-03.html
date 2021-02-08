@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <title>31-Introduction</title>
+
+  <style>
+    .jumbotron-bg2 {
+      background-image: url('images/wangs-1101-TaipeiCity.jpg');
+      background-size: cover;
+      background-position: center center;
+      min-height: 300px
+    }
+
+    .bg-lighter {
+      background-color: rgba(0, 0, 0, .4)
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        王氏家族相冊
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>家人登入
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-111-Login-01.html">說明</a>
+              <a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+              <a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-home"></i>追憶父母
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-211-Parents-01.html">憶父母</a>
+              <a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+              <a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-info"></i>生活回顧
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-311-Review-01.html">眷村生活回顧</a>
+              <a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+              <a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+              <a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+			  <a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>					
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-heart"></i>享受當下
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+              <a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+              <a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+              <a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+              <a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+              <a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+            </div>
+          </li>
+		  <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-asterisk"></i>展望下一代
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+              <a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+              <a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+
+    <!-- Jumbotron-->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+      <div class="container">
+        <div class="bg-lighter p-1" style="width:300px">
+          <p class="text-white">王氏家族相冊</p>
+          <p class="text-white">父母的追憶</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Vue實例的掛載點 -->
+    <div id="app" class="container-fluid mt-3">
+      <div class="row mx-2">
+        <h3>社區簡介 </h3> 
+        <p class="text-danger">注意：本網站仍在測試階段，所有後端作業都尚未開發。所有註冊與線上作業都尚未啟用！</p>
+      </div>
+      <div class="row mx-2">
+
+        <div class="col-12 col-sm-12 col-md-6">
+          <h5>樂捷市社區特色</h5>
+          <p>
+          <dl>
+            <dd>「AiCITY樂捷市」位於桃園市龜山區文德二路.文德公園附近，由鴻築建設股份有限公司投資興建，基地面積 1,848.44坪、建蔽率 49.56%、公設比 32%，樓層規劃為 8棟地上 15層、地下
+              3層建築，326戶住家、20戶店面的住商大樓，格局坪數規劃 1+1 ~ 3+1房 24 ~ 44坪。</dd>
+            <dd>休閒設施方面有接待大廳、中庭花園、交誼廳、視聽室、健身房、親子遊戲區、瑜珈教室、廚藝教室、信箱區，結構為RC鋼筋混凝土。</dd>
+            <dd>周邊環境，距離學區樂善國小步行約 10分鐘，商場頂好Wellcome約 600米，距離林口工業特區約車程8分鐘，距離華亞科技園區約車程 6分鐘。</dd>
+            <dd>交通方面距離機場捷運站A7體育大學站、A8長庚醫院車程約 5 - 7分鐘，距離中山高速公路約車程約 8分鐘，可連結新北市、台北市、桃園市，交通便捷。</dd>
+          </dl>
+
+          </p>
+          <p>
+            <a href="https://tcwang.github.io/AiCity2019/">
+              <img src="fig/AiCity-900-AiCityQRCode.png" Style="width:150px">
+            </a>
+            樂捷市社區網站：請點擊或掃描
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="fig/AiCity-905-樂捷市Logo4.jpg" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer foot-small my-5">
+      <div class="row">
+        <div class="col-3 pl-5 py-1">
+ 
+        </div>
+        <div class="col pr-5 py-1 text-white">
+          <small> 王氏家族相冊 2020 </small>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Vue實例的程式碼 -->
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          Home: '首頁',
+          Menu: '便當',
+          Login: '登入',
+          Shopping: '購物車'
+        }
+      })
+    </script>
+</body>
+
+</html>

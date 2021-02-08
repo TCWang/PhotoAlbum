@@ -1,0 +1,1842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<!-- Bootstrap 4 CSS 的 CDN -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<!-- Fontawesom 的 CDN -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+		integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<!-- Google Icons CDN  -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+	<!-- My CSS file -->
+	<link rel="stylesheet" href="css/mycss.css">
+	<title>相冊：3.2 尋根之旅</title>
+
+	<style>
+		.jumbotron-bg2 {
+			background-image: url('images/wangs-4204-new-03.jpeg');
+			background-size: cover;
+			background-position: center center;
+			min-height: 300px
+		}
+
+		.bg-lighter {
+			background-color: rgba(0, 0, 0, .4);
+			width: 300px;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+			<a class="navbar-brand" href="#">
+				王氏家族相冊
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-user"></i>家人登入
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="index.html">說明</a>
+							<a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+							<a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-home"></i>追憶父母
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="wangs-211-Parents-01.html">傳承篇</a>
+							<a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+							<a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-info"></i>生活回顧
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="wangs-311-Review-01.html">眷村生活回顧</a>
+							<a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+							<a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+							<a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+							<a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-heart"></i>享受當下
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+							<a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+							<a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+							<a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+							<a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+							<a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-asterisk"></i>展望下一代
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+							<a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+							<a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+						</div>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+
+
+		<!-- Jumbotron-->
+		<div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+			<div class="container">
+				<div class="bg-lighter">
+					<h5>尋根之旅</h5>
+					<p>故鄉-浙江省邵興市嵊州市</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Vue實例的掛載點 -->
+		<div class="container-fluid mt-1">
+
+			<header>
+				<div class="row">
+					<h3>3.2 尋根之旅</h3>
+
+				</div>
+
+			</header>
+			<main>
+				<div class="row">
+					<div class="col-md-3 col-lg-2">
+						<aside class="sidebar1">
+							<h5>時間軸:大事記</h5>
+							<p>1913 -2012</p>
+							<ul>
+								<li>2020: 台鳳追憶於台北</li>
+							</ul>
+						</aside>
+						<div class="list-group" id="MenuList" role="tablist">
+							<a href="#Article-01" class="list-group-item list-group-item-action active"
+								data-toggle="list">浙江嵊州市</a>
+							<a href="#Article-02" class="list-group-item list-group-item-action"
+								data-toggle="list">尋根之旅</a>
+							<a href="#Article-03" class="list-group-item list-group-item-action"
+								data-toggle="list">嵊州札記</a>
+							<a href="#Article-04" class="list-group-item list-group-item-action"
+								data-toggle="list">嵊州正宗小吃</a>
+						</div>
+						<br>
+					</div>
+					<div class="col-md-9 col-lg-10">
+
+						<!-- Articla 01-->
+						<div class="tab-content active">
+							<div class="tab-pane active" id="Article-01" role="tabpanel">
+								<article>
+									<h5>浙江嵊州市</h5>
+									<div>
+										<strong>歷史沿革</strong>
+										<img src="images/wangs-4202-map.png" class="img-fluid"
+											style="width:800px; margin-right:5px; padding:5px; float:right">
+										<p>
+											嵊之名因其从山、从乘，“乘”古义“四马”，其境内四周有东簟山、南黄山、西白山、北雩山，取“四山相合”之意。嵊州古称剡县。在新石器时代就有人类繁衍生息，春秋时期属越国，秦时名剡，属会稽郡。汉景帝四年（前153年）置县，称剡县，历属会稽郡、越州、绍兴府、绍兴路、会稽道。王莽时易名尽忠县。东汉初复称剡县。唐初升置嵊州，并置剡城县，后复剡县。吴越中期改称赡县。北宋复剡县，宣和三年（1121年），刘合以“剡”有兵火象，奏请朝廷把“剡”改为“嵊”县，始名嵊县。中华人民共和国成立后，先后属绍兴、宁波专区，现属绍兴市。1995年8月28日，国务院发文批准嵊县改设嵊州市，8月30日，民政部正式批复，9月8日，浙江省政府发出《关于撤销嵊县设立嵊州市的通知》。1995年12月6日，嵊县正式撤县设市，改名嵊州市。
+										</p>
+										<strong>地理位置</strong>
+										<p>
+											嵊州市 距離杭州市約兩小時車程，其中經過紹興市。而距南邊新昌縣只有半小時車程。往東約1個半小時可到寧波市。往西有諸暨市與西南義烏市。
+											父親故居在嵊州市（以前的嵊縣）與新昌縣之間的鄉村。具體位置不明，只知是王家村。
+										</p>
+										<p>
+											文化廣場是現在嵊州市的商業中心區，也是市民假日休閒中心。下面尋根之旅所拍攝的地點就是文化廣場休閒中的長者。文化廣場現在是公園但仍保有當年的城門與部分城牆，城牆與城隍廟是父親90歲仍能清楚記憶的地方。
+										</p>
+										<p>
+											文化廣場北面是浙江著名的越劇博物館。
+											在越劇博物館旁是貓耳嶺舊社區是祖母娘家親人曾居住之處。在嵊州大橋附近是祖母的老家。也就是祖父住在當時的鄉下農村，而祖母算是當時的城裡人。
+										</p>
+
+										<br>
+										<strong>現今發展</strong>
+										<p>
+											嵊州市
+											現今仍屬於五線城市，也被評為五線發展的中等城市。領帶生產是特色經濟發展，全球過半數高級領帶生產於此地。因有剡溪流過，兩旁有良好管理的河邊景觀。沿河開發帶狀現代居住公寓。
+										</p>
+										<img src="images/wangs-4204-new-01.jpeg" class="img-fluid" style="width:600px">
+										<img src="images/wangs-4204-new-04.jpeg" class="img-fluid" style="width:600px">
+										<img src="images/wangs-4204-new-02.jpeg" class="img-fluid" style="width:600px">
+										<br>
+
+										<strong>相關報導 - 影集</strong>
+										<ul>
+											<li>
+												中國影像方志: 第71集 <a
+													href="https://www.youtube.com/watch?v=ZasMzHwY0Tc&t=199s">浙江嵊州篇</a>
+												CCTV科教
+											</li>
+											<li>
+												中國影像方志: 嵊州篇 <a
+													href="https://www.youtube.com/watch?v=O07Zaf7spiQ">美食記</a>
+												嵊州人的一天是被小籠包叫醒的 | CCTV科教
+											</li>
+											<li>
+												美丽浙江: <a href="https://www.youtube.com/watch?v=eULYSSuLUck&t=36s">
+													越好嵊州，嵊州越好</a>
+											</li>
+											<li>
+												中国视频: <a
+													href="https://www.youtube.com/watch?v=UTSZnNsRUjw">绍兴市嵊州市(县级市)</a>
+											</li>
+											<li>
+												绍兴嵊州的 <a href="https://www.youtube.com/watch?v=J59qsKBbpyc"> 崇仁古镇</a>
+											</li>
+											<li>
+												中天新聞：<a
+													href="https://www.youtube.com/watch?v=GEeuZ3YDrek">嵊州小籠包出名　開枝散葉全中國</a>
+											</li>
+										</ul>
+									</div>
+
+								</article>
+							</div>
+
+							<!-- Articla 01-->
+							<div class="tab-pane " id="Article-02" role="tabpanel">
+
+								<div class="row">
+									<h3>尋根之旅</h3> 谷歌相簿： <a
+										href="https://photos.google.com/u/2/share/AF1QipNABZVxz2WfiYhQwDCxBo1N1rBMc7gARAGzMnKx7vTrMLzpy4jXUl2noRharsb6Xg">30-Fong-Zhejiang2016</a>
+
+								</div>
+								<div class="row">
+
+									<div class="col-12 col-sm-12 col-md-6">
+										<section>
+											<h5>浙江寧波慈城古鎮 2016年4月9日</h5>
+											<p>
+												位於浙江寧波市江北區西北部的慈城古鎮有文獻記載的歷史可追溯至公元前五世紀的周代，古名勾余，唐代（公元 738 年）改名慈城。
+												<br>
+												慈城古縣衙
+												<br>
+												慈城古縣衙始建於唐代（738年），現存建築則是清光緒年間所建。遊慈城古縣衙除了看復原的古縣衙、古牢房、庭園建築以及展品和圖文展示等，還可看以蠟像模擬古代縣衙運作時的模樣，亦有一些中國著名歷史人物的介紹。
+												<br>
+												吃一口就忘不掉的寧波慈城年糕。
+												慈城年糕炒著吃，一兩分鐘就會很柔軟。如果蒸一下，就會很糯，可以蘸白糖加果脯像切糕那樣吃。 當時看到賣年糕的小攤，我們買了年糕，分著吃，非常好吃。
+
+											<div id="carouselExampleIndicators-21" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3209-Zhejiang-11.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-12.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-13.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-14.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-21"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-21"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+
+											<h5>嵊州市 2016年4月10日</h5>
+											<p>
+												嵊州市是中國浙江省紹興市的一個縣級市。位於浙江東部，曹娥江上游，東鄰寧波市奉化區和餘姚市，南毗新昌縣、金華東陽市，西連諸暨市、北接上虞區。全市面積1784.43平方公里。漢景帝四年始建縣稱剡，唐初曾設嵊州，北宋年間始名嵊縣。1995年8月國務院批准嵊縣撤縣設市，同年12月正式更名嵊州市。
+												<br>
+												根據大弟台中轉述，記憶中父親曾經描述過他的故鄕在嵊州市。地理位置鄰近的情況，在文化廣場的南面有一座古城牆，北面有一座城隍廟。越劇藝術中心附近就是貓耳嶺，屬於一座老的社區。那裡就是父親早年居住的故居。又南面接近剡溪附近，曾祖母的家就在那附近。祖父的家在
+												今日嵊州市與新昌縣 之間的鄉村。
+												<br>
+												當天經過特殊安排，全團來到我的故鄉嵊州市。特別採訪了坐在文化廣場的一羣貌似父親，講得一口淅江官話的老先生們，雖然聽不懂他們說些什麼⋯，但是，聽到貓耳嶺，長者們馬上站起來，遙指同一方，那𥚃就是我的故鄉。父親來台前，與祖母、姑姑共同居住的地方。由於時間関係，無法前往，只能留待日後再來探訪。
+
+											<div id="carouselExampleIndicators-22" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3209-Zhejiang-15.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-16.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-17.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-18.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-19.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-20.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-21.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-22.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-23.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-22"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-22"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+											<h5>新昌縣 2016年4月10日</h5>
+											<p>
+												新昌縣在中國浙江省東部，是紹興市所轄的一個縣。東邊與奉化、寧海交界，南邊與天台交界，西南與東陽、磐安交界，西、北兩面與嵊州交界，與嵊州市同屬新嵊盆地。
+												2015年7月，中國城市競爭力研究會發布《2015中國城市分類優勢排行榜》，新昌獲得「中國十佳宜居縣」第一名。
+												父親生前經常提及他的青少年求學經過，他曾經在新昌縣唸過高小、初、高中。也曾經髙中畢業，此地敎過書，作過老師。
+												<br>
+
+												新昌大佛
+												<br>
+												漫步在林蔭大道上，很舒服，慢慢走入新昌大佛寺。在前往大佛寺的山壁上，由一佛字，此字甚妙，聽說說這塊石頭上有強大的氣場，有緣人下次到此一遊可以感受一下。
+
+												大佛寺，又名大佛禪寺，位於浙江省新昌縣城南明街道，始建於東晉。全寺以石窟造像為特色，佛像規模宏大，歷史悠久，立有一千六百多年歷史的石彌勒佛，通高16.3米，兩膝相距10.6米
+												。是中國南方僅存的早期石窟造像，被譽為「越國敦煌」。
+												<br>
+												新昌大佛寺位於兩座岩壁山谷之中，走入其中令人有一股悠然寂靜的感覺。石彌勒像不僅此其規模宏大，氣勢非凡著稱於世，而且在造像藝術上也獨具特色，石像盤膝而坐，容秀骨清，婉雅給人一種超脫、莊嚴這感。在造像上作了兩個藝術處理：一是適度放大頭部，處理好視差關係，使人們仰視大佛時，毫無比例失調之感，且面容親近真實。另一個巧妙的創造是鑿成深穴代替眼珠，使觀瞻者不論從哪一角度仰視，均有與佛目光相接之感。
+												<br>
+												新昌大佛寺共25平方公里，坐西朝東。大門後是觀景步道，左側有雙林石窟，千佛院及佛心廣場，右側主要有射鵰村，木化石林恐龍園，天然聖境，佛山聖境，五百羅漢洞，般若谷及棲光禪院，寺院最後則為南朝古剎。此處環境非常清幽，寺院非常潦闊，希望下次能夠有機會來作深度探訪。
+
+											<div id="carouselExampleIndicators-3" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3209-Zhejiang-24.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-25.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-26.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-27.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-28.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-29.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3209-Zhejiang-30.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-3"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-3"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+										</section>
+										<section>
+											<h5>雙龍洞 2016年4月11日</h5>
+											<p>
+												雙龍風景區素以林海莽原、奇異洞景、道教名山著稱於世，景區分為雙龍洞、黃大仙、尖峰山、赤松山、大盤天和家園裡六大景區，共有景點151處，其中自然景點134處，人文景觀17處，其中雙龍洞和黃大仙為核心景區。
+
+											<div id="carouselExampleIndicators-24" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3210-Zhejiang-01.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-02.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-03.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-04.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-24"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-24"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+
+											<h5>諸葛八村 2016年4月11日</h5>
+
+											中國第一奇村，諸葛八卦村。莊中的村民皆為諸葛亮的後裔。諸葛八卦村位於浙江省金華市蘭谿市西部，是迄今發現的諸葛亮後裔的最大聚居地。村中建築格局按「八陣圖」樣式布列，且保存了大量明清古民居，是國內僅有、舉世無雙的古文化村落。拍照的照片，非常有特色，充滿詩意。我們遇到非常多學美術的學生，來此地作畫，捕捉古建築風景之美。
+
+											<div id="carouselExampleIndicators-25" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3210-Zhejiang-05.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-06.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-07.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-08.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-09.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-10.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-11.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-25"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-25"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+											<h5>江洋畔生態園區 2016年4月12日</h5>
+											<p>
+												江洋畔生態公園絕對是杭州非常獨特和另類的一處景點。當年疏浚西湖而挖出來的淤泥年復一年的堆積在此處，久而久之這裡就變成了沼澤的地貌，所以這裡有各種各樣的昆蟲，同時也給小魚小蝦，青蛙蝌蚪等小動物提供了天然的庇護之所。政府在不破壞這裡原來環境和地貌的情況下，將改造成了一個生態公園，還原了自然界最真實的狀態。我們在此大自然生態環境中遊玩，度過環境清幽美好的上午。
+
+											<div id="carouselExampleIndicators-26" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3210-Zhejiang-12.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-13.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-14.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-15.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-16.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-17.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3210-Zhejiang-18.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-26"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-26"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+										</section>
+										<section>
+											<h5>湘湖 2016年4月12日</h5>
+											<p>
+												湘湖是一個位於中國浙江省杭州市蕭山區的湖泊，面積約為1平方千米[1]。湘湖景區是國家4A級旅遊景區。附近景點還有杭州極地海洋公園和杭州樂園。
+
+											<div id="carouselExampleIndicators-27" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3211-Zhejiang-01.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-02.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-03.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-04.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-27"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-27"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+											<h5>五洩風景區 2016年4月11日</h5>
+											<p>
+												五泄風景區位於浙江省諸暨市西北部山區五泄鎮，與縣城相距23公里，總面積9.45平方公里。以西施故里、五泄、斗巖、湯江巖四大景區所構成，為國家級風景名勝區、國家AAAA級旅遊區、國家森林公園。
+
+											<div id="carouselExampleIndicators-28" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3211-Zhejiang-05.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-06.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-07.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-08.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-09.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-10.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-11.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-12.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-13.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-14.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-28"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-28"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+
+											<h5>西施故里</h5>
+											<p>
+												西施故里旅遊區於2003年初由浙江省諸暨市人民政府開始規劃興建，陸續建設至今，已建成一個橫跨浣江兩岸、總面積為1.44平方公里的人文風景旅遊區。旅遊區位於諸暨市城南苧蘿山下，浣紗江畔，按不同的功能劃分為「一軸一心六區」。「一軸」為南北貫穿整個旅遊區的浣江風景帶，「一心」指西施殿景區，「六片」指主入口管理區、鸕鶿灣古漁村景區、古越文化區、美苑休閒娛樂區、三江口濕地生態保護區、休閒度假區。西施故里旅遊區依江而建，縱深數里，西施殿、中國歷代名媛館、范蠡祠、三賢寺、泰山廟、民俗館、鄭氏宗祠、古越一條街等錯落而建
+
+											<div id="carouselExampleIndicators-29" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3211-Zhejiang-14.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-15.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-16.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-17.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3211-Zhejiang-18.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-29"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-29"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+										</section>
+									</div>
+
+									<div class="col-12 col-sm-12 col-md-6">
+
+
+
+										<section>
+											<h5>浴鵠灣 2016年4月12日</h5>
+											<p>
+												西湖的美，並非只限於一湖。它的美，散發四面八方。自十多年前，西湖西進，還湖於民，位於八盤嶺路的烏龜潭和浴鵠灣也成了西湖的一份子。這裏，沒有西湖的外湖那樣遊客如織，也絕沒有車來人往般的喧囂，有的只是寧靜、寂寞、唯美。
+
+											<div id="carouselExampleIndicators-31" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3212-Zhejiang-01.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-02.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-03.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-04.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-05.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-31"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-31"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+											<h5>小河直街 2016年4月13日</h5>
+											<p>
+												小河直街歷史街區地處京杭大運河、小河、餘杭塘河的三河交匯處。自南宋起，小河直街就是南北貨物的水陸集散地，到清代發展成為獨立的商業街。目前，街區仍保留著作坊、店鋪、河埠等歷史遺存。街道兩側小樓枕水而居，粉牆黛瓦，極具近代江南水鄉特色。街區保留了一半以上的原住民，有效延續了運河民居傳統的民風民俗和生活方式。
+
+											<div id="carouselExampleIndicators-32" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-06.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-07.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-08.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-09.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-10.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-11.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-12.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-32"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-32"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+
+											<h5>楊梅嶺 2016年4月13日</h5>
+											<p>
+												喜歡茶的人一定十分地明白，這是西湖龍井一級保護區核心產區的一個村子，行政上隸屬於西湖風景名勝區，是歷史上獅、龍、雲、虎、梅老字號「獅」的核心產區之一，曾經一度獅峰山系的龍井村、翁家山、楊梅嶺、滿覺隴四個自然村抱團打造過一個名之為「翁龍滿楊」的產品，以「萬元一斤」的不二價，引起過媒體的關注，後來有關部門又搞了一個西湖龍井核心產區的團體標準，獅峰龍井，楊梅嶺當是獅峰龍井的主產區之一。
+												<br>
+												楊梅嶺村是中國浙江省杭州市西湖區西湖街道所轄的一個村，位於西湖風景區內。該村總人口368人。楊梅嶺為九溪十八澗的發源地。此地為獅峰龍井茶的主產地之一。經濟以茶業為主。居民具有典型的江南傳統風格。
+
+												我們一行人，來到此地，坐下來品嚐茶，並在此地買了西湖龍井，帶回台灣作爲伴手禮。
+
+											<div id="carouselExampleIndicators-33" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3212-Zhejiang-13.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-14.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-15.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-16.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3212-Zhejiang-17.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-33"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-33"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+										</section>
+
+										<section>
+											<h5>九溪十八澗 2016年4月13日</h5>
+											<p>
+												九溪十八澗（楊梅嶺）位於浙江省杭州市的著名景點西湖之西的群山中，上自龍井起蜿蜒曲折7公里入錢塘江。景色天然，少有匠氣，「溪水因山而曲折」，忽左忽右，其中6處溪流漫過山徑，上置石步，遊人可涉水溪中，也可自石上鶴步而過，各有意趣。
+												<br>
+												九溪自然就是九條溪水，由於還有很多細小的泉水，統稱十八澗，一條小路，依照山勢彎彎曲曲折折。從九溪十八澗這頭走到底，發現新大陸，在九溪的盡頭竟然有九溪煙樹這樣的美景，走到這裡應該正好是夕陽西下，金色的陽光灑在湖水，灑在煙樹上，這美景，不身臨其境者，不能領略。
+
+											<div id="carouselExampleIndicators-34" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3213-Zhejiang-01.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-02.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-03.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-04.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-05.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-06.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-07.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-08.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-34"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-34"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+											<h5>西塘古鎮 2016年4月14日</h5>
+											<p>
+												西塘，古稱胥塘、斜塘，又名平川，位於浙江省嘉善縣，在嘉善縣城北10公里處，是一座已有千年歷史文化的古鎮。面積約1平方公里，春秋戰國時期是吳越兩國的相交之地，故有「吳根越角」和「越角人家」之稱。
+												<br>
+												塘棲為浙江省十大歷史文化古鎮之一，位於京杭運河的最南端，歷經千年來的洗禮，蘊含相當豐富的人文內涵，也保留為數眾多的歷史遺存。
+												塘棲古鎮屬餘杭市，因隋朝時代開鑿運河，四方民工集居於此，故名塘棲（棲爲居住、停留之意）。因地處餘杭、德清、桐鄉三縣市交界地帶，又緊傍大運河，歷朝歷代以來，塘棲便成為杭州市重要的水上門戶。全鎮轄46個行政村，11個居民區，總面積79平方公里，總人口9萬餘人，物産豐富，人傑地靈，素有「花果之地、魚米之鄉、絲綢之府」之美譽。
+												塘棲在明清時期曾富甲一時，曾被譽為「江南十大名鎮」之首。
+
+											<div id="carouselExampleIndicators-32" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="10">
+													</li>
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-09.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-10.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-11.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-12.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-13.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-14.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-15.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-16.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-17.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-18.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3213-Zhejiang-12.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-32"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-32"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+
+										</section>
+										<section>
+											<h5>莫干山 2016年4月15日</h5>
+											<p>
+												「紐約時報」評為全球最值得一去的45個地方，莫干山排名第18位。CNN：除了長城之外，你必須要去的中國景點。
+												<br>
+												莫干山，是天目山的支脈。 因春秋末年，吳王闔閭派干將、莫邪在此鑄成舉世無雙的雌雄雙劍而得名，莫干山風景名勝區有「清
+												涼世界」之美譽，與北戴河、廬山、雞公山並稱為四大避暑勝地。
+												<br>
+												莫干山在歷史上的紀錄
+											<ul>
+												<li>1927年12月，蔣介石與宋美齡在上海結婚後，隨即前往莫干山度蜜月。</li>
+												<li>1928年6月，國民黨元老黃郛退居莫干山買下莫干山509號別墅，更名「白雲山館」。</li>
+												<li>1935年，上海大亨張嘯林、杜月笙在莫干山建造了中國古代宮廷式的別墅黃廟（1935）、林海別墅（1934），琉璃金瓦、檐角飛翹，在西洋別墅一統的莫干山別具一格。
+												</li>
+												<li>1937年，周恩來曾「一登莫干，二至匡廬。」與蔣介石秘密談判兩黨合作事宜，在莫干山的談判地點就是白雲山館。</li>
+												<li>1948年7月，蔣介石在松月廬召開新經濟會議，決定發行金圓券</li>
+											</ul>
+
+											<div id="carouselExampleIndicators-41" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3214-Zhejiang-01.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-02.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-03.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-04.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-05.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-06.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-07.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-41"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-41"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+											<h5>太湖 2016年4月16日</h5>
+											<p>
+												太湖是中國五大淡水湖之一，水域面積排行第三，位於江蘇省南部和浙江省北部交界處，而在行政區劃上幾乎完全屬於江蘇省，是江、浙兩省的界湖，大部分水域位於蘇州市，有「包孕吳越」之稱。湖泊周邊的主要城市，江蘇省境內的是蘇州、無錫、常州。浙江省境內的是湖州。太湖是國家重點風景名勝區之一。
+
+											<div id="carouselExampleIndicators-42" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-08.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-09.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-10.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-11.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-42"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-42"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+											<h5>蕩口古鎮 2016年4月16日</h5>
+											<p>
+												位於無錫、蘇州、常熟三地交界的蕩口古鎮，素有“小蘇州”“銀蕩口”之譽，是無錫市最早一批躋身中國歷史文化名鎮（區）和國家4A級景區的古鎮，也是無錫市域內保留江南水鄉古鎮舊貌最為完整的古鎮
+
+											<div id="carouselExampleIndicators-43" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3214-Zhejiang-12.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-13.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-14.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-15.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-16.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-43"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-43"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+											<h5>拈花灣 2016年4月17日</h5>
+											<p>
+												靈山小鎮·拈花灣位於無錫市濱湖區馬山國家風景名勝區的山水之間，是靈山集團歷時5年，繼靈山梵宮之後又一精品力作，於2015年11月14日開放。
+
+											<div id="carouselExampleIndicators-44" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-17.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-18.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-19.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3214-Zhejiang-20.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-44"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-44"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+										</section>
+										<section>
+											<h5>盤門三景 2016年4月17日</h5>
+											<p>
+												2500年的歷史遺跡盤門三景，在蘇州絕對是一個必去的景點。盤門位於蘇州京杭大運河一旁，古城藉由吳門橋串起兩端的交通
+												大到驚人的單孔石橋，全長66公尺，當完工之時肯定是一陣歡聲雷動的慶祝 往內走來到水陸城門的軍事基地—盤門，是目前蘇州僅存的古式城牆。
+												<br>
+												盤門是位於蘇州城南面城牆上偏西的一座水陸城門，門前臨古老的京杭大運河，是蘇州僅存的古城門遺蹟和中國唯一保存完整的古水陸城門。
+												盤門三景指「盤門」水陸城門，橫跨運河的「吳門橋」，臨流照影的「瑞光寺塔」，整個園區像個大公園。
+
+											<div id="carouselExampleIndicators-45" class="carousel slide img-fluid"
+												data-ride="carousel" style="width:600px">
+												<ol class="carousel-indicators">
+													<li data-target="#carouselExampleIndicators" data-slide-to="0"
+														class="active"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+													<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<img src="images/wangs-3215-Zhejiang-01.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3215-Zhejiang-02.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3215-Zhejiang-03.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3215-Zhejiang-04.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3215-Zhejiang-05.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3215-Zhejiang-06.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+													<div class="carousel-item">
+														<img src="images/wangs-3215-Zhejiang-07.jpg"
+															class="d-block w-100" alt="...">
+													</div>
+
+												</div>
+												<a class="carousel-control-prev" href="#carouselExampleIndicators-45"
+													role="button" data-slide="prev">
+													<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+													<span class="sr-only">Previous</span>
+												</a>
+												<a class="carousel-control-next" href="#carouselExampleIndicators-45"
+													role="button" data-slide="next">
+													<span class="carousel-control-next-icon" aria-hidden="true"></span>
+													<span class="sr-only">Next</span>
+												</a>
+											</div>
+											</p>
+											<h5>回家 2016年4月18日</h5>
+
+											<img src="images/wangs-3215-Zhejiang-08.jpg" class="img-fluid"
+												style="width:600px">
+
+											<h5>普陀山 西溪悅榕莊</h5>
+											<p>
+												寧靜的水域、豐富多樣的動植物群及令人神往的西溪國家溼地公園共同打造出如詩如畫的迷人景緻，置身其中，敬畏與驚歎之情油然而生。夢迴杭州，感受濃濃的浪漫氣息和富有生機的自然環境。杭州西溪悅榕莊豪華度假村是當地最寬敞的閒情之所，下榻此處可盡覽種類豐富、生機勃勃的植被與動物。置身杭州西溪悅榕莊寶貴的幽靜之所，任靈魂自由徜徉。
+
+
+											</p>
+
+										</section>
+
+									</div>
+								</div>
+
+
+							</div>
+							<div class="tab-pane " id="Article-03" role="tabpanel">
+								<article>
+									<h5>嵊州札記</h5>
+									<p>轉載來源：
+										<a
+											href="https://www.toutiao.com/i6866371949606470148/?timestamp=1599169923&app=news_article&group_id=6866371949606470148&use_new_style=1&req_id=202009040552020100140261640D352FEE">
+											嵊州：你怎麼這麼好看 </a>
+										今日頭條 2020/09/02, 原創: 梅子樹</p>
+									<div class="row">
+										<div class="col-12 col-sm-12 col-md-6">
+											<h6>1. 我所居住的嵊州</h6>
+											<img src="images/city/wangs-3203-seng-01.jpeg" class="img-fluid"
+												style="width:600px">
+											<p> 我居住的城市是嵊州。它是一座山城,风景优美，而我也是最近才慢慢喜欢上它。</p>
+											<p>
+												嵊州，嵊州市位于浙江省绍兴市，古称剡县。 <br>
+												它以"百年越剧诞生地、千年剡溪唐诗路、万年文化小黄山"，而闻名于世。这里诞生了山水诗人谢灵运，也曾是王羲之的晚年隐居之地，还是北京大学著名学者马寅初先生的家乡。
+											</p>
+											<img src="images/city/wangs-3203-seng-02.jpeg" class="img-fluid"
+												style="width: 600px; margin-bottom: 5px;">
+											<img src="images/city/wangs-3203-seng-03.jpeg" class="img-fluid"
+												style="width: 600px; margin-bottom: 5px;">
+											<div>
+												<img src="images/city/wangs-3203-seng-05.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 故乡的云</p>
+											</div>
+											<p>
+												它还是胡兰成故乡,有厚重的古镇,有美丽的温泉湖,也有静谧树林。<br>
+												春有百花绽,夏有星月挂,秋有飞叶飘,冬有白雪落。一年四季风景如画。 春花，秋叶，夏月，冬雪，一路风景迤逦。
+											</p>
+											<img src="images/city/wangs-3203-seng-06.jpeg" class="img-fluid"
+												style="width: 600px; margin-bottom: 5px;">
+											<div>
+												<img src="images/city/wangs-3203-seng-07.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 眠牛弄</p>
+											</div>
+											<p>
+												哪怕是冬日,这儿依旧是色彩斑斓。 你在北方的艳阳里大雪纷飞，我在南方的暖阳里瑰丽如梦。
+												我最喜欢落叶了,红的,黄的,美得动人,仿佛日子也被它映染得缤纷。
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-08.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 温泉湖, 摄影：国风</p>
+											</div>
+											<h6>2. 山水裡的嵊州</h6>
+											<blockquote class="ml-2">
+												“湖月照我影，送我至剡溪”。<br>
+												“此行不为鲈鱼脍，自爱名山入剡中”。
+											</blockquote>
+											<p>
+												李白杜甫都曾入此城。他们为嵊州留下了经典诗篇。
+												许许多多文人墨客纷至沓来。
+												山山水水,令人流连忘返。
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-10.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 博济稻田 摄影：谢南华</p>
+											</div>
+											<p>
+												一座城市，若少了历史文化，终究是无魂的城。城市的美少不了文化的支撑。那是城市的主旨和风骨。
+												嵊州的美是有灵魂的。一座座上古建筑，一位位赫赫历史人物撑起了这座独一无二的城。<br>
+
+												嵊州贵门古村，一座海拔350米的高山村落：它文化底蕴深厚，风光清秀，俨然一座世外桃源。
+
+												这儿，有一座书院，叫鹿门书院。900多年前，宋代朱熹、吕祖谦曾在此讲学，朱熹曾来此讲学，并将鹿门改称为“贵门”。
+											</p>
+											<img src="images/city/wangs-3203-seng-11.jpeg" class="img-fluid"
+												style="width: 600px; margin-bottom: 5px; -webkit-margin-bottom-collapse: 5px;">
+											<img src="images/city/wangs-3203-seng-12.jpeg" class="img-fluid"
+												style="width:600px">
+											<p>
+												胡兰成也出生在嵊州。他是三界镇胡村人，在覆卮山余脉。晚年，他回忆述说百年前的胡村风情：
+												<br>
+												“门前一条石弹大路，里通覆卮山群村到奉化，外通三界章镇到绍兴，田畈并不宽，但人家迤逦散开，就见得平旷阳气。”
+											</p>
+											<img src="images/city/wangs-3203-seng-13.jpeg" class="img-fluid"
+												style="width: 600px; margin-bottom: 5px;">
+											<div>
+												<img src="images/city/wangs-3203-seng-14.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 覆卮山 摄影：谢南华</p>
+											</div>
+											<p>
+												而另一座古村,高高的马头墙下，流淌着缕缕笔墨清香，静谧悠远。它是王義之曾所居之地,华堂古村。华堂古村位于嵊州市东部的金庭镇，古村四周"千岩竞秀，万壑争流"，藏龙卧虎之地，佳境叠现，气象万千。
+												<br>
+												东晋永和十一年（公元355年），书圣王羲之慕金庭山水之胜，带妻携子来此隐居，六年后谢世，建茔于瀑布山南麓。书圣后裔世居金庭华堂，聚族而居，绵延1700年，遂成胜景。
+											</p>
+											<img src="images/city/wangs-3203-seng-15.jpeg" class="img-fluid"
+												style="width: 600px; margin-bottom: 5px;">
+											<img src="images/city/wangs-3203-seng-16.jpeg" class="img-fluid"
+												style="width: 600px; margin-bottom: 5px;">
+											<div>
+												<img src="images/city/wangs-3203-seng-17.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 华堂古村 摄影：心</p>
+											</div>
+											<p>
+												这是一座令人神往的一座城。
+												<br>
+												它有小西湖。（摄影：谢南华）
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-18.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 亮眼红杉林 摄影：谢南华</p>
+											</div>
+											<div>
+												<img src="images/city/wangs-3203-seng-19.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 美丽乡村淡山，曾经的一棵树。 摄影：谢南华</p>
+											</div>
+											<div>
+												<img src="images/city/wangs-3203-seng-20.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 小九寨沟 摄影：俞炎兵</p>
+											</div>
+											<div>
+												<img src="images/city/wangs-3203-seng-21.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 幽静的清风寺 摄影：葱哥</p>
+											</div>
+											<div>
+												<img src="images/city/wangs-3203-seng-22.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 它有江南第一瀑布群。</p>
+											</div>
+											<div>
+												<img src="images/city/wangs-3203-seng-23.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 百丈飞瀑 摄影：马园军</p>
+											</div>
+
+										</div>
+										<div class="col-12 col-sm-12 col-md-6">
+											<h6>3. 古鎮古村裡的嵊州</h6>
+											<p>
+												嵊州最美的还是它的古镇古村。<br>
+
+												青砖黛瓦，雕花的木格门窗。精美绝伦的雕刻，悠悠的古街，掩不住漫漫的沧桑。
+												你可以，在一个阴雨绵绵日子，走上那幽幽长长的古弄。
+												雨霏霏微微落下来，一片片的，如烟如雾雨丝，串起那一道道思绪，诉说着一个个不老的传说。
+												诗情画意,亭桥留意。一切的喧嚣淹于这儿，抹平了最深心底的起伏。
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-25.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 苍岩昔颜 攝影：俞炎兵</p>
+											</div>
+											<div>
+												<img src="images/city/wangs-3203-seng-26.jpeg" class="img-fluid"
+													style="width: 600px; border-top: 5px; border-bottom: 5px;">
+												<p class="text-center"> 水墨苍岩 攝影：葱哥</p>
+											</div>
+
+											<div>
+												<img src="images/city/wangs-3203-seng-27.jpeg" class="img-fluid"
+													style="width: 600px; border-top: 5px; border-bottom: 5px;">
+												<img src="images/city/wangs-3203-seng-28.jpeg" class="img-fluid"
+													style="width: 600px; margin-top: 5px; margin-bottom: 5px;">
+												<img src="images/city/wangs-3203-seng-29.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 越剧小镇 摄影：马园军</p>
+											</div>
+											<p>
+												嵊州，有许多古镇古村，当然，最数有名的还是崇仁古镇。
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-30.jpeg" class="img-fluid"
+													style="width:600px">
+												<img src="images/city/wangs-3203-seng-31.jpeg" class="img-fluid"
+													style="width: 600px; margin-bottom: 5px; margin-top: 5px;">
+												<img src="images/city/wangs-3203-seng-32.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 攝影：葱哥</p>
+											</div>
+											<p>
+												你可以去崇仁的街头走一走，可以去尝一尝那刚刚烤好的豆腐馒头。
+												你可以伫足留步,阡陌巷深：
+												那走过的每一条古巷,那一面面墙,也许唤醒了心中潜隐着的一丝丝浓厚的乡愁。
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-33.jpeg" class="img-fluid"
+													style="width: 600px; margin-bottom: 5px;">
+												<img src="images/city/wangs-3203-seng-34.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 摄影：马园军</p>
+											</div>
+											<p>
+												那儿的小弄里，也有许许多多的手艺人：
+												幽幽古镇下,悠悠不散的古老手艺人,他们一年又一年，在日以继日地默默执守。
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-35.jpeg" class="img-fluid"
+													style="width: 600px; margin-bottom: 5px;">
+												<img src="images/city/wangs-3203-seng-36.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 摄影：马园军</p>
+											</div>
+
+
+											<h6>4. 越劇裡的嵊州</h6>
+											<p>
+												嵊州，也在一声声婉转幽扬的越剧声中源远流长。它是越剧的故乡。
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-38.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 摄影：马园军</p>
+											</div>
+											<p>
+												嵊州，是一曲脍炙人口的越剧。<br>
+												不如在一个下午，走进小镇，听一曲越剧罢。这儿的人好多会哼上几句越剧。
+												而在小学里，在音乐课堂上，小朋友们会像模像样地唱上一曲《十八相送》，《我家有个小九妹》。
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-39.jpeg" class="img-fluid"
+													style="width:600px">
+												<img src="images/city/wangs-3203-seng-40.jpeg" class="img-fluid"
+													style="width: 600px; margin-bottom: 5px; margin-top: 5px;">
+												<img src="images/city/wangs-3203-seng-41.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 攝影：国风</p>
+											</div>
+											<h6>5. 小吃裡的嵊州</h6>
+											<p>
+												嵊州，也回味在那一道道让人念念不忘的小吃…… <br>
+												一笼笼热气腾腾小笼包。一个个油香扑鼻的油肫鼓。又或一片片甜而不腻的三界印糕。还有榨面,糟鸡,糟肉,笋干鸭等等。
+												而嵊州小笼包，驰名万里。这里的小笼，还曾被美国有线电视新闻（CNN）旗下的旅游网CNNGo，评选为全球20种最美味食物，排名第一。
+											</p>
+											<div>
+												<img src="images/city/wangs-3203-seng-43.jpeg" class="img-fluid"
+													style="width: 600px; margin-bottom: 5px;">
+												<img src="images/city/wangs-3203-seng-44.jpeg" class="img-fluid"
+													style="width: 600px; margin-bottom: 5px;">
+												<img src="images/city/wangs-3203-seng-45.jpeg" class="img-fluid"
+													style="width:600px">
+												<p class="text-center"> 攝影：葱哥</p>
+											</div>
+											<p>
+												我的读者对我说，过年了，想来嵊州玩玩。我说，春节并不是一个旅行好时候。
+												因为，那时候，你吃不到那美味的街头小吃。而小吃，应是旅行的一个重要内容。没了小吃,旅行逊了色,失了生趣。
+												你真的可以去吃吃黄泽街头的豆腐包；也可以去品尝一碗正宗的嵊州炒年糕；也可以与三四知己，煮上一壶高山好茶，让时光悠悠荡在这片片茶叶之中……
+											</p>
+											<img src="images/city/wangs-3203-seng-46.jpeg" class="img-fluid"
+												style="width:600px">
+
+											<blockquote class="ml-2">
+												<br>
+												什么是嵊州啊<br><br>
+
+												是一座座山，一湾湾水<br>
+
+												一帧帧别具一格的风景<br>
+
+
+
+												是逛不够的古街，听不腻的越剧 <br>
+
+												是根雕，是竹编，是……<br>
+
+												雕不完的里里外外，编不尽的曲曲折折<br>
+
+												是桂花满枝，四处飘香的嵊州<br>
+
+												是秋枫亮眼，频频而曳的嵊州<br>
+
+												是冬红杉，是金银杏,是……<br>
+
+												是陈氏炖鸭肥美无虞<br>
+
+												是葱香小笼包香味四溢<br>
+
+
+												<br>
+												一生倾爱是嵊州<br>
+
+												请你在来日，来一次嵊州吧……<br>
+											</blockquote>
+
+										</div>
+
+									</div>
+								</article>
+							</div>
+							<div class="tab-pane " id="Article-04" role="tabpanel">
+								<h5>嵊州正宗小吃</h5>
+								由今日頭條轉載 2019/03/08 <a
+									href="https://www.toutiao.com/i6661473512504427022/?timestamp=1601983517&app=news_article&group_id=6661473512504427022&use_new_style=1&req_id=20201006192517010015044153137D6CE3">嵊州不可错过的12大风味小吃</a>
+								<div class="row">
+									<div class="col-12 col-sm-12 col-md-6">
+										<p>
+											1、嵊州小笼包<br>
+
+											嵊州特色小吃，来嵊州不吃小笼包，不能说真来过嵊州。刚刚出笼的小笼包子，肉馅的，白白胖胖，一团和气；豆腐馅的，则晶莹剔透，透过薄薄的皮子隐约能看到里面鲜嫩的馅儿。夹起来，蘸点醋或是辣椒酱，一口咬下去，皮韧、里软，满口生香。
+											<img src="images/wangs-3208-food-01.jpeg" class="img-fluid"
+												style="width:600px">
+
+										</p>
+										<p>
+											2、嵊州炒年糕<br>
+
+											人家的年糕是用糯米做的，一条条细腻秀气得像江南女子，看着让人喜爱。可嵊州的年糕，用的是晚粳米，长长的，方方的，粗犷得好如西北汉子，但是味道却是极好的。
+											<img src="images/wangs-3208-food-02.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+										<p>
+											3、榨面<br>
+
+											嵊州榨面系精制灿米制作，经洗米、浸润、磨细、压榨、静渗(亦称微发酵)、搅拌、成稞、煮稞、冷却、上榨、成面、煮面、冷浸、分条于竹笠中成圆盘形、避烈日、背风晒干等二十多道工序制作而成。你看看差不多的面，工艺却比普通面条复杂多了。榨面形似圆盘，条细而均匀，无毛刺和并条，蓬松平叠无断头，略呈半透明状，有光泽，风味好，具有韧而不硬、干而不易碎的特点。
+											<img src="images/wangs-3208-food-03.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+										<p>
+											4、春饼<br>
+
+											所谓“春饼”，就是一种用麦粉烙制而成的小圆薄饼，与麦镬烧相比较显得格外薄，它的制作方法却和麦镬烧异曲同工，只有一点不同，春饼必须放在铁铸的熬盘里烙制。先把麦粉拌上水和少许盐，揉匀打透有韧性后，抓起一小撮面糊在滚烫的“熬盘”上轻轻一抹，待贴在熬盘上的面粉渐渐变熟，然后，将一张薄如翼、圆如满月的薄饼揭起，这就成了吃起来喷喷香、松松脆的春饼。
+											<img src="images/wangs-3208-food-04.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+										<p>
+											5、糯米果<br>
+
+											糯米果是嵊州传统的风味小吃，小孩周岁做糯米果。那糯米果虽小，却与嵊州的民俗风情密切相关，寓意小孩子长大后有收成结果。为此小孩得周，做外公外婆的都要为外孙做糯米果，分给亲戚朋友、左邻右舍，以示喜庆
+											<img src="images/wangs-3208-food-05.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+
+									</div>
+									<div class="col-12 col-sm-12 col-md-6">
+										<p>
+											6、霉干菜烧饼<br>
+
+											现做现卖，肉最好是全部肥肉剁馅儿至少肥肉多点，馅儿都剁的小块一点，特别是霉干菜，这样才好吃。
+											<img src="images/wangs-3208-food-06.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+										<p>
+											7、鸡蛋烤饺<br>
+
+											这是嵊州风味小吃，在平底锅里倒入少量油，将饺子放在锅里煎至七分熟，再把打好的鸡蛋液从外到内的倒入烤饺中，撒入葱花、香菜，便大功告成。
+											<img src="images/wangs-3208-food-07.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+										<p>
+											8、霉干菜扣肉<br>
+
+											嵊州名菜，由霉干菜和五花肉组成，配以黄酒、糖等佐料，先焖后蒸而成。成后菜色乌黑，稍带甜味，肉色红亮，肥而不腻，时下一些饭店里此菜很受顾客钟爱。
+											<img src="images/wangs-3208-food-08.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+										<p>
+											9、臭豆腐<br>
+
+											臭豆腐是嵊州美食的必修课，但对大多数外地人来说也是最难过的关，它是用苋菜梗汁浸制的，有蒸的也有炸的，炸的在越秀路多见，吃起来方便，蒸的就有更多的家常味道，细品品其实鲜味无穷。爱吃的是闻臭而动，不爱吃的是避之惟恐不及。
+											<img src="images/wangs-3208-food-09.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+										<p>
+											10、醉蟹<br>
+
+											剡溪两岸盛产黄酒，也就使得嵊州人在平时生活中随时伴随着黄酒，很多菜的做法都放黄酒以调味。醉蟹，色如鲜蟹，放在盘中，栩栩如生；其肉质细嫩，味道鲜美，且酒香浓郁，香中带甜，营养丰富。黄泽醉蟹在嵊地醉的最绝。
+											<img src="images/wangs-3208-food-10.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+										<p>
+											11、糟鸡<br>
+
+											糟鸡，此菜在嵊州最常见不过。七分熟鸡肉”与酒糟精制，肉质鲜嫩，糟不粘鸡，鸡含糟香。细细嚼来，咸鲜中透出酒意，人微醺，肉质鲜嫩，糟香扑鼻，一口下去，多少嵊州记忆。
+											<img src="images/wangs-3208-food-11.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+										<p>
+											12、油焖笋<br>
+
+											油焖笋是一道传统的嵊州家常菜，现在正是品尝这道菜的绝佳时机。笋是嵊州一大农产，清明前后出土的嫩春笋，重油、重糖烹制，色泽红亮，鲜嫩爽口，鲜咸而带甜味，一股子嵊州竹林的清鲜味。
+											<img src="images/wangs-3208-food-12.jpeg" class="img-fluid"
+												style="width:600px">
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- Next Aritical -->
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</main>
+
+			<!-- Footer -->
+			<footer class="page-footer foot-small my-5">
+				<div class="row">
+					<div class="col-3 pl-5 py-1">
+
+					</div>
+					<div class="col pr-5 py-1 text-white">
+						<small> 王氏家族相冊 2020 </small>
+
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Vue 的 CDN -->
+		<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+		<!-- Bootstrap 4 JavaScript 的 CDN -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+			integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+			crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+			crossorigin="anonymous"></script>
+		<!-- Axios 的 CDN -->
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+		<!-- Vue實例的程式碼 -->
+
+</body>
+
+</html>

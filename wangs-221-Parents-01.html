@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <title>相冊：2.2 父親篇</title>
+
+  <style>
+    .jumbotron-bg2 {
+      background-image: url('images/wangs-1101-TaipeiCity.jpg');
+      background-size: cover;
+      background-position: center center;
+      min-height: 300px
+    }
+
+    .bg-lighter {
+      background-color: rgba(0, 0, 0, .4);
+      width: 300px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">
+        王氏家族相冊
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>家人登入
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">說明</a>
+              <a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+              <a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-home"></i>追憶父母
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-211-Parents-01.html">傳承篇</a>
+              <a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+              <a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-info"></i>生活回顧
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-311-Review-01.html">眷村生活回顧</a>
+              <a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+              <a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+              <a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+			  <a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>									
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-heart"></i>享受當下
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+              <a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+              <a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+              <a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+              <a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+              <a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-asterisk"></i>展望下一代
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+              <a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+              <a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+    <!-- Jumbotron-->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+      <div class="container">
+        <div class="bg-lighter">
+          <h5>父親篇</h5>
+          <p>對我們父親的回憶</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vue實例的掛載點 -->
+    <div id="app" class="container-fluid mt-1">
+
+      <header>
+        <div class="row mx-1">
+          <h3>2.2 父親篇</h3>
+
+        </div>
+
+      </header>
+      <main>
+        <div class="row">
+          <div class="col-md-3 col-lg-2">
+            <aside class="sidebar1">
+              <h5>時間軸:大事記</h5>
+              <p>1913年 -2013年：父親-王才金 浙江新昌縣人</p>
+              <ul>
+                <li>1913年農曆元月10日辰時: 父親出生於浙江嵊縣</li>
+				<li>2013年11月9日：病逝家中，享年百歲</li>
+				<li>1945年: 前往塞班島，擔任中華民國駐塞班島憲兵分隊長</li>
+                <li>2020: 台鳳追憶於台北</li>
+              </ul>
+            </aside>
+            <div class="list-group" id="MenuList" role="tablist">
+              <a href="#Article-01" class="list-group-item list-group-item-action active" data-toggle="list">父親的身影</a>
+              <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">人格特質</a>
+              <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">坦蕩剛直</a>
+              <a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">怒海救人</a>
+              <a href="#Article-05" class="list-group-item list-group-item-action" data-toggle="list">日薄西山</a>
+            </div>
+			  <br>
+          </div>
+          <div class="col-md-9 col-lg-10">
+
+
+
+            <!-- Articla 01-->
+            <div class="tab-content">
+              <div class="tab-pane active" id="Article-01" role="tabpanel">
+                <article>
+                  <h5>父親的身影</h5>
+                  <div>
+                    <img src="images/wangs-3101-father-1.jpg" id="pic3101" class="img-fluid"
+                      style="width: 600px; padding: 5px; margin-left: 5px; float: left;">
+                      <br>
+                    <p>父親是一位軍人。我出生於一個軍人家庭。兄弟姊計有六人。幼年及青少年期間，在我的記憶中，並沒有「父親」的身影。主因父親從事軍職治安單位的工作，顕少時間在家。</p>
+                    <p>偶爾，父親回家也是匆匆來去。當父親回家的時候，兄弟姊們也都是噤若寒蟬循規蹈距，深怕觸惱了父親大人。</p>
+                    <p>
+                      早年的鄰居，我的的同學好友，陳麗瓊曾經多次向我提到我的父親，他是多麼地幽默風趣，且長的非常帥喔！我的母親美麗非常溫柔婉約。她經常到家中來玩。非常羨慕我們的家庭。對於她的誇奬美言，我從來沒有感受到父親及母親有何異於他人之處。
+                    </p>
+                    <p>
+                      當我初中唸市女中時，每日放學回家曾経與父親共乘交通車。父親在車上高談闊論，非常有風趣。可是，一回到家，就抱怨非常疲憊，馬上唸東唸西。大家看到父親回家了，也都正襟危坐，不敢造次了。尢其是兩位小兄弟也都在裝乖。父親在家中完全軍事管理，標準的嚴父。家中兄弟們沒有人敢持有任何異議及叛逆的能力。兄弟們一生的循規蹈矩來自於父親軍事化嚴格的管理
+                    </p>
+                    <p>
+                      父親生於1913年，2013年辭世，半生戎馬奉獻國家。有印象中的攵親已是他的晚年，年輕時的英挺帥氣早已不復記憶。當我在整理相簿時，看到他的照片，驚覺鄰居好友對他的評語，我的父親長得可真「帥氣」呵！晚輩們看到不知是否有同感。
+                    </p>
+                    <p>
+                      30-60年代，身處在戰亂復國重建家園時期，家家戶戶經濟生活多半困頓，我的母親卻獨自撐起一片天持家有方，從未讓子女感到生活的匱乏。直到今天，我仍然可以有開闊的胸襟高度的視野，享受物質及精神的生活，實拜偉大的母親努力賢淑忍讓所賜！
+                    </p>
+                    <p>在此感恩我的父母賜予良好的基因及優秀的手足，因為有你們，才有今天美好幸福快樂的日子！</p>
+                  </div>
+         
+                </article>
+              </div>
+
+              <!-- Articla 02-->
+              <div class="tab-pane " id="Article-02" role="tabpanel">
+                <article>
+                  <h5 style="margin-bottom: 0px">人格特質</h5>
+
+                  <strong>品格</strong>
+                  <p>
+                    父親是一位剛正耿直不阿的人。父親在軍職任職治安、情報工作。在家時間甚少，在我們青幼年時期，從未聽聞提及他的工作。年長偶爾談論到他的過往工作經歷，才稍有了解，他對認為自己認知是正確的事情，他是會理直氣壯具理力爭到底。因此可能得罪長官上級影響官位也在所不惜。他擔任治安單位主管，曾經審查許多違反治安人員的案件，也力求勿枉勿縱。尤其來台初期，有很多涉及匪諜、共諜等案件，也會仔細再三搜証，力求勿枉勿判。他曾經告誡我們做人最重要的一件事，就是自己的正確正義判决是如何的重要。他在擔任地方治安首長期間因公正執法，才能使他歷任鳳山、台中、台北等地區的憲兵隊長，長達〇年，在當時台灣動亂的年代，殊屬不易。𠻸後，長官、部屬及他審理的案件也從未聽聞有任何負評。
+                  </p>
+                  <strong>清廉</strong>
+                  <p>
+                    父親的為人除了正直以外；就是清廉。父親沒有什麼財務觀念。家中薪水經年全數交給母親打理。自己僅留少數私用。
+
+                    年長後，才聼聞父親談道他初來台駐軍任職，台灣光復後，他曾奉命接收日本人戰敗撒離的房子，非常多棟均悉數造冊繳交中央。據母親告知，幼年時期我們家隨軍遷移，曾經住過大龍峒廟內。而父親從未以他的官職
+                    強奪公產。他在各大都市任治安憲兵隊長，也未強佔公地據為己有。父親自始自終都認為未來一定會隨蔣縂
+                    統反共大陸回到故居淅江嵊縣。
+
+                    父親曾經任職治安、情報單位，從未聽聞有過索取任何不法之財。父親完全沒有財務觀念，母親生性節儉持家有方，也讓前缐作戰的父親沒有後顧之憂。當然也不會冒貪污之險取不義之財。
+                  </p>
+
+
+                  <strong>負責</strong>
+                  <p>
+                    父親是一位從公負責的軍職主管。全力以赴為國家打拚。最有記憶的一件事情。他曾經擔任調查站站長。當天晚上有在地百姓，突然攻擊進入調查站，並且滋事放火。當晩假日父親因仍然駐守調查站，立即有效處置，以致事態沒有擴大。一位領導人有效領導組織單位對社會國家的重要性不可言喻。
+                  </p>
+                  <strong>承擔</strong>
+                  <p>
+                    父親在駐塞班島時，欲返回廈門港，搭乘一貨輪不幸在海中失去動力，父親跳海向美軍艦求援的事蹟（請閲怒海救人篇）。呈現出父親英勇的表現。
+
+                    記得我念小學時期，眷村經常淹大水。當時大水幾乎淹在大人的胸部。我們先行撒退暫移住在北二女中學敎室。我看到父親將牀板拆下，在洪水中移動，將家中幼童搶救逐個遷移到安全地帶。
+
+                    父親雖然公務繁忙，仍然趁有空時，來西門國小探訪，當我在敎室的後窗，看到父親時，十分開心。父親經常帶起士林小點心，在當年可說是奢侈品。但是父親在經濟拮据時，對家人也從不吝付出。
+                  </p>
+                  <strong>領導</strong>
+                  <p>
+                    父親經常提及帶兵打仗，一定不能損失一兵一卒。父親的管理哲學，雖然我們身為子女覺得碎念。現在回憶也是不無道理的。成年後，我擔任公職也管理百人團隊。如果主管沒有叮嚀再三，團隊的公安事故一定頻傳。管理者沒有嚴加督導，組織成員一定渙散。事故頻傳造成的傷害，對公司社會國家及部屬都是無法補救的大災難。
+
+                    我們能夠平安健康長大，真的要感謝感恩父母親督導有方。
+                  </p>
+                  <strong>善良</strong>
+                  <p>
+                    父親晚年，在子女長大就業後，家庭重擔減輕，經常外出購買水果、食品，分享給鄰居水電行、小商店等。父親給予服務人員較多的小費例如理髪師、澡堂人員等。出手大方，照顧低收入者，則是他善良人性的一面。
+
+                    作為子女的人，縂感受到父親的威嚴，但是回憶父親的一生從沒有懲罰任一位子女，也沒有任一子女被鞭打過。可見父親縂是用說敎的，也表現出父親其實是一位善良仁慈的人。
+                  </p>
+                  <p>
+                    在軍權威嚴管理下，子女們僅能服從聽命。我們的母親以柔制剛，也從不正面衝突，所以，我們的家庭諶稱和樂相處。唯有不聽命的小女我經常反叛對抗，父親戲
+                    稱我是家中的「共產黨」、「民進黨」一位異議份子。由於我太像我的父親，他也拿我沒轍。
+                  </p>
+                  <img src="images/wangs-2211.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-2213.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-2214.jpg" class="img-fluid" style="width:600px">
+                </article>
+              </div>
+
+              <!-- Articla 03-->
+              <div class="tab-pane " id="Article-03" role="tabpanel">
+                <article>
+                  <h5>坦蕩與剛直</h5>
+
+                  <p>父親生平雖然爲人袒蕩、個性剛直，但見義勇為，好打抱不平的人格特質也曾讓他在軍旅生涯中發生重大轉折。</p>
+                  <p>
+                    當年全家遷居台中市，父親在憲兵團部擔任少校警務員，某日該團所轄連級指導員王文埔（該員陸官畢業，算是青幫在憲兵的一個山頭，為人陰狠、手段毒辣，善於營私結黨，後來還升任中將副司令）檢控某一連級幹部涉嫌匪諜案，事證是他發現該員辦公桌玻璃板下壓了一張由報紙剪下的打油詩，但背面卻刊載有政府槍斃匪諜的名單，就懷疑他有刻意為匪蒐集情資的動機。當案件會辦至父親處，父親對該案持反對的意見，他經比對報紙後認為所剪下的匪諜名單並不完整，應該屬單純為興趣蒐集打油詩時，而未能注意到背面的新聞所造成的誤會，且匪諜罪屬重罪，千萬要慎重查證，不能憑白冤枉人。
+                  </p>
+                  <p>
+                    父親以客觀就事論事的觀點，等於是潑了王文埔一心想立功表現心態上的一頭冷水，這廝立馬去找團部指導員抱怨，以當時政工幹部自以爲是、自我膨脹，囂張跋扈、唯恐天下不亂的心態與氣焰，又補了父親一槍，隨口說道：「我懷疑王OO也是他的同路人？」。父親得知後，那容的下這種指控與污辱。他氣憤難平之餘，未對母親說明，就獨自搭車北上到國防部總政戰部找主任蔣經國。
+                  </p>
+                  <p>
+                    當時蔣經國聽說父親著憲兵軍服自稱要以匪諜身分來自首，就立即親自接見，聽聞原委並請參謀私下查過父親背景後，也認同政工幹部對此案處理草率，出言不當的過失，同時親自致電給當時的憲兵司令尹俊要求不得事後追究，同時指責該團級指導員出言不當、有損官箴，應立即調職處分，還父親一個清白。
+                  </p>
+                  <p>事後，父親冷靜思考既然得罪了政工幹部，爾後在武裝部隊（班、排、連、營、團、旅級）指揮職上的發展必然受限，唯有從事情報調查工作可不受政工的制肘。所以基於這原因父親就開始從事情報工作。</p>
+
+                  <img src="images/wangs-3101-father-2.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-3101-father-3.jpg" class="img-fluid" style="width:600px">
+
+                </article>
+              </div>
+
+              <!-- Articla 04-->
+              <div class="tab-pane " id="Article-04" role="tabpanel">
+                <article>
+                  <h5>怒海救人</h5>
+                  <p>以下摘錄自 “特高憲兵 – 陳中堅回憶錄：附述對海峽兩岸統一福祉期望” 第十章：獻身情報 pp 387-390 </p>
+                  <p>民國四十六年,我分發至・憲兵直屬調査第一組的「高公館。」位於台北市大龍峒重慶北路三段 二三巷十號,一棟不起眼的平房中。 中校組長王才金先生,曾是一位在太平洋中「怒海救人」的了不起英雄人物。
+                    民國三十四年,同盟國於日本本土投下原子彈,日本以無條件投降戰敗。同盟國由美國五星上將 麥克阿瑟元帥受降,估領東京。我國是同盟國戰勝國之一。也有權去估領東京。但我國勝利后,要接
+                    收淪陷區甚為潦闊,又與中共在紛争,無法派遣軍隊去估領日本。僅象征性的,由國民政府軍事委員 會派遣何世禮將軍率領一個「中華民國駐日軍事代表團」與由憲兵司令部派陳毓亮少校率領武裝憲兵
+                    一隊前往日本,估領東京。 那時在太平洋的馬里西納群島中的;關島,塞班島。均是第二次世界大戰,美軍攻打日軍登陸戰 的主戰場。美軍登陸勝利後,在這些島上留下大批軍用物資,經美國撥贈我國。由行政院善后安全
+                    署,派兵工前往處理。並由中華民國駐日本東京憲兵隊,派遣憲兵一分隊,由王才金中尉率領前往 「塞班島」成立「中華民國駐塞班島憲兵分隊。」</p>
+                  <p>「塞班島」位於太平洋馬里亞納群島中,僅次於關島的第二大島,當年為日軍太平洋艦隊司令部 所在地,為美軍太平洋登陸戰主戰場。戰爭最激烈,在美軍登陸時,日軍艦隊司令部全體官兵,均集 體跳海自殺,甚為壯烈。
+                    民國七十九年,我次子陳孝祿,在關島大學留學就讀,我數度前往探視。塞班島離關島僅三十分 鐘航程,且為台北至關島,必須停靠之島。而我在塞班島也有一位紅粉知己在那裡,故曾往遊覽。見
+                    島上洋溢熱帶風情,西海岸是綿延亮麗的沙灘,東海岸則全是充滿雄偉壯觀的斷崖絕壁,沿途仍可到 處見到、當年美軍登陸時,殘留的砲彈爆破痕跡。
+                    「塞班島」目前僅有二萬餘人口,但每年到塞班島的觀光客最少有二百萬人以上,觀光業甚為發達。</p>
+                  <p>但在王先生那時駐紮塞班島時,甚為荒涼,亦無航空班機來往,僅有一條小貨輪,每個月來往目 本東京與中國廈門之間。 島上處理美軍遺留物資與軍品的華籍員工有數百人之多。某日,王先生與三十多位華籍員工搭乘
+                    小輪船,欲往中國的廈門港。不意船在航行途中機器失靈,失去動力飄泊於大海中,至船旅客均惶恐萬分。</p>
+                  <p>此時在小輪船右前方正有一艘美國兵艦,船長立即打信號旗與信號燈向美國兵艦求救。但發出了 多次求救信號,美國兵艦毫無反應,可能美國兵艦看不懂中國的信號,船長也焦急萬分。</p>
+                  <p>
+                    這時我們這位塞班島憲兵隊長王先生自告奮提出,由他跳入大海游向美國兵艦求救。這是一項常冒険及危險的行動,船長與全船旅客,並不贊同。但王先生力陳,為了全船旅客安危。他義無反顧。他立即脫下全身衣服,僅著一條短褲,帶了一件救生衣二個救生圈跳人海中,他奮力向美國兵艦方向游去，他在大海中搏了三個多小時,竟幸運被美國兵艦發現,設法把他救上了
+                    王先生立即向美國兵艦長說明,他原乘的小輪船,失去動力即將沉沒,央求美國兵艦前往搭救。</p>
+                  <p>美國兵艦同意了王先生的央求,前往小輪船處,將全船的旅客與船員就上兵艦。 這時至船旅客,莫不感激主先生救命之恩,紛將身上的金錢,有的並把手錶取下,全部要贈送給
+                    王先生,但他一件都不收。並說:他身為憲兵,這次跳入海中向美國兵艦求救,是他應該做的,算不了什麽。</p>
+                  <p>美國兵艦這時同意,改航駛往度門,把營救在兵艦上的旅客與船員送達目的地。並先拍出電報告 知厦門港務局。廈門港務局,接到電報,即著手准備迎接這批怒海餘生歸來的旅客,並把王先生的經
+                    過發饰了新聞。故美國兵艦尚未到達廈門,王先生英勇事蹟,已為厦門報刊電台廣為傳播,已經哄動全廈門。王先生已經為家喻戶曉的英雄人物。</p>
+
+                  <img src="images/wangs-3102-record-3.jpg" class="img-fluid" style="width:600px">
+                  <img src="images/wangs-3102-record-2.jpg" class="img-fluid" style="width:600px">
+
+                </article>
+              </div>
+              <!-- Articla 05-->
+              <div class="tab-pane " id="Article-05" role="tabpanel">
+                <article>
+                  <h5>日薄西山</h5>
+					<img src="images/wangs-3102-record-4.jpg" class="img-fluid" id="FloatR"  style="width:600px">
+                  <p>父母雙親晚年相依為命生活。父親一生從軍一介武夫脾氣相當急躁。母親以柔克剛相忍為家。直到母親積勞成疾，2010年撒手人寰。父親高齡原本健朗的身體，開始急速敗壞，雖然我們一直隱藏母親的死訊，但是，聰明的父親早已心知肚明，從此以後，不再提及母親大人。</p>
+                  <p>「父親經常開始無釐頭發脾氣胡鬧，苦的是照顧他的五弟台鼎及印尼看護安妮。由於沒有安全感的緣故，父親開始向大哥台龍要錢，大哥初期不敢有所違抗，只好照辦。然而父親持續要求更多的金錢時，家人開始懷疑金錢的流向及用途。也曾將父親帶出，搜尋父親房間內所有地方，均沒有發現父親錢的去處。印尼看護安妮是一位非常盡責的人。在沒有任何證據時，也無法認為是嫌疑人士。這是父親終老時的謎題。</p>
+                  <p>父親接近百歲時，經常出入三軍總醫院及鄰近家附近的慈濟、耕莘醫院。最後只能插鼻胃管進食。每當星期天我回家去看他的時候，他都搖著手示意，希望我能夠將他的手套解開。</p>
+                  <p>
+                    印尼看護也在我回家時，訴說父親跟她吵鬧的情況。我的父親已日薄西山命在旦夕。2013年11月9日當天由我值日看顧時，不幸辭世家中，走完他的人生。
+
+					父母雙親辭世僅相隔三年。在我們子女來說，好似漫長的歲月，日日夜夜難渡。可見母親照顧父親一生的辛苦。</p>
+
+                </article>
+				
+              </div>				
+				
+	            <!-- Next Aritical -->	
+				
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </main>
+
+      <!-- Footer -->
+      <footer class="page-footer foot-small my-5">
+        <div class="row">
+          <div class="col-3 pl-5 py-1">
+
+          </div>
+          <div class="col pr-5 py-1 text-white">
+            <small> 王氏家族相冊 2020 </small>
+
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Vue實例的程式碼 -->
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          Home: '首頁',
+          Menu: '便當',
+          Login: '登入',
+          Shopping: '購物車'
+        }
+      })
+    </script>
+</body>
+
+</html>

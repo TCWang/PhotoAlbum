@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap 4 CSS 的 CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fontawesom 的 CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <!-- Google Icons CDN  -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="css/mycss.css">
+    <title>相冊：3.3 化解危機之道</title>
+
+    <style>
+        .jumbotron-bg2 {
+            background-image: url('images/wangs-1103-TaipeiPark.jpg');
+            background-size: cover;
+            background-position: center center;
+            min-height: 300px
+        }
+
+        .bg-lighter {
+            background-color: rgba(0, 0, 0, .4);
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#">
+                王氏家族相冊
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>家人登入
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="index.html">說明</a>
+                            <a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+                            <a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-home"></i>追憶父母
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-211-Parents-01.html">傳承篇</a>
+                            <a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+                            <a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-info"></i>生活回顧
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-311-Review-01.html">眷村生活回顧</a>
+                            <a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+                            <a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+                            <a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+                            <a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-heart"></i>享受當下
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+                            <a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+                            <a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+                            <a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+                            <a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+                            <a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-asterisk"></i>展望下一代
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+                            <a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+                            <a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+
+
+        <!-- Jumbotron-->
+        <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+            <div class="container">
+                <div class="bg-lighter">
+                    <h5>軍旅生活</h5>
+                    <p>從小的訓練造就成功的軍旅生涯</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Vue實例的掛載點 -->
+        <div id="app" class="container-fluid mt-1">
+
+            <header>
+                <div class="row mx-1">
+                    <h3>3.3 軍旅生活回顧</h3>
+
+                </div>
+
+            </header>
+            <main>
+                <div class="row">
+                    <div class="col-md-3 col-lg-2">
+                        <aside class="sidebar1">
+                            <h5>時間軸:大事記</h5>
+                            <p>1953 -201x</p>
+                            <ul>
+                                <li>2020: 台鼎追憶於台北</li>
+                            </ul>
+                        </aside>
+                        <div class="list-group" id="MenuList" role="tablist">
+                            <a href="#Article-01" class="list-group-item list-group-item-action active"
+                                data-toggle="list">化解危機之道</a>
+                            <a href="#Article-02" class="list-group-item list-group-item-action"
+                                data-toggle="list">江浙子弟在台灣紀行</a>
+                            <a href="#Article-03" class="list-group-item list-group-item-action"
+                                data-toggle="list">從軍樂-在軍中開菜單的歲月</a>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="col-md-9 col-lg-10">
+
+
+
+                        <!-- Articla 01-->
+                        <div class="tab-content active">
+                            <div class="tab-pane active" id="Article-01" role="tabpanel">
+                                <article>
+                                    <h5>化解危機之道</h5>
+                                    <div>
+                                        <p>
+                                            自幼在父親軍事威權管理，長期執行鐵的紀律愛的敎育中生活，對於軍中的管理制度早已經耳濡目染非常熟捻，以致日後從軍服從配合長官性高。〇年軍旅生涯能夠順遂平安度過，父親的敎誨敎導實功不可沒。
+                                            記得我在憲兵司令辦公室擔任主任時，發生：某日部內沈姓少將副參謀長在開會時，因發言不當，觸怒了司令官，當會議結束後，步出會場，司令還氣憤難消、一路飆罵，我們這少將副參謀長走也不是，站著又覺的尷尬，副司令以下等將官都豎立在兩側，場面尷尬且疆持不下，這時，只有我走進他老人家在他耳邊輕聲的說：「報告司令，官兵都在側目很難堪！對您血壓也不好，您先息怒回房，我找傳令給您泡杯茶，等您氣消了，我再叫這畜牲進來，您想怎麼弄它都可以」，我們司令盡然也聽話回房去了。這時我猛一回頭，見到我們副參謀長眼角含淚，還不斷對我點頭表達謝意。
+                                        </p>
+                                        <p>
+                                            另一件事：某日司令侍從官某中校衝進辦公室找我：「主任、主任，今天老板有點反常，開會開了兩個多小時，並且一直在飆人，怎麼辦？」我回：「簡單，我叫他出來就好啦」，他表情驚恐的問：「真的嗎？你敢喔！」，我說：「我們賭酒席一桌」，我接著直接進會場對司令說：「報告司令，參謀總長來電有要事，請您回電」，他老人家聽了也不囉唆，摘了老花眼鏡，立馬踩著小快步隨我出來了，等出了會場我立刻告訴他：「您別急，沒事。我看您開會時間太長，血壓又要飆高，請您先出來上個廁所，喝點茶，再進去弄死他們」結果他嘴角強忍著微笑，還真聽我安排，自此，侍從官等視我如天神。
+                                        </p>
+                                        <p>
+                                            我們這位司令私下綽號叫白老虎（屬煞星、猛禽類，具有心思細密、多疑、易怒、翻臉無情、有仇必報等人格特質）當年，憲兵多數幹部每天幾乎都在探究、思考要如何跟這位司令相處，其實他們不知道每當夜深人靜時，司令也在思考要如何跟我和平相處。
+                                            就當我退役十餘年後，每逢與長官、同學、同僚餐聚時，他們還會好奇的追問，我如何跟楊先生這麽難纏的人能相處四年有餘（二任），他還不願意讓我走，其實真正的原因我從來沒有說明過。我們自幼在父親鐵的紀律、愛的教育、威權鎮壓下成長、茁壯。對司令這點小軍閥的這點僚氣與能耐，實在不能算是什麽卡，當他盛怒發脾氣時，對我來說只不過算是一個熱帶氣旋，連颱風都稱不上，夠不成什麽威脅，實在不足掛齒。
+                                        </p>
+                                    </div>
+                                    <img src="images/wangs-4301-miltary-1.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-3303-military-1.jpg" class="img-fluid" style="width:600px">
+                                    <img src="images/wangs-3303-military-2.jpg" class="img-fluid" style="width:600px">
+									<br><br>
+								
+									
+                                </article>
+                            </div>
+                            <div class="tab-pane " id="Article-02" role="tabpanel">
+                                <article>
+                                    <h5>江浙子弟在台灣紀行</h5>
+                                    <div>
+                                        <p>
+                                            七十年間，我在台北憲兵隊擔任中尉副連長。
+                                            某日清晨五點不到，指揮官李範勳將軍，就差侍從官喚我立刻到他房間，劈頭就問：「你是浙江人？」，「浙江話會不會講？會不會聽？」，我答：「自幼已習慣聽家父講話，講不行，聽還算可以」。
+                                        </p>
+                                        <p>
+                                            他說：「你現在馬上回連上把個人軍服、裝備繳清，我準備調你到國民黨中央黨部報到。切記，去時，多聽少說，尤其不能讓黨部員工知道你據有軍人身份。今後，有大小事情，你都可直接向我報告，詳細的情形，待會，副指揮官在車上會告訴你」。
+                                        </p>
+                                        <P>
+                                            報到後，我才得知，原本指揮部是指派另一位台籍幹部任職，但沒想到他去後，完全聽不懂警衛室的浙江土話，也讓總幹事非常不高興，認為憲部辦事草率，親自打電話給憲兵司令要求當天換人。
+                                        </P>
+                                        <P>
+                                            我上任後才瞭解黨部警衛的編制與特性。
+                                            當時，因每週總統固定會蒞臨主持中常會，且經國先生無預警會從總統府直接驅車到對面黨部找秘書長蔣彥士商討事情，在侍衛室無法即時佈署下，黨部的日常內部淨化、人員進出管制等安全考量，就在秘書長室下設「警衛室」。
+                                        </P>
+                                        <p>
+                                            總幹事季竣公-曾擔任老總統的龍頭侍衛官，專員-胡忠良是老總統的貼身侍衛官，幹事-陳烈，是曾擔任現任經國先生的龍頭侍衛官。這編組成員5-6人，在當時看，都各有來頭，均屬前、後朝宮內得寵的資深太監級人物，人員籍貫，那更沒話說，清一色-皆是浙江省奉化縣溪口鎮人士，自幼都是跟著蔣公在溪邊看魚逆游而上的貼身護衛。
+                                        </p>
+                                        <P>
+                                            在警衛室下則設有警衛組，編制有中校組長（一），中尉副組長（一），警衛大隊衛士30員。
+                                            是跟著父親看魚群順流而下，其實，逆流而上的那群魚，在我父子眼中，它們根本是自找麻煩，沒事找事做，我們是不噱的），其餘成員：青一色，全是金門籍人士。
+                                            註：當年老總統從金門戰地孤兒中挑選、撫養、教育，在育幼院完成初中學業後，再送至各常備士官學校或軍官學校受訓，並授與射擊、八極拳等武術技能，編入警衛大隊，配置在士林、大直七海官邸擔任內衛區的警衛任務。
+                                        </P>
+                                        <p>
+                                            期間，因我們金門組長的家鄉音，跟浙江家鄉話大有不同，也造成與警衛室溝通上經常發生誤解與衝突，相對的，我在警衛室眾鄉親的關照下，倍受寵愛。
+                                        </p>
+                                        <P>
+                                            依慣例；警衛室內部開會時，是不准組長入內的，這種感覺就像族長在祠堂裡開宗親大會時，怎容的下一個外姓人士混在裡面，那基本上是對祖宗的不尊重，而我坐在旁邊吹冷氣、看報紙，儘管做我的事，老鄉親們總是視而不見，偶爾還會要我幫忙接聽電話，完全當做自家人。況且，我們也算是沒事喜歡看魚游的方向，有著共同嗜好的人。
+                                        </P>
+                                        <p>
+                                            與他們共事，讓我悟出一點心得，我們這些老鄉親們特別講究做事的基本原則，他們一向是堅持「對人不對事的」。
+
+                                            每逢輪我在秘書長辦公室前站軍官哨時，專員胡鄉長，必定會藉機過來陪我聊聊天的，他說：「抬頂（台鼎）啊！尼槍腰帶不要紮太近（緊），要記得紮的適中，不然像窩（我），年輕時長年帶槍站班，老了，兩根腿桿子都靜脈曲張痛苦的不得了⋯⋯」。
+                                        </p>
+                                        <P>
+                                            等到他看見組長站班時，我所聽到的話又不一樣了。
+                                            他會老遠就喚組長全名：「張漢民，你在殺（耍）流氓啊！尼看你的槍壳子（套），一半幾幾乎都露在西裝外了，尼是不是想擺弄尼有槍，要瞎（嚇）唬老百姓，尼這樣、怎麼能以身作賊（則），我們當年，每個人中山裝裡面規定是要插兩支盒子砲的，還有1博（百）發子彈的，還不准讓旁人看出有犧帶武器的，那像尼這樣隨隨便便的，搞得像在拍西部牛仔片一樣，我要是早年的脾氣，一腳就把尼踢出警衛圈子了」。
+                                        </P>
+                                        <p>
+                                            某天，我途經警衛室前，又看到專員跟組長發生劇烈爭執。
+                                            我聽到專員說：「你們衛士每次沒上哨前，一定先會去竊盜。我看到幾次了，怎麼糾正還是不改」。組長則臉紅脖子粗的辯解：「我們衛士都是經過身家查核的，絕對不可能發生這種事的」。專員更生氣的執問：「做錯事，你還敢幫他們辯解，這難道是你授意的」。我眼看他倆八極拳開打的手式都快擺出來了，而我一聽我們老鄉的話意，就猜出他在講什麼事。
+                                        </p>
+                                        <p>
+                                            我婉轉跟組長翻譯，專員是說：「衛士很糟糕，往往還沒上哨就違反規定，提前偷偷到各樓層去簽到了，而你聽錯以為是竊盜了」，他這時才恍然大悟。
+                                            這時，專員更生氣的說道：「我們講畫（話）都是清清楚楚，明明白白的，這個人怎麽總是聾子聽雷，攪不清楚呢？就算是個聾子，他們還是會觀查別人的嘴型，猜出在說些什麼的，我看這個人是徹底沒救了，他不單是聾，還是個瞎子。
+                                        </p>
+                                        <p>
+                                            從此以後，專員經常私下跟我提起：「台鼎啊！尼有沒有意願，軍職外調，留在我們這裡，不要回部隊了」，「台鼎啊！我們跟總幹事研究過了，給秘書長上個案子，請他給憲兵司令打個電話，先把你的缺，調整到地方黨部，你人留在這裡。我再把那聽不懂人話的東西清乾淨，以後就由你來負責接他位置，這樣除了工作穩定，待遇比軍中高出許多，尼還可以文職幹到65歲」。
+                                        </p>
+                                        <p>
+                                            當時考量，這種工作枯躁乏味，我僅待了三年多，就面臨快要崩潰，所以堅持無意願。最後還是靠著指揮官以我中尉年資，需先進憲校正規班受半年教育，否則影響爾後歷練主官職的名義，讓我重返憲兵部隊，當時，知道實情的人都認為我太笨，這可是千載難逢、一般人無法遇的機運，但現在看看的國民黨的狀況，我今年屆齡退休時，可能連退休金都領不到。所以說：「事事難料，是福是禍？沒有發生前，誰能算得準」。
+                                        </p>
+                                    </div>
+
+                                </article>
+                            </div>
+                            <div class="tab-pane " id="Article-03" role="tabpanel">
+                                <article>
+                                    <h5> 從軍樂-在軍中開菜單的歲月</h5>
+                                    <div>
+                                        <p>
+                                            我在調升台北憲兵隊（202指揮部）隨隊營擔任副連長職務之前，在憲兵201指揮部（駐地：士林梅莊營區）警務組擔任參謀職。在此期間，適逢指揮官職務更迭。剛到任的指揮官馮元修將軍從組裡參謀中遴選我擔任他的隨從參謀。主要的工作是負責安排、管制他的公私行誼，並隨侍在他左右、每天陪他上山、下海、走馬、看「軍」。
+                                        </p>
+                                        <p>
+                                            新到任的馮將軍為了拉近與官兵間的距離及深入瞭解基層生活上的實況與需求。特別指示：即日起，每週至少需排定轄內一個憲兵營，要與官兵一起共餐。同時，還特別強調一切保持正常，官兵平常吃什麼，他也吃什麼。嚴禁有特別加錢、加菜的行爲。但是，也許他太不瞭解；國軍不知何時起，少部分幹部為求升官，就有虛偽造假逢迎拍馬的不良習性。
+                                        </p>
+                                        <P>
+                                            當各級幹部獲知指揮官要來，這關係到未來前途發展，就算再窮再苦，心一橫，可能把自己的大腿肉都願意割下來給官兵加點菜。
+                                        </P>
+                                        <P>
+                                            再看看當年政黨輪替後，阿扁總統所到之處，營區官兵一致戴扁帽，口中喊著：「你是我的巧克力」等，這種香蕉你個芭樂、超級低俗噁心的話都能嚷嚷上口，還有什麼事做不出來？
+                                        </P>
+                                        <p>
+                                            所以每當輪到那個營準備辦餐時，該營營長百分之百會私下致電給我，主要是探詢：「老弟啊！請教指揮官平時吃飯，有沒有什麽忌口的？或是特別愛吃的口味？」。
+
+                                            「老弟啊！前個營準備了那些菜色？指揮官滿不滿意？回來有沒有提到些什麽要改進的？」。
+
+                                            「老弟啊！你經常跟在指揮官旁邊，應該最清楚他喜歡吃些什麽？能不能幫個忙，給我們擬個菜單，建議、建議一下，大家有了方向也好準備、準備⋯⋯等」。
+                                        </p>
+                                        <P>
+                                            而我這個人的最大弱點，就是怕被對方有所求，不忍拒絕。我當下抱持著：「人溺己溺」、「助人為樂」的心胸，鉅細彌遺的為他們開出四菜一湯（梅花餐），含餐後水果及甜點。色、香、味俱全的美食菜單。
+                                        </P>
+                                        <p>
+                                            當日用完餐後，當馮將軍還在與官兵閒話家常的空檔裡，這些自認貼心、精明的營長，還會偷偷磨趁過來，撞撞我肩膀，或用手緊捏我手掌，暗示：「一切圓滿」、「諸事順利」、「你是我兄弟」等感謝之意。
+                                        </p>
+                                        <P>
+                                            講真的，其實，是我應該要感謝他們。因爲，我所開出的菜單，都是一般般我平常最常吃的菜色。尤其是剛才吃完，還真覺得味道蠻合我的口味。沒有什麼特殊性，也不是什麼山珍海味。
+                                        </P>
+                                        <p>
+                                            多數行伍之人總會抱怨：「軍旅生涯東漂西蕩，物資匱乏，再加上三餐味同嚼蠟」。我反倒是覺得：「日子逍遙自在，三餐皆佳餚，深得我心」。軍中生活一切如魚得水。
+                                        </p>
+
+                                    </div>
+
+                                </article>
+                            </div>
+                            <!-- Next Aritical -->
+
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </main>
+
+            <!-- Footer -->
+            <footer class="page-footer foot-small my-5">
+                <div class="row">
+                    <div class="col-3 pl-5 py-1">
+
+                    </div>
+                    <div class="col pr-5 py-1 text-white">
+                        <small> 王氏家族相冊 2020 </small>
+
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Vue 的 CDN -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+        <!-- Bootstrap 4 JavaScript 的 CDN -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+        <!-- Axios 的 CDN -->
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script>
+            // Javascript to enable link to tab
+            var url = document.location.toString();
+            if (url.match('#')) {
+                $('.list-group a[href="#' + url.split('#')[1] + '"]').tab('show');
+            }
+
+            // Change hash for page-reload
+            $('.list-group a').on('shown.bs.tab', function (e) {
+                window.location.hash = e.target.hash;
+            })
+        </script>		
+
+        <!-- Vue實例的程式碼 -->
+        <script>
+            new Vue({
+                el: '#app',
+                data: {
+                    Home: '首頁',
+                    Menu: '便當',
+                    Login: '登入',
+                    Shopping: '購物車'
+                }
+            })
+        </script>
+</body>
+
+</html>

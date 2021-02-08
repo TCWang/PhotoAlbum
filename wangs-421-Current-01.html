@@ -1,0 +1,1600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap 4 CSS 的 CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- Fontawesom 的 CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <!-- Google Icons CDN  -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!-- My CSS file -->
+  <link rel="stylesheet" href="css/mycss.css">
+  <title>王氏家族相冊 - 活在當下：台龍</title>
+
+  <style>
+    .jumbotron-bg2 {
+      background-image: url('images/20201117-Hualien2/wangs-4205-HualienDay2-17.jpg');
+      background-size: cover;
+      background-position: center center;
+      min-height: 300px
+    }
+
+    .bg-lighter {
+      background-color: rgba(0, 0, 0, .4)
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        王氏家族相冊
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-user"></i>家人登入
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-111-Login-01.html">說明</a>
+              <a class="dropdown-item" href="wangs-121-Login-01.html">登入</a>
+              <a class="dropdown-item" href="wangs-131-Login-01.html">族譜</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-home"></i>追憶父母
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-211-Parents-01.html">憶父母</a>
+              <a class="dropdown-item" href="wangs-221-Parents-01.html">父親篇</a>
+              <a class="dropdown-item" href="wangs-231-Parents-01.html">母親篇</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-info"></i>生活回顧
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-311-Review-01.html">眷村生活回顧</a>
+              <a class="dropdown-item" href="wangs-321-Review-01.html">尋根之旅</a>
+              <a class="dropdown-item" href="wangs-331-Review-01.html">軍旅生活回顧</a>
+              <a class="dropdown-item" href="wangs-341-Review-01.html">團圓相聚</a>
+              <a class="dropdown-item" href="wangs-351-Review-01.html">家族重要日子</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-heart"></i>享受當下
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-411-Current-01.html">1.芳</a>
+              <a class="dropdown-item" href="wangs-421-Current-01.html">2.龍</a>
+              <a class="dropdown-item" href="wangs-431-Current-01.html">3.鳳</a>
+              <a class="dropdown-item" href="wangs-441-Current-01.html">4.中</a>
+              <a class="dropdown-item" href="wangs-451-Current-01.html">5.鼎</a>
+              <a class="dropdown-item" href="wangs-461-Current-01.html">6.煌</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-asterisk"></i>展望下一代
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="wangs-511-Child-01.html">台灣</a>
+              <a class="dropdown-item" href="wangs-521-Child-01.html">加拿大</a>
+              <a class="dropdown-item" href="wangs-531-Child-01.html">美國</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+
+
+    <!-- Jumbotron-->
+    <div class="jumbotron jumbotron-fluid jumbotron-bg2 d-flex align-items-end">
+      <div class="container">
+        <div class="bg-lighter p-1" style="width:300px">
+          <p class="text-white">活在當下 - 台龍</p>
+          <p class="text-white">家族旅遊 融合家族的最好方式 </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Vue實例的掛載點 -->
+    <div id="app" class="container-fluid">
+      <div class="row">
+        <h3>花蓮家族旅遊</h3>
+        <p>
+
+        </p>
+      </div>
+      <main>
+        <div class="row">
+          <div class="col-md-3 col-lg-2">
+            <aside class="sidebar1">
+              <h5>時間軸:大事記</h5>
+
+              <ul>
+                <li>2020年11月17-19日: 花蓮 家族旅遊</li>
+
+
+              </ul>
+            </aside>
+            <div class="list-group" id="MenuList" role="tablist">
+              <a href="#Article-01" class="list-group-item list-group-item-action active" data-toggle="list">太魯閣國家公園</a>
+              <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">花蓮東海岸</a>
+			  <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">花蓮壽豐鄉</a>
+            </div>			  
+            <br>
+          </div>
+          <div class="col-md-9 col-lg-10">
+
+
+            <div class="tab-content">
+				
+            <!-- Articla 01-->				
+              <div class="tab-pane active" id="Article-01" role="tabpanel">
+                <article>
+                  <div class="row">
+                    <h5>2020年 11/17 太魯閣國家公園</h5>
+                    <p id="AlignR">谷歌相簿：
+                      <a href="https://photos.google.com/u/2/album/AF1QipN5fMvprbde9lioeW3dGadXoBbHWTJrkPtk0xk3">00-2020/11/17-花蓮遊
+                      </a>
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <h5>Day1 - 太魯閣國家公園</h5>
+						<ul>
+							<li>11:00 火車站接
+								<ul>
+									<li>花蓮香扁食</li>									
+								</ul>
+							</li>
+							<li>13:30 達基力餐廳
+								<ul>
+									<li>清水斷崖</li>		
+									<li>砂卡礑步道</li>
+									<li>燕子口</li>
+									<li>九曲洞</li>								
+								</ul>
+							</li>
+							<li>18:00 闔家歡餐廳</li>								
+						</ul>
+
+						清水斷崖<br>
+
+						清水斷崖是位於台灣花蓮縣秀林鄉的海岸斷崖，是蘇花公路和仁至崇德路段著名的旅遊景。台灣八景之一。 自蘇花公路和平至崇德之間，綿延21公里 。其中清水山東南大斷崖尤其險峻，絕壁臨海面長達5公里，非常壯觀。在這裡還可以欣賞太平洋海天一色，山海對峙，以及海岸呈現多層次的藍色驚艷。我們在此留下足跡，值得回憶。
+						<br><br>
+						<div id="carouselExampleIndicators-11" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>							  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-21.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-22.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-23.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-24.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-25.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-26.jpg" class="d-block w-100" alt="...">
+							</div>							  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-11" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-11" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<br><br>
+						砂卡礑步道<br>
+
+						砂卡礑步道長度為4.4公里，單程步行約二小時。砂卡礑是立霧溪第一條支流砂卡礑溪中下游溪谷的總稱，步道全程都是沿著砂卡礑溪左岸的溪畔行走。我們一行人，欣賞沿途美麗的大理石峽谷與清澈迷人的溪潭外，步道前半段大都是開鑿在峭壁下的明隧道，很有特色。 由於時間的限制，我們只在此停留半個小時，路途平坦，非常好走。
+						<br>
+						<div id="carouselExampleIndicators-12" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>		
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>								  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-27.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-28.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-29.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-30.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-31.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-32.jpg" class="d-block w-100" alt="...">
+							</div>	
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-33.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-34.jpg" class="d-block w-100" alt="...">
+							</div>									  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-12" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-12" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<br>
+                      <p>
+						燕子口<br>
+
+						燕子口和九曲洞，是太魯閣峽谷最讓人心動的自然奇觀，也是峽谷最窄的兩段，臨溪側闢有人行步道供遊客漫步欣賞。燕子口對岸大理石峭壁上可見到許多小洞穴，每當春夏之際，常有小雨燕和洋燕在峭壁間穿梭鳴唱，或在洞穴內築巢，故而得名燕子口。今天我們一行人來到此地，僅僅看到岩壁上的大小燕子口，當然看不到燕子啦！
+						路途上旅客稀少，我們能夠輕鬆的拍照。不需要避開過多的遊客。這還是第一次遭遇的情況。猶記得以往每次來都是人山人海。
+						<br>
+
+                      </p>
+						<div id="carouselExampleIndicators-01" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-01.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-02.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-03.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-04.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-05.jpg" class="d-block w-100" alt="...">
+							</div>
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-01" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-01" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						  <br>
+                      <p>
+						九曲洞歩道<br>
+						值得一提的是九曲洞，2019年6月24日試營運重新開放。在此之前已經封閉六年。九曲洞步道全長700公尺，須原路折返，和燕子口步道都是太魯閣峽谷地形精華的路段。立霧溪水切穿厚層大理岩，雕鑿出溪谷狹窄、兩岸山壁垂直陡峭的峽谷地形，是當前遊客最喜歡造訪的景點。距離上次九曲洞步道開放，已經事隔6年了，所以在此次行程安排中是一個非去不可的景點。
+						<br>
+						我們一行人今天來到此地造訪，看到雄壯的山勢陡峭起㐲，鬼伏神功的工程，真要佩服及感謝所有在此工程奉獻的古今人士，工程的偉大與辛勞。九曲洞步道緊倚著高山深壑，向下俯瞰則是急湍的立霧溪水，兩岸山壁緊峙，鬼斧神工與險峻的地勢令人讚嘆震懾。除了峽谷之外，大理岩壁上的斷層、節理、褶皺等地形，以及在峭壁上絕地逢生的岩生植物，都是值得觀察的重點。路面寬闊平緩是一條大眾化的遊憩步道，和戶外地質教室。九曲洞步道大致分為以下五處。
+						<br><br>
+						九曲洞步道入口<br>
+						位於九曲洞隧道西端出口處，是人車分道的起點。新設景觀明隧道從九曲洞隧道延伸出來，提供往來車輛、行人完善之落石防護，兼顧安全及賞景之需求。公車站牌、公廁等設施均設在此。
+						<br><br>
+						第二站 水景步道<br>
+						行至步道里程200公尺處，有一段更靠近溪谷的水景步道，帶領遊人從較低的位置更親近峽谷，在這裡聆聽立霧溪急流震耳的水聲，不難感受到立霧溪強大的侵蝕力。
+
+						<br><br>
+						第三站 魚躍龍門（科蘭溪）<br>
+						九曲洞對岸有一條小溪注入立霧溪，陡急的溪水沖蝕大理石壁，在山壁上跳躍翻滾，而大理石山壁也被水切出一道彎曲而狹窄的峽谷，從外觀上看來，有一巨大的大理石佇立在一旁，狀似越過急流的大魚，因此有人將此地取名為「魚躍龍門」。科蘭溪切過大理石壁，儼然已成為一個小型的太魯閣峽谷，從這裡可以看出太魯閣峽谷形成過程中的樣貌，若溪水長年不歇，在久遠的歲月之後，將形成另一個大理石峽谷。
+
+						<br><br>
+
+						第四站 九曲蟠龍<br>
+						九曲洞步道中途山壁上所刻有梁寒操先生所提「九曲蟠龍」四個行書大字，此處正好位於兩隧道相接的透空處，透過臨溪的洞口可欣賞西側的峽谷景觀，向東則緊鄰峽谷最窄的一線天，兩岸岩壁逼近，幾乎讓人有伸手可抵對岸的錯覺，而也正因這樣的地形，在此也可明顯感受到上升氣流的現象。
+						九曲洞步道上除「九曲蟠龍」壁刻之外，另有黃杰將軍所題「如腸之迴，如河之曲，人定勝天，開此其局。」
+						<br><br>
+
+						第五站 步道終點（折返點）<br>
+						里程700公尺的步道終點，遊客需在此回頭循原路折返。
+
+						<br>
+                      </p>
+
+						<div id="carouselExampleIndicators-02" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-06.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-07.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-08.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-09.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-10.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-11.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-12.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-13.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-14.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-15.jpg" class="d-block w-100" alt="...">
+							</div>
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-02" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-02" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						  <br>
+                        <p>
+							山月吊橋<br>
+							山月吊橋是位於臺灣太魯閣國家公園布洛灣遊憩區內的一座景觀人行吊橋，橫跨立霧溪太魯閣峽谷，高懸於布洛灣台地與巴達岡台地間，全長196公尺、寬度2.5公尺，橋面距溪谷約153公尺，為臺灣跨深比最大的吊橋。此次行程原有安排去山月吊橋，可惜的是因為必須要上網登記已經額滿，只能在遠方眺望。
+                        </p>
+
+							<div id="carouselExampleIndicators-03" class="carousel slide img-fluid" data-ride="carousel"
+							  style="width:600px">
+							  <ol class="carousel-indicators">
+								<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+
+
+							  </ol>
+							  <div class="carousel-inner">
+								<div class="carousel-item active">
+								  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-16.jpg" class="d-block w-100" alt="...">
+								</div>
+								  
+							  </div>
+							  <a class="carousel-control-prev" href="#carouselExampleIndicators-03" role="button"
+								data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							  </a>
+							  <a class="carousel-control-next" href="#carouselExampleIndicators-03" role="button"
+								data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							  </a>
+							</div>
+						
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <section>
+					
+						<h5>美食</h5>
+
+						達基力餐廳<br>
+						由太魯閣族的老闆及老闆娘經營。老闆娘專攻在太魯閣族傳統美食創意料理 ；而老闆則是致力於藝術創作。在崇德這裡別具一格的用餐場所。我們早在出發前早已預訂，排在中午1:30的梯次進餐。除了享受太魯閣族的風味餐外，餐廳內還有許多原創藝術雕刻藝術、檜木精油手工皂工作室、舞鎷咖啡館、編織教室及藝術展間。
+						<br>
+						<div id="carouselExampleIndicators-13" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>		
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>								  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-35.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-36.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-37.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-38.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-39.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-40.jpg" class="d-block w-100" alt="...">
+							</div>	
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-41.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-42.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-43.jpg" class="d-block w-100" alt="...">
+							</div>							  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-13" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-13" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>	
+						<br>
+						
+						闔家歡<br>
+						30年前從麵食館起家的「闔家歡」至今已是花蓮首屈一指的合菜餐廳，Google評價破千且高達4.3分相當厲害。由於上回來花蓮，我們到吃餐廳覺得非常好吃，所以，在這趟旅程中，特別預訂到此用餐。
+						<br><br>
+
+						<div id="carouselExampleIndicators-14" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-44.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-45.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-46.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-47.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-48.jpg" class="d-block w-100" alt="...">
+							</div>						  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-14" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-14" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>	
+						<br>
+						扁食<br>
+						難得來花蓮，一定要吃在外縣市沒有的在地美食。花蓮有名的小吃，首推扁食（又稱餛飩）。
+						是在地人從小吃到大也是觀光客必吃得花蓮美食之一。液香扁食店，聽說是蔣經國總統來吃過所以名聲大噪。這家餐館只賣餛飩湯竟可以開了超過70年。上回來花蓮，中午時間竟然座無虛席。
+						此次來花蓮，另換口味選擇花蓮香扁食。香扁食是花蓮本地人最喜歡吃的扁食。
+						<br>
+						<div id="carouselExampleIndicators-15" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+
+							  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-49.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-50.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay1-51.jpg" class="d-block w-100" alt="...">
+							</div>
+				  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-15" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-15" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>						
+						<br><br>
+                      </section>
+
+                    </div>
+                  </div>
+
+                </article>
+              </div>
+
+
+            <!-- Articla 02-->				
+              <div class="tab-pane" id="Article-02" role="tabpanel">
+                <article>
+                  <div class="row">
+                    <h5>2020年 11/18 花蓮東海岸</h5>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <h5>Day2 - 花蓮東海岸</h5>
+						<ul>
+							<li>09:00民宿出發
+								<ul>
+									<li>七七高地</li>
+									<li>牛山呼庭</li>								
+								</ul>
+							</li>
+
+							<li>12:00  口福餐廳
+								<ul>
+									<li>石梯坪</li>
+									<li>七星潭</li>								
+								</ul>
+							</li>
+							<li>18:00松賀家餐廳</li>
+						</ul>
+
+						七七高地<br>
+
+						七七高地是一處能夠環景360度視野的景點，這塊區域因海拔高度77公尺，故又被稱為七七高地。以前這𥚃是駐軍的管制區。進入的道路狹小，兩旁雜草茂密，沿著道路進入約數百公尺，便會來到一處廢棄的砲陣地，再往前行數十公尺，便能抵達最北端的制高點，這有一處廢棄的營舍，爬上二樓平臺，就可以展望四周風景。能俯瞰花蓮溪出海口，這裡也是海岸山脈的最北端。行前在網路上看到許多報導，非常心動，特別安排此一行程。親自探訪秘境，果然不虛此行。
+						<br>
+						<div id="carouselExampleIndicators-21" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>	
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>	
+							<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>	
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-01.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-02.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-03.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-04.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-05.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-06.jpg" class="d-block w-100" alt="...">
+							</div>	
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-07.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-08.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-09.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-10.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-11.jpg" class="d-block w-100" alt="...">
+							</div>		
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-12.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-13.jpg" class="d-block w-100" alt="...">
+							</div>								  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-21" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-21" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<br>
+						牛山呼庭<br>
+
+						牛山呼庭位於花蓮壽豐鄉，座落在水璉南方海灘的牛山旁。牛山，也就是牧牛耕種之地，阿美族稱之為「呼庭(Huting)」。這裡是以漂流木藝術為主題的特色民宿，但大多數的遊客主要是到此走走，到海灘踏浪、到大草坪休息、到眺望台遠眺依山傍水的美景，享受悠閒緩慢的時光。
+						<br>
+						<div id="carouselExampleIndicators-22" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>		
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>		
+							<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>							  
+							<li data-target="#carouselExampleIndicators" data-slide-to="13"></li>								  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-14.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-15.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-16.jpg" class="d-block w-100" alt="...">
+							</div>
+
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-18.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-19.jpg" class="d-block w-100" alt="...">
+							</div>	
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-20.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-21.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-22.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-23.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-24.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-25.jpg" class="d-block w-100" alt="...">
+							</div>	
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-26.jpg" class="d-block w-100" alt="...">
+							</div>		
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-27.jpg" class="d-block w-100" alt="...">
+							</div>	
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-28.jpg" class="d-block w-100" alt="...">
+							</div>								  
+								  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-22" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-22" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<br>
+						
+                      <p>
+						石梯坪<br>
+						曾經到訪花蓮多次，均因遇雨而無法走近到石梯坪上遊玩，今天天氣晴，非常幸運我們可以近距離遊玩石梯坪。更幸運的是遇到好導遊阿煜，指點了許多拍照的好景點。拍出了非常非常美麗的照片。
+						<br>
+						石梯坪擁有經風力和海水雕刻而成的特殊岩岸風景，潮間帶上豐富的自然生態資源：螃蟹、海星、海參、寄居蟹、色彩斑斕的魚群。
+						<br><br>
+						石梯坪位在花蓮縣豐濱鄉石梯灣的南側尾端，整個區域是一個面積極大的海岸階地，海蝕地形十分發達，海蝕平台、隆起珊瑚礁、海蝕溝、海蝕崖等舉目皆是，尤其是壺穴景觀堪稱台灣第一。
+						<br><br>
+						擁有東部海岸最美的海景之稱。花蓮的海岸由於一邊靠山一邊靠海，加上潮水拍打造成的奇岩景觀，深受許多國內外遊客喜愛。特殊沿岸風景也是許多婚紗業者挑選的拍照聖地。更是讓新人婚紗呈現出少見獨特的作品。
+						<br>
+                      </p>
+						<div id="carouselExampleIndicators-23" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>							  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-31.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-32.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-33.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-34.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-35.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-36.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-37.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-38.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-39.jpg" class="d-block w-100" alt="...">
+							</div>							  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-23" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-23" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						  <br>
+						
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <section>
+						玉石咖啡<br>
+
+						天氣晴朗炎熱，大家提議來杯咖啡吧！我們來到玉石咖啡，猶記得上次也曾經途經此地避雨。此咖啡廳販售咖啡、飲料、𣲙品、甜點以外；還兼賣玉石等物品。樓下有民宿可提供住宿。我們在此逗留看風景，喝咖啡，非常享受。
+						<br>
+						<div id="carouselExampleIndicators-24" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+						  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-41.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-42.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-43.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-44.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-45.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-46.jpg" class="d-block w-100" alt="...">
+							</div>
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-24" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-24" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<br>
+						七星潭<br>
+						從東海岸回到花蓮市區，我們又趕往七星潭，已經接近十七點，傍晚黃昏的海邊另有一番不同的景象。
+
+						七星潭，又稱月牙灣，位於臺灣花蓮縣新城鄉大漢村、花蓮市北郊、空軍花蓮基地東側。七星潭是花蓮縣唯一的縣級風景區，連接太魯閣國家公園、東海岸和花東縱谷國家風景區。
+						<br><br>
+						七星潭富有詩意的名稱，據說是位於花蓮師範學院和花蓮機場一帶，早年有零星湖泊散佈，後來因建設需要而填實。現在一般稱七星潭，是指美崙工業區和花蓮機場以北的地區，有斷層形成的海峽與優美的弧形海灣，具有豐富的自然人文景觀。在七星潭，可以遠眺清水斷崖，夜間還可以欣賞新城和崇德地區的燈火，區內更有許多景點，提供休憩和知性之旅。
+						<br>
+						<div id="carouselExampleIndicators-25" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+						  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-47.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-48.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-49.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-50.jpg" class="d-block w-100" alt="...">
+							</div>
+
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-25" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-25" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						
+						<br>
+						松賀家<br>
+
+						18:00準時我們趕到松賀家享用晚餐。松賀家無菜單料理是花蓮有名氣的餐廳。非常豐盛可口的美食，值得推薦給大家。每道料理都是當地食材很新鮮美味。
+						<br>
+						<div id="carouselExampleIndicators-26" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>	
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>									  
+
+						  </ol>
+						  <div class="carousel-inner">
+
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-52.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-51.jpg" class="d-block w-100" alt="...">
+							</div>							  
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-53.jpg" class="d-block w-100" alt="...">
+							</div>							
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-54.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-55.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-56.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-57.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-58.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-59.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay2-60.jpg" class="d-block w-100" alt="...">
+							</div>							  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-26" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-26" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+
+   
+                      </section>
+
+                    </div>
+                  </div>
+
+                </article>
+              </div>				
+
+            <!-- Articla 03ˊ-->				
+              <div class="tab-pane" id="Article-03" role="tabpanel">
+                <article>
+                  <div class="row">
+                    <h5>2020年 11/19 花蓮壽豐鄉</h5>
+
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <h5>Day3 - 花蓮壽豐鄉</h5>
+						<ul>
+							<li>09:00 民宿出發
+								<ul>
+									<li>楓林步道</li>
+									<li>翡翠谷</li>							
+									<li>鯉魚潭</li>									
+								</ul>
+							</li>
+							<li>12:00  樹屋餐廳
+								<ul>
+									<li>夢幻湖</li>
+									<li>東華大學</li>
+									<li>新天堂樂園</li>	
+							<li>貨櫃辛巴克</li>								
+								</ul>
+							</li>
+							<li> 16:00 火車站</li>								
+						</ul>
+
+						吉安楓林步道<br>
+						花蓮吉安楓林步道，全長2.8公里除了是健行好去處，可以俯瞰整花蓮平原及海岸山脈北側的美麗風景。蜿蜒而上的山徑兩旁有所成列的楓樹步道 ，是遊客休閒踏青的熱門景點 。步道轉彎處都有設置觀景台好讓遊客休息欣賞美景，來到四號觀景台，阿煜非常詳盡的觧説有名的建築地標。讓大家更進一步了解花蓮。
+						<br>
+						<div id="carouselExampleIndicators-31" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>	
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-01.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-02.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-03.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-04.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-05.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-06.jpg" class="d-block w-100" alt="...">
+							</div>	
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-07.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-08.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-09.jpg" class="d-block w-100" alt="...">
+							</div>
+							  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-31" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-31" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<br>
+						翡翠谷<br>
+						翡翠谷目前是花蓮地區超人氣必訪景點。與慕谷慕魚齊名。由於慕谷慕魚目前關閉中尚未開放。此行在最後一天行程中特別安排。沒想到通過黑呼呼的翡翠谷隧道，就能通往另一處絕美的世外桃源。
+
+						翡翠谷最迷人的地方就是一整片的水簾瀑布。
+						來訪的游客在觀景賞瀑布之餘，還能踩踩水與瀑布合影。
+						<br><br>
+						要進入翡翠谷前，要先穿越翡翠谷隧道，因為伸手不見五指，記得攜帶手電筒照明，經過隧道時仔細觀察，能看見隧道上方吊掛蝙蝠。
+
+						穿越隧道約再走20分鐘的路程，能看見傾洩而下的天然瀑布，這片瀑布有許多名字：「門簾瀑布」、「琉璃瀑布」等，溪水下能看見小魚、溪蟹悠遊自在，來訪的游客可以脫下鞋襪，在沁涼的溪水中泡腳，或是在秀麗的瀑布前，拍照留下美麗的身影。若往瀑布上游走，穿梭林間與溪石，則能看見與瀑布不同的景色，巨大溪石散落在藍綠色澤的湍急溪水，石頭上有著天然的紋理，坐在岩石上欣賞山谷美景，感嘆大自然的鬼斧神工。
+						<br>
+						<div id="carouselExampleIndicators-32" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>		
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>							  
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-10.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-11.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-12.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-13.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-14.jpg" class="d-block w-100" alt="...">
+							</div>							  
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-15.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-16.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-17.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-18.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-19.jpg" class="d-block w-100" alt="...">
+							</div>	
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-20.jpg" class="d-block w-100" alt="...">
+							</div>
+								  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-32" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-32" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<br>
+
+						鯉魚潭<br>
+
+						鯉魚潭位於台灣花蓮縣壽豐鄉，地處花東縱谷國家風景區的最北端。鯉魚潭為木瓜溪支流銅文蘭溪之上游與花蓮溪支流荖溪之間河川襲奪所形成的堰塞湖，湖面呈南北長東西窄的橢圓形，面積約104公頃左右，湖水來自於地底湧泉，所以終年清澈，水最深處達15公尺。
+						<br><br>
+						鯉魚潭位於壽豐鄉池南村鯉魚山腳下，因東傍鯉魚山而被命名為鯉魚潭。鯉魚潭可分潭南、潭北，潭北附近有銅門慕谷慕魚、翡翠谷，潭南則鄰近池南森林遊樂園區等景點，是花蓮熱門的風景區，有著環潭步道、森林步道等多元化遊憩活動。我們一行人來到此地，漫步環繞潭邊而行，邊看潭邊風光。運氣十分好，拜老天賞賜，天氣非常好。
+						<br>
+						<div id="carouselExampleIndicators-33" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>	
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-21.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-22.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-23.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-24.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-25.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-26.jpg" class="d-block w-100" alt="...">
+							</div>	
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-27.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-28.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-29.jpg" class="d-block w-100" alt="...">
+							</div>
+							  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-33" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-33" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<br>					
+						
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                      <section>
+
+						雲山水<br>
+
+						雲山水農莊為自然生態設立的農莊，佔地面積24公頃，內有4公頃如夢似幻的夢幻湖，農莊內種植有26種棕櫚科的植物、廣大的闊葉林、季節性開花植物及大片的翠綠草地，高聳挺秀紅了成片的落羽松也展冬顏，改變了夢幻湖單一的顏色，樹幹在水中站立，隨著湖水的波動，好似也在水中浮動，真是難的一見的美景。
+						<br>
+						<div id="carouselExampleIndicators-34" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>		
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="10"></li>							  
+							<li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="13"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="14"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="15"></li>		
+							<li data-target="#carouselExampleIndicators" data-slide-to="16"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="17"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="18"></li>
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-30.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-31.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-32.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-33.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-34.jpg" class="d-block w-100" alt="...">
+							</div>							  
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-35.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-36.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-37.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-38.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-39.jpg" class="d-block w-100" alt="...">
+							</div>	
+						  
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-41.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-42.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-43.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-44.jpg" class="d-block w-100" alt="...">
+							</div>							  
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-45.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-46.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-47.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-48.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-49.jpg" class="d-block w-100" alt="...">
+							</div>	
+								  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-34" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-34" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>
+						<br>
+						東華大學<br>
+						 花東為台灣的後山，以景色優美聞名。沿著山線來到了東華大學，號稱是最美的大學。學校開放進入參觀，免收停車費，但需換證進入。
+
+						東華大學共佔地251公頃。偌大的校園中擁有東湖、華湖和小華湖三個湖泊，其中又以東湖最為有名。校內多數建築物座落於湖畔，景色優美，宛若歐式莊園。湖上有著橫跨湖面的觀景橋，為觀看東華美景的好地方。		
+						  
+						<br>
+						<div id="carouselExampleIndicators-35" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>		
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-51.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-52.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-53.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-54.jpg" class="d-block w-100" alt="...">
+							</div>							  
+
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-56.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-57.jpg" class="d-block w-100" alt="...">
+							</div>
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-35" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-35" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>						  
+						  <br>
+						星巴克咖啡<br>
+
+						星巴克洄瀾門市，亞洲首間貨櫃屋門市。洄瀾門市是首間也是亞洲首間以「貨櫃」打造的貨櫃屋門市，建築外觀由建築大師隈研吾設計，以曾駐足過紐約、巴爾的摩、馬賽、巴塞隆納等世界各大城市碼頭的 29 個貨櫃為主體堆疊打造出倒金字塔型的四層建築，賦予貨櫃新生命。此特色星巴克成為來到花蓮必訪的景點之一。
+						<br> 
+						<div id="carouselExampleIndicators-36" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-61.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-62.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-63.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-64.jpg" class="d-block w-100" alt="...">
+							</div>							  
+
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-36" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-36" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>		
+						  
+						<br>
+
+						樹屋<br>
+
+						來到花蓮鯉魚潭，不僅可以遊湖、乘船、騎自行車，最讚的是可以嘗到池南社區最著名的原住民風味餐，樹屋是此地極為熱門的餐廳。提供道地的原住民料理。
+						<br>
+						<div id="carouselExampleIndicators-37" class="carousel slide img-fluid" data-ride="carousel"
+						  style="width:600px">
+						  <ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>		
+							<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+
+						  </ol>
+						  <div class="carousel-inner">
+							<div class="carousel-item active">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-65.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-66.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-67.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-68.jpg" class="d-block w-100" alt="...">
+							</div>							  
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-69.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-70.jpg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+							  <img src="images/20201117-Hualien2/wangs-4205-HualienDay3-71.jpg" class="d-block w-100" alt="...">
+							</div>						  
+
+						  </div>
+						  <a class="carousel-control-prev" href="#carouselExampleIndicators-37" role="button"
+							data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						  </a>
+						  <a class="carousel-control-next" href="#carouselExampleIndicators-37" role="button"
+							data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						  </a>
+						</div>		
+						  
+   
+                      </section>
+
+                    </div>
+                  </div>
+
+                </article>
+              </div>				
+				
+              <!-- Next Aritical -->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </main>
+
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer foot-small my-5">
+      <div class="row">
+        <div class="col-3 pl-5 py-1">
+
+        </div>
+        <div class="col pr-5 py-1 text-white">
+          <small> 王氏家族相冊 2020 </small>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Vue 的 CDN -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+    <!-- Bootstrap 4 JavaScript 的 CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+    <!-- Axios 的 CDN -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <!-- Vue實例的程式碼 -->
+    <script>
+      new Vue({
+        el: '#app',
+        data: {
+          Home: '首頁',
+          Menu: '便當',
+          Login: '登入',
+          Shopping: '購物車'
+        }
+      })
+    </script>
+</body>
+
+</html>
