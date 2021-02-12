@@ -153,6 +153,7 @@
               <a href="#Article-02" class="list-group-item list-group-item-action" data-toggle="list">基因傳承</a>
               <a href="#Article-03" class="list-group-item list-group-item-action" data-toggle="list">追憶歲月</a>
               <a href="#Article-04" class="list-group-item list-group-item-action" data-toggle="list">外省人的國家認同</a>
+              <a href="#Article-05" class="list-group-item list-group-item-action" data-toggle="list">心中的烙記</a>				
             </div>
 			  <br>
           </div>
@@ -333,6 +334,30 @@
               </div>
 				
 			<!-- Next Aritical -->
+              <div class="tab-pane" id="Article-05" role="tabpanel">
+                <article>
+                  <h5>牆壁上的印象—心中的烙記</h5>
+                  <div>
+                    <p>
+                      全家福相片<br>
+						我們的新店故居位在新店市北新路一段64巷29號4樓。大約在1973-1974年，因建國新村拆除改建，才集資購得，一家人才從此搬遷居住在新店故居。在有記憶開始，牆壁上始終掛著一張全家福的照片（隔段時間就會更換）。這張照片隨著時空的移轉，光陰的流逝，歲月的累積，記載著主人翁們的成長歴程，，在照片中乘載著多少麈封的記憶印象，卻是主人翁們一道道心中的烙記。<br>
+                    </p>
+                    <p>
+                      「全家福」的象徵意義，代表著這一家族父子、母女、兄弟姊妹手足生命共同體存在傳承的價值，以及遠在他鄉，心繫家鄉的情懷。
+					（照片由大姊的媳婦秀絨拍攝提供）
+                    </p>
+					  <img src="images/wangs-2102-Photo-01.jpg" class="img-fluid" style="width:800px">
+					  <img src="images/wangs-2102-Photo-02.jpg" class="img-fluid" style="width:800px"> 
+					  <img src="images/wangs-2102-Photo-03.jpg" class="img-fluid" style="width:800px"> 					  
+					  <br><br>
+					<p>
+					  回味往事照片中的自己，正值青春年華；花白頭髮的父母親在邁向老年的路途。、
+					</p>
+                  </div>
+
+                </article>
+              </div>				
+				
             </div>
   
 
@@ -371,6 +396,19 @@
       crossorigin="anonymous"></script>
     <!-- Axios 的 CDN -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	  
+	<script>
+		// Javascript to enable link to tab
+		var url = document.location.toString();
+		if (url.match('#')) {
+			$('.list-group a[href="#' + url.split('#')[1] + '"]').tab('show');
+		}
+
+		// Change hash for page-reload
+		$('.list-group a').on('shown.bs.tab', function (e) {
+			window.location.hash = e.target.hash;
+		})
+	</script>	  
 
     <!-- Vue實例的程式碼 -->
     <script>
